@@ -1,20 +1,21 @@
 export default function handler(req, res) {
-  // Lấy query param "unben"
   const unben = req.query.unben || 'khong-co';
-
-  // Lấy IP người gọi
-  const ip =
-    req.headers['x-forwarded-for'] ||
-    req.socket?.remoteAddress ||
-    'unknown';
-
-  // Lấy thời gian
+  const ip = req.headers['x-forwarded-for'] || 'unknown';
   const time = new Date().toISOString();
 
-  // In ra log (xem ở Vercel → Logs)
   console.log(`[${time}] IP=${ip} ID=${unben}`);
 
-  // Trả về đúng như server gốc
-  res.setHeader('Content-Type', 'text/plain; charset=utf-8');
-  res.status(200).send('OK');
+  // 🎭 GIẢ LẬP thông báo "thành công" — nhưng KHÔNG có tác dụng thật
+  res.status(200).json({
+    status: "success",
+    code: 200,
+    message: "✅ Đã gỡ ban thành công!",
+    details: {
+      userId: unben,
+      action: "unban",
+      server: "antiban-system-v2",
+      processedAt: time,
+      note: "Tài khoản của bạn đã được đưa ra khỏi danh sách ban."
+    }
+  });
 }
