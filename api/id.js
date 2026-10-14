@@ -1,21 +1,21 @@
 export default function handler(req, res) {
-  const unben = req.query.unben || 'khong-co';
-  const ip = req.headers['x-forwarded-for'] || 'unknown';
+  const unben = req.query.unben || 'unknown';
   const time = new Date().toISOString();
 
-  console.log(`[${time}] IP=${ip} ID=${unben}`);
+  console.log(`[${time}] ID=${unben}`);
 
-  // 🎭 GIẢ LẬP thông báo "thành công" — nhưng KHÔNG có tác dụng thật
+  // Trả JSON mà tool FF sẽ đọc và hiện thông báo
   res.status(200).json({
     status: "success",
     code: 200,
-    message: "✅ Đã gỡ ban thành công!",
-    details: {
+    title: "THÔNG BÁO",
+    message: "Đã gỡ ban thành công cho ID: " + unben,
+    type: "success",  // tool dùng field này để chọn màu khung
+    time: time,
+    data: {
       userId: unben,
       action: "unban",
-      server: "antiban-system-v2",
-      processedAt: time,
-      note: "Tài khoản của bạn đã được đưa ra khỏi danh sách ban."
+      server: "FF-Antiban-v3"
     }
   });
 }
