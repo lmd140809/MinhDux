@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FF Tool Demo</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #000;
+      font-family: 'Courier New', monospace;
+      color: #0ff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .container { width: 100%; max-width: 500px; }
+
+    /* Khung xanh trên cùng */
+    .top-box {
+      border: 2px solid #0ff;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      color: #0f0;
+      font-size: 14px;
+      margin-bottom: 10px;
+      background: rgba(0, 255, 255, 0.05);
+    }
+
+    /* Khung vàng Telegram */
+    .tg-box {
+      border: 2px solid #ff0;
+      padding: 10px;
+      text-align: center;
+      color: #ff0;
+      font-size: 13px;
+      margin-bottom: 10px;
+      background: rgba(255, 255, 0, 0.05);
+    }
+
+    /* Chữ xanh lá */
+    .green-text {
+      text-align: center;
+      color: #0f0;
+      font-weight: bold;
+      font-size: 14px;
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+    .pink-text { color: #f0f; font-size: 12px; }
+
+    /* Popup thông báo */
+    .popup {
+      background: rgba(0, 0, 0, 0.95);
+      border: 1px solid #333;
+      padding: 20px;
+      margin-top: 20px;
+      display: none;
+    }
+    .popup.show { display: block; }
+
+    .popup-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+      border-bottom: 3px solid;
+      display: inline-block;
+    }
+    .popup-title.success { color: #0f0; border-color: #0f0; }
+    .popup-title.error { color: #f00; border-color: #f00; }
+    .popup-title.warning { color: #ff0; border-color: #ff0; }
+
+    .popup-message {
+      color: #fff;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      white-space: pre-line;
+    }
+
+    .popup-btn {
+      background: #ff0;
+      color: #000;
+      border: none;
+      padding: 10px 30px;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+      float: right;
+    }
+
+    /* Input */
+    .input-area {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+    }
+    .input-area input {
+      flex: 1;
+      padding: 10px;
+      background: #111;
+      border: 1px solid #0ff;
+      color: #0ff;
+      font-family: inherit;
+    }
+    .input-area button {
+      padding: 10px 20px;
+      background: #0ff;
+      color: #000;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: inherit;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Khung xanh trên cùng -->
+    <div class="top-box">
+      || NOT WORKING JOIN GC NEW FILE NED ||
+    </div>
+
+    <!-- Khung vàng Telegram -->
+    <div class="tg-box">
+      || https://t.me/Premiume_FF_Tcp_bot_Community ||
+    </div>
+
+    <!-- Chữ xanh -->
+    <div class="green-text">
+      FILE REAL ADMIN<br>
+      <span class="pink-text">@AriyanPrime_A9x</span>
+    </div>
+
+    <!-- Input test -->
+    <div class="input-area">
+      <input id="idInput" placeholder="Nhập ID FF..." value="test123">
+      <button onclick="callApi()">GỬI</button>
+    </div>
+
+    <!-- Popup thông báo -->
+    <div id="popup" class="popup">
+      <div id="popupTitle" class="popup-title">LỖI</div>
+      <div id="popupMessage" class="popup-message">Đang tải...</div>
+      <button class="popup-btn" onclick="closePopup()">OK</button>
+      <div style="clear:both"></div>
+    </div>
+
+  </div>
+
+  <script>
+    async function callApi() {
+      const id = document.getElementById('idInput').value || 'test123';
+      const url = '/id?unben=' + encodeURIComponent(id);
+
+      try {
+        const res = await fetch(url);
+        const data = await res.json();
+        showPopup(data);
+      } catch (e) {
+        showPopup({
+          type: 'error',
+          title: 'LỖI',
+          message: 'Lỗi kết nối mạng\nĐăng nhập máy chủ thất bại: 500'
+        });
+      }
+    }
+
+    function showPopup(data) {
+      const popup = document.getElementById('popup');
+      const title = document.getElementById('popupTitle');
+      const message = document.getElementById('popupMessage');
+
+      title.textContent = data.title || 'THÔNG BÁO';
+      title.className = 'popup-title ' + (data.type || 'success');
+      message.textContent = data.message || 'Không có nội dung';
+
+      popup.classList.add('show');
+    }
+
+    function closePopup() {
+      document.getElementById('popup').classList.remove('show');
+    }
+  </script>
+</body>
+</html>
