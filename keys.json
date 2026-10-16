@@ -31,12 +31,6 @@
       "deviceID": null,
       "expiresAt": "2026-03-01",
       "note": "Dùng thử 30 ngày"
-    },
-    {
-      "key": "CHECKONETRUE",
-      "deviceID": null,
-      "expiresAt": "2026-06-30",
-      "note": "Key cũ — giữ để tương thích"
     }
   ]
 }
