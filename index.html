@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MINH DUC PRO — Key Manager</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👑</text></svg>">
+<style>
+  :root {
+    --primary: #f32647;
+    --gold: #ffc733;
+    --gold-light: #fff0b3;
+    --bg-1: #0a0508;
+    --bg-2: #1a0205;
+    --success: #22c55e;
+    --danger: #ef4444;
+    --warning: #f59e0b;
+    --info: #3b82f6;
+  }
+  
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  
+  html, body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg-1);
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: 
+      radial-gradient(circle at 15% 20%, rgba(243, 38, 71, 0.15), transparent 45%),
+      radial-gradient(circle at 85% 80%, rgba(255, 199, 51, 0.12), transparent 45%),
+      radial-gradient(circle at 50% 50%, rgba(243, 38, 71, 0.05), transparent 60%),
+      linear-gradient(135deg, var(--bg-1), var(--bg-2), var(--bg-1));
+    pointer-events: none;
+    z-index: 0;
+    animation: bgPulse 15s ease-in-out infinite;
+  }
+  
+  @keyframes bgPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.85; }
+  }
+  
+  /* Grid overlay */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: 
+      linear-gradient(rgba(255, 199, 51, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 199, 51, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .app {
+    position: relative;
+    z-index: 1;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* ═══════════════════════════════════════════════
+     TOP BAR
+     ═══════════════════════════════════════════════ */
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 24px;
+    padding: 16px 20px;
+    background: rgba(0, 0, 0, 0.55);
+    border: 1.5px solid rgba(255, 199, 51, 0.25);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    flex-wrap: wrap;
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  
+  .brand-logo {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold), var(--gold-light), var(--gold));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 
+      0 0 25px rgba(255, 199, 51, 0.5),
+      inset 0 0 20px rgba(255, 255, 255, 0.3);
+    position: relative;
+    animation: logoPulse 3s ease-in-out infinite;
+  }
+  
+  @keyframes logoPulse {
+    0%, 100% { box-shadow: 0 0 25px rgba(255, 199, 51, 0.5), inset 0 0 20px rgba(255, 255, 255, 0.3); }
+    50% { box-shadow: 0 0 40px rgba(255, 199, 51, 0.8), inset 0 0 25px rgba(255, 255, 255, 0.4); }
+  }
+  
+  .brand-logo::before {
+    content: '👑';
+    filter: drop-shadow(0 0 8px rgba(255, 199, 51, 0.9));
+  }
+  
+  .brand-text h1 {
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    background: linear-gradient(180deg, #fff, var(--gold-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .pro-badge {
+    font-size: 8px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    color: #000;
+    padding: 3px 8px;
+    border-radius: 10px;
+    -webkit-text-fill-color: #000;
+  }
+  
+  .brand-text .sub {
+    font-size: 10px;
+    color: var(--primary);
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-top: 2px;
+  }
+  
+  .top-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .icon-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1.5px solid rgba(255, 199, 51, 0.35);
+    color: var(--gold);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: all 0.2s;
+  }
+  
+  .icon-btn:hover {
+    background: rgba(255, 199, 51, 0.15);
+    border-color: var(--gold);
+    transform: translateY(-2px);
+  }
+  
+  .status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--success);
+    box-shadow: 0 0 10px var(--success);
+    animation: dotPulse 2s infinite;
+  }
+  
+  @keyframes dotPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+  
+  .status-pill {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: rgba(34, 197, 94, 0.1);
+    border: 1px solid rgba(34, 197, 94, 0.35);
+    border-radius: 100px;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: var(--success);
+  }
+  
+  /* ═══════════════════════════════════════════════
+     STATS
+     ═══════════════════════════════════════════════ */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .stat-card {
+    background: rgba(0, 0, 0, 0.55);
+    border: 1.5px solid rgba(255, 199, 51, 0.2);
+    border-radius: 18px;
+    padding: 16px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(255, 199, 51, 0.5);
+    box-shadow: 0 10px 30px rgba(255, 199, 51, 0.15);
+  }
+  
+  .stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--color, var(--gold)), transparent);
+  }
+  
+  .stat-icon {
+    font-size: 20px;
+    margin-bottom: 6px;
+    display: block;
+  }
+  
+  .stat-value {
+    font-size: 28px;
+    font-weight: 900;
+    color: white;
+    line-height: 1;
+    margin-bottom: 4px;
+    font-family: 'SF Mono', Menlo, monospace;
+  }
+  
+  .stat-label {
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+  }
+  
+  /* ═══════════════════════════════════════════════
+     MAIN GRID
+     ═══════════════════════════════════════════════ */
+  .main-grid {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 20px;
+  }
+  
+  @media (max-width: 1024px) {
+    .main-grid { grid-template-columns: 1fr; }
+  }
+  
+  /* ═══════════════════════════════════════════════
+     CARDS
+     ═══════════════════════════════════════════════ */
+  .card {
+    background: rgba(0, 0, 0, 0.55);
+    border: 1.5px solid rgba(255, 199, 51, 0.25);
+    border-radius: 20px;
+    padding: 20px;
+    backdrop-filter: blur(20px);
+    margin-bottom: 16px;
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 199, 51, 0.15);
+  }
+  
+  .card-header .icon {
+    font-size: 18px;
+  }
+  
+  .card-header h3 {
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    color: var(--gold);
+    text-transform: uppercase;
+    flex: 1;
+  }
+  
+  /* ═══════════════════════════════════════════════
+     FORMS
+     ═══════════════════════════════════════════════ */
+  .form-group {
+    margin-bottom: 14px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 6px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 12px 14px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1.5px solid rgba(255, 199, 51, 0.25);
+    border-radius: 12px;
+    color: white;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.2s;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 20px rgba(255, 199, 51, 0.25);
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .form-control::placeholder { color: rgba(255, 255, 255, 0.3); }
+  
+  .mono { font-family: 'SF Mono', Menlo, monospace; letter-spacing: 1px; }
+  
+  /* Quick buttons */
+  .quick-row {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  
+  .quick-btn {
+    flex: 1;
+    min-width: 70px;
+    padding: 8px 10px;
+    background: rgba(255, 199, 51, 0.08);
+    border: 1px solid rgba(255, 199, 51, 0.3);
+    color: var(--gold);
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 900;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    font-family: inherit;
+    transition: all 0.2s;
+  }
+  
+  .quick-btn:hover {
+    background: rgba(255, 199, 51, 0.2);
+    transform: translateY(-1px);
+  }
+  
+  .quick-btn.active {
+    background: var(--gold);
+    color: black;
+  }
+  
+  /* Buttons */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    font-family: inherit;
+    width: 100%;
+  }
+  
+  .btn-primary {
+    background: linear-gradient(135deg, var(--primary), #ff4d6a);
+    color: white;
+    box-shadow: 0 4px 16px rgba(243, 38, 71, 0.35);
+  }
+  
+  .btn-primary:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(243, 38, 71, 0.55);
+  }
+  
+  .btn-gold {
+    background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    color: black;
+    box-shadow: 0 4px 16px rgba(255, 199, 51, 0.35);
+  }
+  
+  .btn-gold:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(255, 199, 51, 0.55);
+  }
+  
+  .btn-outline {
+    background: transparent;
+    border: 1.5px solid rgba(255, 199, 51, 0.4);
+    color: var(--gold);
+  }
+  
+  .btn-outline:hover:not(:disabled) {
+    background: rgba(255, 199, 51, 0.1);
+    border-color: var(--gold);
+  }
+  
+  .btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  /* ═══════════════════════════════════════════════
+     KEYS LIST
+     ═══════════════════════════════════════════════ */
+  .keys-toolbar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .search-box {
+    flex: 1;
+    min-width: 200px;
+    position: relative;
+  }
+  
+  .search-box input {
+    width: 100%;
+    padding: 10px 14px 10px 36px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1.5px solid rgba(255, 199, 51, 0.25);
+    border-radius: 12px;
+    color: white;
+    font-size: 13px;
+  }
+  
+  .search-box input:focus {
+    outline: none;
+    border-color: var(--gold);
+  }
+  
+  .search-box::before {
+    content: '🔍';
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+  }
+  
+  .filter-tabs {
+    display: flex;
+    gap: 4px;
+    padding: 4px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 199, 51, 0.2);
+    border-radius: 12px;
+  }
+  
+  .filter-tab {
+    padding: 8px 14px;
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 11px;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+    font-family: inherit;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  
+  .filter-tab:hover { color: white; }
+  
+  .filter-tab.active {
+    background: var(--gold);
+    color: black;
+  }
+  
+  .key-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    padding: 14px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1.5px solid rgba(255, 199, 51, 0.15);
+    border-radius: 14px;
+    margin-bottom: 8px;
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .key-row:hover {
+    border-color: rgba(255, 199, 51, 0.45);
+    background: rgba(0, 0, 0, 0.55);
+    transform: translateX(3px);
+  }
+  
+  .key-row.expired { border-color: rgba(239, 68, 68, 0.3); }
+  .key-row.expired::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--danger);
+  }
+  
+  .key-row.valid::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--success);
+  }
+  
+  .key-row.infinite::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--gold);
+  }
+  
+  .key-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+  }
+  
+  .key-name {
+    font-family: 'SF Mono', Menlo, monospace;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  
+  .copy-btn {
+    background: rgba(255, 199, 51, 0.15);
+    border: 1px solid rgba(255, 199, 51, 0.3);
+    color: var(--gold);
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 9px;
+    font-weight: 900;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    font-family: inherit;
+  }
+  
+  .copy-btn:hover { background: rgba(255, 199, 51, 0.3); }
+  
+  .key-meta {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.55);
+  }
+  
+  .key-meta span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .key-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-end;
+  }
+  
+  .badge {
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
+  
+  .badge-ok {
+    background: rgba(34, 197, 94, 0.15);
+    color: var(--success);
+    border: 1px solid rgba(34, 197, 94, 0.35);
+  }
+  
+  .badge-expired {
+    background: rgba(239, 68, 68, 0.15);
+    color: var(--danger);
+    border: 1px solid rgba(239, 68, 68, 0.35);
+  }
+  
+  .badge-infinite {
+    background: rgba(255, 199, 51, 0.15);
+    color: var(--gold);
+    border: 1px solid rgba(255, 199, 51, 0.35);
+  }
+  
+  .mini-btn {
+    padding: 6px 10px;
+    background: rgba(255, 199, 51, 0.08);
+    border: 1px solid rgba(255, 199, 51, 0.25);
+    color: var(--gold);
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: 900;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    font-family: inherit;
+  }
+  
+  .mini-btn:hover { background: rgba(255, 199, 51, 0.2); }
+  
+  .mini-btn.danger {
+    background: rgba(239, 68, 68, 0.08);
+    border-color: rgba(239, 68, 68, 0.3);
+    color: var(--danger);
+  }
+  
+  .mini-btn.danger:hover { background: rgba(239, 68, 68, 0.2); }
+  
+  /* Empty state */
+  .empty {
+    text-align: center;
+    padding: 40px 20px;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .empty .emoji {
+    font-size: 48px;
+    margin-bottom: 12px;
+    display: block;
+  }
+  
+  .empty p { font-size: 13px; }
+  
+  /* Result box */
+  .result {
+    margin-top: 14px;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 12px;
+    line-height: 1.6;
+    font-family: 'SF Mono', Menlo, monospace;
+    word-break: break-all;
+    display: none;
+    white-space: pre-wrap;
+  }
+  
+  .result.show { display: block; animation: slideIn 0.3s ease-out; }
+  
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .result.success {
+    background: rgba(34, 197, 94, 0.12);
+    border: 1.5px solid rgba(34, 197, 94, 0.4);
+    color: #4ade80;
+  }
+  
+  .result.error {
+    background: rgba(239, 68, 68, 0.12);
+    border: 1.5px solid rgba(239, 68, 68, 0.4);
+    color: #f87171;
+  }
+  
+  .result.info {
+    background: rgba(59, 130, 246, 0.12);
+    border: 1.5px solid rgba(59, 130, 246, 0.4);
+    color: #60a5fa;
+  }
+  
+  /* Token section */
+  .token-section {
+    padding: 16px;
+    background: rgba(243, 38, 71, 0.06);
+    border: 1.5px solid rgba(243, 38, 71, 0.3);
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .token-section h3 {
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    color: var(--primary);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .token-section p {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 12px;
+    line-height: 1.6;
+  }
+  
+  .token-section a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 700;
+  }
+  
+  .token-section code {
+    background: rgba(255, 199, 51, 0.12);
+    color: var(--gold);
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-size: 10px;
+    font-family: 'SF Mono', Menlo, monospace;
+  }
+  
+  /* Loading */
+  .spinner {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    vertical-align: middle;
+    margin-right: 6px;
+  }
+  
+  @keyframes spin { to { transform: rotate(360deg); } }
+  
+  /* Toast */
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    color: black;
+    padding: 14px 24px;
+    border-radius: 14px;
+    font-weight: 900;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 10px 40px rgba(255, 199, 51, 0.5);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 9999;
+    max-width: 90vw;
+  }
+  
+  .toast.show { transform: translateX(-50%) translateY(0); }
+  
+  .toast.error {
+    background: linear-gradient(135deg, var(--danger), #f87171);
+    color: white;
+    box-shadow: 0 10px 40px rgba(239, 68, 68, 0.5);
+  }
+  
+  /* Modal */
+  .modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9998;
+    padding: 20px;
+  }
+  
+  .modal-backdrop.show {
+    display: flex;
+    animation: fadeIn 0.2s;
+  }
+  
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  
+  .modal {
+    background: var(--bg-1);
+    border: 1.5px solid rgba(255, 199, 51, 0.4);
+    border-radius: 20px;
+    padding: 24px;
+    max-width: 480px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+  }
+  
+  .modal h3 {
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    color: var(--gold);
+  }
+  
+  .modal-success-icon {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 12px;
+    animation: bounceIn 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  @keyframes bounceIn {
+    0% { transform: scale(0); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+  }
+  
+  .modal-key-display {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1.5px solid rgba(255, 199, 51, 0.4);
+    border-radius: 12px;
+    padding: 14px;
+    font-family: 'SF Mono', Menlo, monospace;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--gold);
+    margin: 12px 0;
+    word-break: break-all;
+  }
+  
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.3); border-radius: 4px; }
+  ::-webkit-scrollbar-thumb { background: rgba(255, 199, 51, 0.3); border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(255, 199, 51, 0.5); }
+</style>
+</head>
+<body>
+
+<div class="app">
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="brand">
+      <div class="brand-logo"></div>
+      <div class="brand-text">
+        <h1>MINH DUC <span class="pro-badge">PRO</span></h1>
+        <div class="sub">KEY MANAGER • ADMIN PANEL</div>
+      </div>
+    </div>
+    <div class="top-actions">
+      <div class="status-pill"><span class="status-dot"></span> ONLINE</div>
+      <button class="icon-btn" onclick="openThemePicker()" title="Đổi màu">🎨</button>
+      <button class="icon-btn" onclick="openTokenSettings()" title="Cài đặt token">⚙️</button>
+    </div>
+  </div>
+
+  <!-- TOKEN SECTION -->
+  <div class="token-section" id="tokenSection">
+    <h3>⚙️ BƯỚC 1: CẤU HÌNH GITHUB TOKEN</h3>
+    <p>
+      Cần <strong>Personal Access Token</strong> để đọc/ghi file <code>keys.json</code>.<br>
+      Tạo tại: <a href="https://github.com/settings/tokens?type=beta" target="_blank">github.com/settings/tokens</a><br>
+      <strong>Cần quyền:</strong> <code>Contents: Read and write</code> trên repo <code>lmd140809/MinhDux</code>
+    </p>
+    <div style="display: flex; gap: 8px;">
+      <input type="password" id="token" placeholder="github_pat_xxxxxxxxxxxx" class="form-control mono" style="flex: 1;">
+      <button class="btn btn-gold" style="width: auto; padding: 12px 24px;" onclick="saveToken()">💾 LƯU</button>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats-grid">
+    <div class="stat-card" style="--color: var(--gold);">
+      <span class="stat-icon">🔑</span>
+      <div class="stat-value" id="statTotal">—</div>
+      <div class="stat-label">Tổng Keys</div>
+    </div>
+    <div class="stat-card" style="--color: var(--success);">
+      <span class="stat-icon">✅</span>
+      <div class="stat-value" id="statValid">—</div>
+      <div class="stat-label">Còn Hạn</div>
+    </div>
+    <div class="stat-card" style="--color: var(--danger);">
+      <span class="stat-icon">❌</span>
+      <div class="stat-value" id="statExpired">—</div>
+      <div class="stat-label">Hết Hạn</div>
+    </div>
+    <div class="stat-card" style="--color: var(--info);">
+      <span class="stat-icon">∞</span>
+      <div class="stat-value" id="statInfinite">—</div>
+      <div class="stat-label">Vĩnh Viễn</div>
+    </div>
+  </div>
+
+  <!-- MAIN GRID -->
+  <div class="main-grid">
+
+    <!-- LEFT: GENERATE + CHECK -->
+    <div>
+      <!-- Generate -->
+      <div class="card">
+        <div class="card-header">
+          <span class="icon">⚡</span>
+          <h3>Tạo Key Mới</h3>
+        </div>
+        
+        <div class="form-group">
+          <label>Tên gợi nhớ</label>
+          <input type="text" id="genNote" class="form-control" placeholder="VD: Khách VIP - Anh Minh">
+        </div>
+        
+        <div class="form-group">
+          <label>Hạn sử dụng</label>
+          <div class="quick-row">
+            <button class="quick-btn" onclick="setQuickExpiry(7)">7 ngày</button>
+            <button class="quick-btn active" onclick="setQuickExpiry(30)">30 ngày</button>
+            <button class="quick-btn" onclick="setQuickExpiry(90)">90 ngày</button>
+            <button class="quick-btn" onclick="setQuickExpiry(365)">1 năm</button>
+          </div>
+          <input type="date" id="genExpiry" class="form-control" style="margin-top: 8px;">
+        </div>
+        
+        <div class="form-group">
+          <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; text-transform: none; font-size: 12px; color: white;">
+            <input type="checkbox" id="genInfinite" onchange="toggleInfinite()" style="width: auto;">
+            <span>∞ Không hết hạn (vĩnh viễn)</span>
+          </label>
+        </div>
+        
+        <button class="btn btn-primary" onclick="generateKey()">🚀 TẠO KEY</button>
+        
+        <div class="result" id="genResult"></div>
+      </div>
+
+      <!-- Check -->
+      <div class="card">
+        <div class="card-header">
+          <span class="icon">🔍</span>
+          <h3>Kiểm Tra Key</h3>
+        </div>
+        
+        <div class="form-group">
+          <input type="text" id="checkKey" class="form-control mono" placeholder="MINHDUC-XXXX-XXXX">
+        </div>
+        
+        <button class="btn btn-outline" onclick="checkKey()">🔎 KIỂM TRA NGAY</button>
+        
+        <div class="result" id="checkResult"></div>
+      </div>
+    </div>
+
+    <!-- RIGHT: KEYS LIST -->
+    <div class="card" style="margin-bottom: 0;">
+      <div class="card-header">
+        <span class="icon">📋</span>
+        <h3>Danh Sách Keys</h3>
+        <button class="mini-btn" onclick="loadKeys()">🔄 Tải lại</button>
+        <button class="mini-btn" onclick="exportCSV()">📤 CSV</button>
+      </div>
+      
+      <div class="keys-toolbar">
+        <div class="search-box">
+          <input type="text" id="searchBox" placeholder="Tìm key, note..." oninput="applyFilters()">
+        </div>
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-filter="all" onclick="setFilter('all')">Tất cả</button>
+          <button class="filter-tab" data-filter="valid" onclick="setFilter('valid')">Còn hạn</button>
+          <button class="filter-tab" data-filter="expired" onclick="setFilter('expired')">Hết hạn</button>
+          <button class="filter-tab" data-filter="infinite" onclick="setFilter('infinite')">∞</button>
+        </div>
+      </div>
+      
+      <div id="keysList">
+        <div class="empty">
+          <span class="emoji">🔑</span>
+          <p>Nhập token và tải danh sách keys</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal Success -->
+<div class="modal-backdrop" id="successModal">
+  <div class="modal">
+    <div class="modal-success-icon">🎉</div>
+    <h3 style="text-align: center;">TẠO KEY THÀNH CÔNG!</h3>
+    <div class="modal-key-display" id="modalKeyDisplay">—</div>
+    <div style="text-align: center; color: rgba(255,255,255,0.6); font-size: 11px; margin-bottom: 16px;" id="modalKeyInfo">—</div>
+    <button class="btn btn-gold" onclick="copyModalKey()">📋 COPY KEY</button>
+    <button class="btn btn-outline" style="margin-top: 8px;" onclick="closeModal()">ĐÓNG</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ═══════════════════════════════════════════════════════════
+// CONFIG
+// ═══════════════════════════════════════════════════════════
+const CONFIG = {
+  owner: 'lmd140809',
+  repo: 'MinhDux',
+  path: 'keys.json',
+  branch: 'main'
+};
+
+const API_BASE = `https://api.github.com/repos/${CONFIG.owner}/${CONFIG.repo}/contents/${CONFIG.path}`;
+
+// ═══════════════════════════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════════════════════════
+let currentSha = null;
+let currentData = null;
+let currentFilter = 'all';
+let searchQuery = '';
+
+// ═══════════════════════════════════════════════════════════
+// TOKEN
+// ═══════════════════════════════════════════════════════════
+function saveToken() {
+  const token = document.getElementById('token').value.trim();
+  if (!token) { showToast('❌ Vui lòng nhập token', 'error'); return; }
+  localStorage.setItem('gh_token', token);
+  showToast('✅ Đã lưu token');
+  loadKeys();
+}
+
+function getToken() { return localStorage.getItem('gh_token') || ''; }
+
+function openTokenSettings() {
+  document.getElementById('tokenSection').scrollIntoView({ behavior: 'smooth' });
+}
+
+// ═══════════════════════════════════════════════════════════
+// LOAD
+// ═══════════════════════════════════════════════════════════
+async function loadKeys() {
+  const token = getToken();
+  if (!token) {
+    document.getElementById('keysList').innerHTML = `
+      <div class="empty">
+        <span class="emoji">🔒</span>
+        <p>Vui lòng nhập token trước</p>
+      </div>`;
+    return;
+  }
+
+  document.getElementById('keysList').innerHTML = `
+    <div class="empty">
+      <span class="emoji"><span class="spinner"></span></span>
+      <p>Đang tải danh sách keys...</p>
+    </div>`;
+
+  try {
+    const res = await fetch(API_BASE + `?ref=${CONFIG.branch}&t=${Date.now()}`, {
+      headers: {
+        'Authorization': `token ${token}`,
+        'Accept': 'application/vnd.github.v3+json'
+      }
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    
+    const json = await res.json();
+    currentSha = json.sha;
+    const content = decodeURIComponent(escape(atob(json.content.replace(/\n/g, ''))));
+    currentData = JSON.parse(content);
+    
+    updateStats(currentData.keys);
+    applyFilters();
+  } catch (err) {
+    document.getElementById('keysList').innerHTML = `
+      <div class="empty">
+        <span class="emoji">❌</span>
+        <p>Lỗi tải keys: ${err.message}</p>
+      </div>`;
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+// STATS
+// ═══════════════════════════════════════════════════════════
+function updateStats(keys) {
+  const total = keys.length;
+  const now = new Date();
+  let valid = 0, expired = 0, infinite = 0;
+  
+  keys.forEach(k => {
+    if (!k.expiresAt) { infinite++; return; }
+    const exp = parseDate(k.expiresAt);
+    if (exp && exp < now) expired++;
+    else valid++;
+  });
+  
+  document.getElementById('statTotal').textContent = total;
+  document.getElementById('statValid').textContent = valid;
+  document.getElementById('statExpired').textContent = expired;
+  document.getElementById('statInfinite').textContent = infinite;
+}
+
+function parseDate(str) {
+  if (!str) return null;
+  const parts = str.split('-').map(Number);
+  if (parts.length !== 3) return null;
+  return new Date(parts[0], parts[1] - 1, parts[2]);
+}
+
+// ═══════════════════════════════════════════════════════════
+// RENDER + FILTER
+// ═══════════════════════════════════════════════════════════
+function setFilter(f) {
+  currentFilter = f;
+  document.querySelectorAll('.filter-tab').forEach(t => {
+    t.classList.toggle('active', t.dataset.filter === f);
+  });
+  applyFilters();
+}
+
+function applyFilters() {
+  if (!currentData) return;
+  searchQuery = (document.getElementById('searchBox')?.value || '').toLowerCase();
+  
+  const now = new Date();
+  let filtered = currentData.keys.filter(k => {
+    // Search
+    if (searchQuery) {
+      const match = k.key.toLowerCase().includes(searchQuery) ||
+                    (k.note || '').toLowerCase().includes(searchQuery);
+      if (!match) return false;
+    }
+    // Filter
+    const isExp = k.expiresAt && parseDate(k.expiresAt) < now;
+    const isInf = !k.expiresAt;
+    const isVal = !isExp && !isInf;
+    
+    if (currentFilter === 'valid' && !isVal) return false;
+    if (currentFilter === 'expired' && !isExp) return false;
+    if (currentFilter === 'infinite' && !isInf) return false;
+    return true;
+  });
+  
+  renderKeys(filtered);
+}
+
+function renderKeys(keys) {
+  if (keys.length === 0) {
+    document.getElementById('keysList').innerHTML = `
+      <div class="empty">
+        <span class="emoji">🔍</span>
+        <p>Không tìm thấy key nào</p>
+      </div>`;
+    return;
+  }
+  
+  const now = new Date();
+  const html = keys.map((k, i) => {
+    const idx = currentData.keys.indexOf(k);
+    const isExp = k.expiresAt && parseDate(k.expiresAt) < now;
+    const isInf = !k.expiresAt;
+    const cls = isInf ? 'infinite' : (isExp ? 'expired' : 'valid');
+    const badge = isInf ? '<span class="badge badge-infinite">∞ VĨNH VIỄN</span>'
+                : isExp ? '<span class="badge badge-expired">❌ HẾT HẠN</span>'
+                : `<span class="badge badge-ok">✅ CÒN ${daysLeft(k.expiresAt)}N</span>`;
+    
+    return `
+      <div class="key-row ${cls}">
+        <div class="key-info">
+          <div class="key-name">
+            ${escapeHtml(k.key)}
+            <button class="copy-btn" onclick="copyKey('${escapeHtml(k.key)}')">📋 COPY</button>
+          </div>
+          <div class="key-meta">
+            <span>📅 ${k.expiresAt || '∞'}</span>
+            <span>🆔 ${k.deviceID ? 'Khoá máy' : 'Chưa gán'}</span>
+            ${k.note ? `<span>📝 ${escapeHtml(k.note)}</span>` : ''}
+          </div>
+        </div>
+        <div class="key-actions">
+          ${badge}
+          <div style="display: flex; gap: 4px;">
+            <button class="mini-btn" onclick="extendKey(${idx})">+30d</button>
+            <button class="mini-btn danger" onclick="deleteKey(${idx})">🗑</button>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+  
+  document.getElementById('keysList').innerHTML = html;
+}
+
+function daysLeft(expiry) {
+  const exp = parseDate(expiry);
+  if (!exp) return 0;
+  return Math.max(0, Math.ceil((exp - new Date()) / 86400000));
+}
+
+// ═══════════════════════════════════════════════════════════
+// GENERATE
+// ═══════════════════════════════════════════════════════════
+function setQuickExpiry(days) {
+  const d = new Date();
+  d.setDate(d.getDate() + days);
+  document.getElementById('genExpiry').value = d.toISOString().split('T')[0];
+  document.getElementById('genInfinite').checked = false;
+  document.querySelectorAll('.quick-btn').forEach(b => {
+    b.classList.toggle('active', b.textContent.includes(days + ' ngày'));
+  });
+}
+
+function toggleInfinite() {
+  const checked = document.getElementById('genInfinite').checked;
+  document.getElementById('genExpiry').disabled = checked;
+}
+
+function genRandomKey() {
+  const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+  const seg = () => Array.from({length: 4}, () => chars[Math.floor(Math.random() * chars.length)]).join('');
+  return `MINHDUC-${seg()}-${seg()}`;
+}
+
+async function generateKey() {
+  const token = getToken();
+  if (!token) { showResult('genResult', '❌ Vui lòng nhập GitHub token trước', 'error'); return; }
+  
+  const note = document.getElementById('genNote').value.trim() || 'Không có ghi chú';
+  const infinite = document.getElementById('genInfinite').checked;
+  const expiryInput = document.getElementById('genExpiry').value;
+  
+  if (!infinite && !expiryInput) {
+    showResult('genResult', '❌ Vui lòng chọn ngày hết hạn', 'error');
+    return;
+  }
+  
+  const newKey = genRandomKey();
+  const newEntry = {
+    key: newKey,
+    deviceID: null,
+    expiresAt: infinite ? null : expiryInput,
+    note: note
+  };
+  
+  showResult('genResult', '<span class="spinner"></span> Đang tạo key...', 'info');
+  
+  try {
+    const res = await fetch(API_BASE + `?ref=${CONFIG.branch}&t=${Date.now()}`, {
+      headers: {
+        'Authorization': `token ${token}`,
+        'Accept': 'application/vnd.github.v3+json'
+      }
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    
+    const json = await res.json();
+    const content = decodeURIComponent(escape(atob(json.content.replace(/\n/g, ''))));
+    const data = JSON.parse(content);
+    
+    data.keys.push(newEntry);
+    data.updatedAt = new Date().toISOString().split('T')[0];
+    
+    const saved = await saveToGitHub(data, json.sha, token);
+    if (!saved) throw new Error('Không lưu được');
+    
+    // Show modal
+    document.getElementById('modalKeyDisplay').textContent = newKey;
+    document.getElementById('modalKeyInfo').innerHTML = 
+      `📅 ${infinite ? '∞ Vĩnh viễn' : expiryInput}<br>📝 ${note}`;
+    document.getElementById('successModal').classList.add('show');
+    
+    showResult('genResult', '', 'success');
+    document.getElementById('genResult').classList.remove('show');
+    
+    document.getElementById('genNote').value = '';
+    loadKeys();
+  } catch (err) {
+    showResult('genResult', `❌ Lỗi: ${err.message}`, 'error');
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+// EXTEND (+30 ngày)
+// ═══════════════════════════════════════════════════════════
+async function extendKey(idx) {
+  const token = getToken();
+  if (!token) return;
+  const key = currentData.keys[idx];
+  
+  if (!confirm(`Gia hạn key "${key.key}" thêm 30 ngày?`)) return;
+  
+  try {
+    const res = await fetch(API_BASE + `?ref=${CONFIG.branch}&t=${Date.now()}`, {
+      headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github.v3+json' }
+    });
+    const json = await res.json();
+    const content = decodeURIComponent(escape(atob(json.content.replace(/\n/g, ''))));
+    const data = JSON.parse(content);
+    
+    // Base = max(today, current expiry)
+    const now = new Date();
+    const currentExp = data.keys[idx].expiresAt ? parseDate(data.keys[idx].expiresAt) : now;
+    const base = currentExp > now ? currentExp : now;
+    base.setDate(base.getDate() + 30);
+    
+    data.keys[idx].expiresAt = base.toISOString().split('T')[0];
+    data.updatedAt = new Date().toISOString().split('T')[0];
+    
+    await saveToGitHub(data, json.sha, token);
+    showToast(`✅ Đã gia hạn +30 ngày`);
+    loadKeys();
+  } catch (err) {
+    showToast(`❌ Lỗi: ${err.message}`, 'error');
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+// DELETE
+// ═══════════════════════════════════════════════════════════
+async function deleteKey(idx) {
+  const key = currentData.keys[idx];
+  if (!confirm(`Bạn có chắc muốn xoá key "${key.key}"?`)) return;
+  
+  const token = getToken();
+  try {
+    const res = await fetch(API_BASE + `?ref=${CONFIG.branch}&t=${Date.now()}`, {
+      headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github.v3+json' }
+    });
+    const json = await res.json();
+    const content = decodeURIComponent(escape(atob(json.content.replace(/\n/g, ''))));
+    const data = JSON.parse(content);
+    
+    const removed = data.keys[idx].key;
+    data.keys.splice(idx, 1);
+    data.updatedAt = new Date().toISOString().split('T')[0];
+    
+    await saveToGitHub(data, json.sha, token);
+    showToast(`🗑 Đã xoá: ${removed}`);
+    loadKeys();
+  } catch (err) {
+    showToast(`❌ Lỗi: ${err.message}`, 'error');
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+// CHECK
+// ═══════════════════════════════════════════════════════════
+async function checkKey() {
+  const token = getToken();
+  if (!token) { showResult('checkResult', '❌ Cần token', 'error'); return; }
+  
+  const input = document.getElementById('checkKey').value.trim().toUpperCase();
+  if (!input) { showResult('checkResult', '❌ Nhập key cần kiểm tra', 'error'); return; }
+  
+  showResult('checkResult', '<span class="spinner"></span> Đang kiểm tra...', 'info');
+  
+  try {
+    const res = await fetch(API_BASE + `?ref=${CONFIG.branch}&t=${Date.now()}`, {
+      headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github.v3+json' }
+    });
+    const json = await res.json();
+    const content = decodeURIComponent(escape(atob(json.content.replace(/\n/g, ''))));
+    const data = JSON.parse(content);
+    
+    const found = data.keys.find(k => k.key.toUpperCase() === input);
+    if (!found) {
+      showResult('checkResult', 
+        `❌ KEY KHÔNG TỒN TẠI\n\nKey "${input}" không có trong hệ thống.`,
+        'error');
+      return;
+    }
+    
+    const isExp = found.expiresAt && parseDate(found.expiresAt) < new Date();
+    const dl = found.expiresAt ? daysLeft(found.expiresAt) : null;
+    
+    showResult('checkResult',
+      `${isExp ? '❌ KEY ĐÃ HẾT HẠN' : '✅ KEY HỢP LỆ'}\n\n` +
+      `🔑 Key: ${found.key}\n` +
+      `📅 Hết hạn: ${found.expiresAt || '∞ Không hạn'}\n` +
+      `${dl !== null ? `⏳ Còn lại: ${dl} ngày\n` : ''}` +
+      `🆔 Device: ${found.deviceID || 'Chưa gán máy'}\n` +
+      `📝 Note: ${found.note || 'Không có'}`,
+      isExp ? 'error' : 'success');
+  } catch (err) {
+    showResult('checkResult', `❌ Lỗi: ${err.message}`, 'error');
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+// EXPORT CSV
+// ═══════════════════════════════════════════════════════════
+function exportCSV() {
+  if (!currentData || currentData.keys.length === 0) {
+    showToast('❌ Không có key để xuất', 'error');
+    return;
+  }
+  
+  const headers = ['Key', 'Expires', 'Device', 'Note'];
+  const rows = currentData.keys.map(k => [
+    k.key,
+    k.expiresAt || 'infinite',
+    k.deviceID || 'none',
+    (k.note || '').replace(/,/g, ';')
+  ]);
+  
+  const csv = [headers, ...rows].map(r => r.join(',')).join('\n');
+  const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `minhduc-keys-${new Date().toISOString().split('T')[0]}.csv`;
+  a.click();
+  URL.revokeObjectURL(url);
+  showToast('📤 Đã xuất CSV');
+}
+
+// ═══════════════════════════════════════════════════════════
+// SAVE TO GITHUB
+// ═══════════════════════════════════════════════════════════
+async function saveToGitHub(data, sha, token) {
+  const content = JSON.stringify(data, null, 2);
+  const base64 = btoa(unescape(encodeURIComponent(content)));
+  
+  const res = await fetch(API_BASE, {
+    method: 'PUT',
+    headers: {
+      'Authorization': `token ${token}`,
+      'Accept': 'application/vnd.github.v3+json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      message: `Update keys.json — ${new Date().toISOString()}`,
+      content: base64,
+      sha: sha,
+      branch: CONFIG.branch
+    })
+  });
+  
+  return res.ok;
+}
+
+// ═══════════════════════════════════════════════════════════
+// UTILS
+// ═══════════════════════════════════════════════════════════
+function showResult(id, text, type) {
+  const el = document.getElementById(id);
+  if (!text) { el.classList.remove('show'); return; }
+  el.textContent = text;
+  el.className = `result show ${type}`;
+}
+
+function showToast(msg, type = 'success') {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = `toast ${type === 'error' ? 'error' : ''} show`;
+  setTimeout(() => t.classList.remove('show'), 2800);
+}
+
+function copyKey(key) {
+  navigator.clipboard.writeText(key).then(() => {
+    showToast('📋 Đã copy key');
+  });
+}
+
+function copyModalKey() {
+  const key = document.getElementById('modalKeyDisplay').textContent;
+  navigator.clipboard.writeText(key).then(() => {
+    showToast('📋 Đã copy key');
+  });
+}
+
+function closeModal() {
+  document.getElementById('successModal').classList.remove('show');
+}
+
+function escapeHtml(s) {
+  if (!s) return '';
+  return s.replace(/[&<>"']/g, c => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  })[c]);
+}
+
+function openThemePicker() {
+  const themes = [
+    { name: 'Gold', primary: '#f32647', gold: '#ffc733' },
+    { name: 'Red', primary: '#dc2626', gold: '#fbbf24' },
+    { name: 'Blue', primary: '#2563eb', gold: '#60a5fa' },
+    { name: 'Purple', primary: '#9333ea', gold: '#c084fc' },
+    { name: 'Green', primary: '#16a34a', gold: '#4ade80' },
+    { name: 'Pink', primary: '#ec4899', gold: '#f9a8d4' }
+  ];
+  
+  const current = localStorage.getItem('theme') || 'Gold';
+  const next = themes[(themes.findIndex(t => t.name === current) + 1) % themes.length];
+  
+  document.documentElement.style.setProperty('--primary', next.primary);
+  document.documentElement.style.setProperty('--gold', next.gold);
+  localStorage.setItem('theme', next.name);
+  showToast(`🎨 Theme: ${next.name}`);
+}
+
+// ═══════════════════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════════════════
+window.addEventListener('load', () => {
+  const saved = getToken();
+  if (saved) {
+    document.getElementById('token').value = saved;
+    loadKeys();
+  }
+  
+  // Set default expiry +30 days
+  setQuickExpiry(30);
+  
+  // Load saved theme
+  const theme = localStorage.getItem('theme');
+  if (theme) {
+    const themes = {
+      'Gold': ['#f32647', '#ffc733'],
+      'Red': ['#dc2626', '#fbbf24'],
+      'Blue': ['#2563eb', '#60a5fa'],
+      'Purple': ['#9333ea', '#c084fc'],
+      'Green': ['#16a34a', '#4ade80'],
+      'Pink': ['#ec4899', '#f9a8d4']
+    };
+    if (themes[theme]) {
+      document.documentElement.style.setProperty('--primary', themes[theme][0]);
+      document.documentElement.style.setProperty('--gold', themes[theme][1]);
+    }
+  }
+});
+
+// Close modal on backdrop click
+document.getElementById('successModal')?.addEventListener('click', (e) => {
+  if (e.target.id === 'successModal') closeModal();
+});
+</script>
+
+</body>
+</html>
