@@ -35,7 +35,7 @@
     {
       "key": "CHECKONETRUE",
       "deviceID": null,
-      "expiresAt": null,
+      "expiresAt": "2026-06-30",
       "note": "Key cũ — giữ để tương thích"
     }
   ]
