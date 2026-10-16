@@ -6,31 +6,25 @@
       "key": "MINHDUC-MASTER",
       "deviceID": null,
       "expiresAt": "2026-10-30",
-      "note": "Key chÃ­nh cá»§a admin â khÃ´ng háº¿t háº¡n"
+      "note": "Key chÃÂ­nh cÃ¡Â»Â§a admin Ã¢ÂÂ khÃÂ´ng hÃ¡ÂºÂ¿t hÃ¡ÂºÂ¡n"
     },
     {
       "key": "MinhDuc",
       "deviceID": null,
       "expiresAt": "2026-10-20",
-      "note": "KhÃ¡ch VIP 1"
+      "note": "KhÃÂ¡ch VIP 1"
     },
     {
       "key": "VIETNGUANCUT",
       "deviceID": null,
       "expiresAt": "2026-10-16",
-      "note": "KhÃ¡ch VIP 2"
+      "note": "KhÃÂ¡ch VIP 2"
     },
     {
       "key": "MINHDUC-VIP-003",
       "deviceID": null,
       "expiresAt": "2026-06-30",
-      "note": "KhÃ¡ch VIP 3"
-    },
-    {
-      "key": "TRIAL-30D",
-      "deviceID": null,
-      "expiresAt": "2026-03-01",
-      "note": "DÃ¹ng thá»­ 30 ngÃ y"
+      "note": "KhÃÂ¡ch VIP 3"
     },
     {
       "key": "MINHDUC-Z57G-3RU4",
