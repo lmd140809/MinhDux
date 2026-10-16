@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MINH DUC PRO — Key Manager</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #0a0508 0%, #1a0205 50%, #0a0508 100%);
+    min-height: 100vh;
+    color: white;
+    padding: 20px;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: 
+      radial-gradient(circle at 20% 30%, rgba(243, 38, 71, 0.15), transparent 40%),
+      radial-gradient(circle at 80% 70%, rgba(255, 199, 51, 0.10), transparent 40%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 28px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 199, 51, 0.2);
+  }
+  
+  .logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ffc733, #fff0b3, #ffc733);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    box-shadow: 0 0 30px rgba(255, 199, 51, 0.5);
+    position: relative;
+  }
+  
+  .logo::before {
+    content: '👑';
+    position: absolute;
+    top: -6px;
+    filter: drop-shadow(0 0 6px rgba(255, 199, 51, 0.9));
+  }
+  
+  .logo::after {
+    content: '⚡';
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    font-size: 16px;
+    filter: drop-shadow(0 0 4px #f32647);
+  }
+  
+  .header-text h1 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    background: linear-gradient(180deg, #fff, #ffecb3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 900;
+  }
+  
+  .header-text .badge {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #ffc733, #fff0b3);
+    color: #000;
+    padding: 3px 7px;
+    border-radius: 10px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  
+  .header-text .subtitle {
+    font-size: 11px;
+    color: #f32647;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-top: 2px;
+  }
+  
+  /* Token Section */
+  .token-box {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1.5px solid rgba(255, 199, 51, 0.4);
+    border-radius: 16px;
+    padding: 18px;
+    margin-bottom: 24px;
+  }
+  
+  .token-box h3 {
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    color: #ffc733;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .token-box p {
+    font-size: 12px;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  .token-box a {
+    color: #ffc733;
+    text-decoration: none;
+  }
+  
+  /* Cards */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .grid { grid-template-columns: 1fr 1fr; }
+    .full-width { grid-column: span 2; }
+  }
+  
+  .card {
+    background: rgba(0, 0, 0, 0.55);
+    border: 1.5px solid rgba(255, 199, 51, 0.35);
+    border-radius: 20px;
+    padding: 22px;
+    transition: all 0.2s;
+  }
+  
+  .card:hover {
+    border-color: rgba(255, 199, 51, 0.6);
+    box-shadow: 0 0 25px rgba(255, 199, 51, 0.15);
+  }
+  
+  .card-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    color: #ffc733;
+    text-transform: uppercase;
+  }
+  
+  .card-title .icon {
+    font-size: 16px;
+  }
+  
+  /* Forms */
+  .form-group {
+    margin-bottom: 14px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 11px;
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 6px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px 14px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1.5px solid rgba(255, 199, 51, 0.3);
+    border-radius: 12px;
+    color: white;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.2s;
+  }
+  
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #ffc733;
+    box-shadow: 0 0 15px rgba(255, 199, 51, 0.3);
+  }
+  
+  input::placeholder { color: rgba(255,255,255,0.35); }
+  
+  .mono { font-family: 'SF Mono', Menlo, monospace; letter-spacing: 1px; }
+  
+  /* Buttons */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 14px;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    font-family: inherit;
+    width: 100%;
+  }
+  
+  .btn-primary {
+    background: linear-gradient(135deg, #f32647, #ff4d6a);
+    color: white;
+    box-shadow: 0 4px 16px rgba(243, 38, 71, 0.4);
+  }
+  
+  .btn-primary:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(243, 38, 71, 0.6);
+  }
+  
+  .btn-gold {
+    background: linear-gradient(135deg, #ffc733, #fff0b3);
+    color: black;
+    box-shadow: 0 4px 16px rgba(255, 199, 51, 0.4);
+  }
+  
+  .btn-gold:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(255, 199, 51, 0.6);
+  }
+  
+  .btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .btn-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .btn-row .btn { flex: 1; min-width: 120px; }
+  
+  /* Result box */
+  .result {
+    margin-top: 14px;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 13px;
+    line-height: 1.6;
+    font-family: 'SF Mono', Menlo, monospace;
+    word-break: break-all;
+    display: none;
+  }
+  
+  .result.show { display: block; }
+  
+  .result.success {
+    background: rgba(34, 197, 94, 0.12);
+    border: 1.5px solid rgba(34, 197, 94, 0.4);
+    color: #4ade80;
+  }
+  
+  .result.error {
+    background: rgba(239, 68, 68, 0.12);
+    border: 1.5px solid rgba(239, 68, 68, 0.4);
+    color: #f87171;
+  }
+  
+  .result.info {
+    background: rgba(59, 130, 246, 0.12);
+    border: 1.5px solid rgba(59, 130, 246, 0.4);
+    color: #60a5fa;
+  }
+  
+  /* Key list */
+  .key-list {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-top: 10px;
+  }
+  
+  .key-item {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 199, 51, 0.2);
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    position: relative;
+  }
+  
+  .key-item .key-name {
+    font-family: 'SF Mono', monospace;
+    font-weight: 700;
+    color: #ffc733;
+    font-size: 13px;
+    margin-bottom: 6px;
+    letter-spacing: 1px;
+  }
+  
+  .key-item .key-meta {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    color: rgba(255,255,255,0.6);
+    font-size: 11px;
+  }
+  
+  .key-item .key-status {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 10px;
+    font-weight: 900;
+    padding: 3px 8px;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+  }
+  
+  .status-ok {
+    background: rgba(34, 197, 94, 0.2);
+    color: #4ade80;
+  }
+  
+  .status-expired {
+    background: rgba(239, 68, 68, 0.2);
+    color: #f87171;
+  }
+  
+  .status-infinite {
+    background: rgba(255, 199, 51, 0.2);
+    color: #ffc733;
+  }
+  
+  .delete-btn {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.4);
+    color: #f87171;
+    padding: 3px 8px;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: 900;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+  }
+  
+  .delete-btn:hover {
+    background: rgba(239, 68, 68, 0.3);
+  }
+  
+  /* Quick actions */
+  .quick-generate {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  
+  .quick-btn {
+    flex: 1;
+    padding: 8px 10px;
+    background: rgba(255, 199, 51, 0.1);
+    border: 1px solid rgba(255, 199, 51, 0.3);
+    color: #ffc733;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 900;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    font-family: inherit;
+  }
+  
+  .quick-btn:hover {
+    background: rgba(255, 199, 51, 0.2);
+  }
+  
+  /* Loading spinner */
+  .spinner {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    vertical-align: middle;
+    margin-right: 6px;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Help */
+  .help {
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.6;
+    margin-top: 8px;
+  }
+  
+  .help code {
+    background: rgba(255, 199, 51, 0.15);
+    color: #ffc733;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-size: 10px;
+    font-family: 'SF Mono', monospace;
+  }
+  
+  /* Toast */
+  .toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: linear-gradient(135deg, #ffc733, #fff0b3);
+    color: black;
+    padding: 14px 24px;
+    border-radius: 14px;
+    font-weight: 900;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 10px 40px rgba(255, 199, 51, 0.5);
+    transition: all 0.3s;
+    z-index: 9999;
+  }
+  
+  .toast.show {
+    transform: translateX(-50%) translateY(0);
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Header -->
+  <div class="header">
+    <div class="logo"></div>
+    <div class="header-text">
+      <h1>MINH DUC <span class="badge">PRO</span></h1>
+      <div class="subtitle">KEY MANAGER • ADMIN PANEL</div>
+    </div>
+  </div>
+
+  <!-- Token Section -->
+  <div class="token-box">
+    <h3>⚙️ Bước 1: Nhập GitHub Token</h3>
+    <p>
+      Cần <strong>Personal Access Token</strong> để đọc/ghi file <code>keys.json</code> trên GitHub.<br>
+      Tạo token tại: <a href="https://github.com/settings/tokens?type=beta" target="_blank">github.com/settings/tokens</a><br>
+      <strong>Cần quyền:</strong> <code>Contents: Read and write</code> trên repo <code>lmd140809/MinhDux</code>
+    </p>
+    <div class="form-group">
+      <input type="password" id="token" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" class="mono">
+    </div>
+    <button class="btn btn-gold" onclick="saveToken()">💾 Lưu Token</button>
+    <div class="help">Token được lưu trong localStorage của browser, không gửi đi đâu khác ngoài GitHub API.</div>
+  </div>
+
+  <!-- Main Grid -->
+  <div class="grid">
+
+    <!-- Generate Key -->
+    <div class="card">
+      <div class="card-title"><span class="icon">🔑</span> Tạo Key Mới</div>
+      
+      <div class="form-group">
+        <label>Tên gợi nhớ (note)</label>
+        <input type="text" id="genNote" placeholder="VD: Khách VIP 1">
+      </div>
+      
+      <div class="form-group">
+        <label>Ngày hết hạn</label>
+        <input type="date" id="genExpiry">
+      </div>
+      
+      <div class="quick-generate">
+        <button class="quick-btn" onclick="setQuickExpiry(30)">+30 ngày</button>
+        <button class="quick-btn" onclick="setQuickExpiry(90)">+90 ngày</button>
+        <button class="quick-btn" onclick="setQuickExpiry(365)">+1 năm</button>
+      </div>
+      
+      <div class="form-group" style="margin-top: 14px;">
+        <label>Hoặc không hết hạn (∞)</label>
+        <input type="checkbox" id="genInfinite" style="width: auto;" onchange="toggleInfinite()">
+        <span style="font-size: 12px; margin-left: 8px;">Key vĩnh viễn</span>
+      </div>
+      
+      <button class="btn btn-primary" style="margin-top: 14px;" onclick="generateKey()">⚡ TẠO KEY</button>
+      <div class="result" id="genResult"></div>
+    </div>
+
+    <!-- Check Key -->
+    <div class="card">
+      <div class="card-title"><span class="icon">🔍</span> Kiểm Tra Key</div>
+      
+      <div class="form-group">
+        <label>Nhập key cần kiểm tra</label>
+        <input type="text" id="checkKey" placeholder="MINHDUC-XXXX-XXXX" class="mono">
+      </div>
+      
+      <button class="btn btn-gold" onclick="checkKey()">🔎 KIỂM TRA</button>
+      <div class="result" id="checkResult"></div>
+    </div>
+
+    <!-- All Keys -->
+    <div class="card full-width">
+      <div class="card-title">
+        <span class="icon">📋</span> Tất Cả Keys
+        <button class="quick-btn" style="flex: 0; padding: 4px 10px; margin-left: auto;" onclick="loadKeys()">🔄 Tải lại</button>
+      </div>
+      <div id="keysList" class="key-list">
+        <div style="text-align: center; padding: 20px; color: rgba(255,255,255,0.4); font-size: 12px;">
+          Nhập token và nhấn "Tải lại" để xem danh sách
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ═══════════════════════════════════════════════════════════
+// CONFIG
+// ═══════════════════════════════════════════════════════════
+const CONFIG = {
+  owner: 'lmd140809',
+  repo: 'MinhDux',
+  path: 'keys.json',
+  branch: 'main'
+};
+
+const API_BASE = `https://api.github.com/repos/${CONFIG.owner}/${CONFIG.repo}/contents/${CONFIG.path}`;
+
+// ═══════════════════════════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════════════════════════
+let currentSha = null;
+let currentData = null;
+
+// ═══════════════════════════════════════════════════════════
+// TOKEN
+// ═══════════════════════════════════════════════════════════
+function saveToken() {
+  const token = document.getElementById('token').value.trim();
+  if (!token) {
+    showToast('❌ Vui lòng nhập token');
+    return;
+  }
+  localStorage.setItem('gh_token', token);
+  showToast('✅ Đã lưu token');
+  loadKeys();
+}
+
+function getToken() {
+  return localStorage.getItem('gh_token') || '';
+}
+
+// ═══════════════════════════════════════════════════════════
+// LOAD KEYS FROM GITHUB
+// ═══════════════════════════════════════════════════════════
+async function loadKeys() {
+  const token = getToken();
+  if (!token) {
+    document.getElementById('keysList').innerHTML = `
+      <div style="text-align: center; padding: 20px; color: #f87171; font-size: 12px;">
+        ❌ Vui lòng nhập token trước
+      </div>`;
+    return;
+  }
+
+  document.getElementById('keysList').innerHTML = `
+    <div style="text-align: center; padding: 20px; color: rgba(255,255,255,0.5); font-size: 12px;">
+      <span class="spinner"></span> Đang tải...
+    </div>`;
+
+  try {
+    const res = await fetch(API_BASE + `?ref=${CONFIG.branch}&t=${Date.now()}`, {
+      headers: {
+        'Authorization': `token ${token}`,
+        'Accept': 'application/vnd.github.v3+json'
+      }
+    });
+
+    if (!res.ok) {
+      throw new Error(`HTTP ${res.status}`);
+    }
+
+    const json = await res.json();
+    currentSha = json.sha;
+    
+    // Decode base64
+    const content = atob(json.content.replace(/\n/g, ''));
+    currentData = JSON.parse(content);
+
+    renderKeys(currentData.keys);
+  } catch (err) {
+    document.getElementById('keysList').innerHTML = `
+      <div style="text-align: center; padding: 20px; color: #f87171; font-size: 12px;">
+        ❌ Lỗi tải keys: ${err.message}
+      </div>`;
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+// RENDER KEYS
+// ═══════════════════════════════════════════════════════════
+function renderKeys(keys) {
+  if (!keys || keys.length === 0) {
+    document.getElementById('keysList').innerHTML = `
+      <div style="text-align: center; padding: 20px; color: rgba(255,255,255,0.4); font-size: 12px;">
+        Chưa có key nào
+      </div>`;
+    return;
+  }
+
+  const html = keys.map((k, idx) => {
+    const status = getKeyStatus(k);
+    return `
+      <div class="key-item">
+        <div class="key-name">${escapeHtml(k.key)}</div>
+        <div class="key-meta">
+          <span>📅 ${k.expiresAt || '∞ Không hạn'}</span>
+          <span>🆔 ${k.deviceID ? 'Đã khoá máy' : 'Chưa gán máy'}</span>
+          ${k.note ? `<span>📝 ${escapeHtml(k.note)}</span>` : ''}
+        </div>
+        <div class="key-status ${status.class}">${status.text}</div>
+        <button class="delete-btn" onclick="deleteKey(${idx})">🗑 Xoá</button>
+      </div>
+    `;
+  }).join('');
+
+  document.getElementById('keysList').innerHTML = html;
+}
+
+function getKeyStatus(k) {
+  if (!k.expiresAt) {
+    return { text: '∞ VĨNH VIỄN', class: 'status-infinite' };
+  }
+  const exp = parseDate(k.expiresAt);
+  const now = new Date();
+  if (exp && exp < now) {
+    return { text: '❌ HẾT HẠN', class: 'status-expired' };
+  }
+  const days = exp ? Math.ceil((exp - now) / (1000 * 60 * 60 * 24)) : 0;
+  return { text: `✅ CÒN ${days}N`, class: 'status-ok' };
+}
+
+function parseDate(str) {
+  if (!str) return null;
+  const parts = str.split('-').map(Number);
+  if (parts.length !== 3) return null;
+  return new Date(parts[0], parts[1] - 1, parts[2]);
+}
+
+// ═══════════════════════════════════════════════════════════
+// GENERATE KEY
+// ═══════════════════════════════════════════════════════════
+function setQuickExpiry(days) {
+  const d = new Date();
+  d.setDate(d.getDate() + days);
+  document.getElementById('genExpiry').value = d.toISOString().split('T')[0];
+  document.getElementById('genInfinite').checked = false;
+}
+
+function toggleInfinite() {
+  const checked = document.getElementById('genInfinite').checked;
+  document.getElementById('genExpiry').disabled = checked;
+}
+
+function genRandomKey() {
+  const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+  const seg = () => Array.from({length: 4}, () => chars[Math.floor(Math.random() * chars.length)]).join('');
+  return `MINHDUC-${seg()}-${seg()}`;
+}
+
+async function generateKey() {
+  const token = getToken();
+  if (!token) {
+    showResult('genResult', '❌ Vui lòng nhập GitHub token trước', 'error');
+    return;
+  }
+
+  const note = document.getElementById('genNote').value.trim() || 'Không có ghi chú';
+  const infinite = document.getElementById('genInfinite').checked;
+  const expiryInput = document.getElementById('genExpiry').value;
+
+  if (!infinite && !expiryInput) {
+    showResult('genResult', '❌ Vui lòng chọn ngày hết hạn hoặc tích "vĩnh viễn"', 'error');
+    return;
+  }
+
+  const newKey = genRandomKey();
+  const newEntry = {
+    key: newKey,
+    deviceID: null,
+    expiresAt: infinite ? null : expiryInput,
+    note: note
+  };
+
+  showResult('genResult', '<span class="spinner"></span> Đang tạo key...', 'info');
+
+  try {
+    // Load current data first
+    const res = await fetch(API_BASE + `?ref=${CONFIG.branch}&t=${Date.now()}`, {
+      headers: {
+        'Authorization': `token ${token}`,
+        'Accept': 'application/vnd.github.v3+json'
+      }
+    });
+
+    if (!res.ok) throw new Error(`Không tải được file keys.json (HTTP ${res.status})`);
+
+    const json = await res.json();
+    const content = atob(json.content.replace(/\n/g, ''));
+    const data = JSON.parse(content);
+
+    // Add new key
+    data.keys.push(newEntry);
+    data.updatedAt = new Date().toISOString().split('T')[0];
+
+    // Save to GitHub
+    const saved = await saveToGitHub(data, json.sha, token);
+    if (!saved) throw new Error('Không lưu được lên GitHub');
+
+    showResult('genResult', 
+      `✅ ĐÃ TẠO KEY THÀNH CÔNG!\n\n` +
+      `🔑 Key: ${newKey}\n` +
+      `📅 Hết hạn: ${infinite ? '∞ Không hạn' : expiryInput}\n` +
+      `📝 Ghi chú: ${note}\n\n` +
+      `Copy key này gửi khách hàng!`,
+      'success'
+    );
+
+    // Refresh list
+    loadKeys();
+    
+    // Clear form
+    document.getElementById('genNote').value = '';
+    
+  } catch (err) {
+    showResult('genResult', `❌ Lỗi: ${err.message}`, 'error');
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+// DELETE KEY
+// ═══════════════════════════════════════════════════════════
+async function deleteKey(idx) {
+  if (!confirm('Bạn có chắc muốn xoá key này?')) return;
+
+  const token = getToken();
+  if (!token) return;
+
+  try {
+    const res = await fetch(API_BASE + `?ref=${CONFIG.branch}&t=${Date.now()}`, {
+      headers: {
+        'Authorization': `token ${token}`,
+        'Accept': 'application/vnd.github.v3+json'
+      }
+    });
+
+    const json = await res.json();
+    const content = atob(json.content.replace(/\n/g, ''));
+    const data = JSON.parse(content);
+
+    const removedKey = data.keys[idx].key;
+    data.keys.splice(idx, 1);
+    data.updatedAt = new Date().toISOString().split('T')[0];
+
+    const saved = await saveToGitHub(data, json.sha, token);
+    if (!saved) throw new Error('Không lưu được');
+
+    showToast(`✅ Đã xoá key: ${removedKey}`);
+    loadKeys();
+  } catch (err) {
+    showToast(`❌ Lỗi: ${err.message}`);
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+// CHECK KEY
+// ═══════════════════════════════════════════════════════════
+async function checkKey() {
+  const token = getToken();
+  if (!token) {
+    showResult('checkResult', '❌ Vui lòng nhập GitHub token trước', 'error');
+    return;
+  }
+
+  const input = document.getElementById('checkKey').value.trim().toUpperCase();
+  if (!input) {
+    showResult('checkResult', '❌ Vui lòng nhập key', 'error');
+    return;
+  }
+
+  showResult('checkResult', '<span class="spinner"></span> Đang kiểm tra...', 'info');
+
+  try {
+    const res = await fetch(API_BASE + `?ref=${CONFIG.branch}&t=${Date.now()}`, {
+      headers: {
+        'Authorization': `token ${token}`,
+        'Accept': 'application/vnd.github.v3+json'
+      }
+    });
+
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+    const json = await res.json();
+    const content = atob(json.content.replace(/\n/g, ''));
+    const data = JSON.parse(content);
+
+    const found = data.keys.find(k => k.key.toUpperCase() === input);
+
+    if (!found) {
+      showResult('checkResult', 
+        `❌ KEY KHÔNG TỒN TẠI\n\nKey "${input}" không có trong hệ thống.`,
+        'error'
+      );
+      return;
+    }
+
+    const status = getKeyStatus(found);
+    const isExpired = status.class === 'status-expired';
+
+    showResult('checkResult',
+      `${isExpired ? '❌' : '✅'} ${isExpired ? 'KEY ĐÃ HẾT HẠN' : 'KEY HỢP LỆ'}\n\n` +
+      `🔑 Key: ${found.key}\n` +
+      `📅 Hết hạn: ${found.expiresAt || '∞ Không hạn'}\n` +
+      `🆔 Device: ${found.deviceID || 'Chưa gán máy nào'}\n` +
+      `📝 Note: ${found.note || 'Không có'}\n` +
+      `📊 Trạng thái: ${status.text}`,
+      isExpired ? 'error' : 'success'
+    );
+
+  } catch (err) {
+    showResult('checkResult', `❌ Lỗi: ${err.message}`, 'error');
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+// SAVE TO GITHUB
+// ═══════════════════════════════════════════════════════════
+async function saveToGitHub(data, sha, token) {
+  const content = JSON.stringify(data, null, 2);
+  const base64 = btoa(unescape(encodeURIComponent(content)));
+
+  const res = await fetch(API_BASE, {
+    method: 'PUT',
+    headers: {
+      'Authorization': `token ${token}`,
+      'Accept': 'application/vnd.github.v3+json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      message: `Update keys.json — ${new Date().toISOString()}`,
+      content: base64,
+      sha: sha,
+      branch: CONFIG.branch
+    })
+  });
+
+  return res.ok;
+}
+
+// ═══════════════════════════════════════════════════════════
+// UTILS
+// ═══════════════════════════════════════════════════════════
+function showResult(id, text, type) {
+  const el = document.getElementById(id);
+  el.textContent = text;
+  el.className = `result show ${type}`;
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+function escapeHtml(s) {
+  if (!s) return '';
+  return s.replace(/[&<>"']/g, c => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  })[c]);
+}
+
+// ═══════════════════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════════════════
+window.addEventListener('load', () => {
+  const saved = getToken();
+  if (saved) {
+    document.getElementById('token').value = saved;
+    loadKeys();
+  }
+  
+  // Set default expiry to +30 days
+  setQuickExpiry(30);
+});
+</script>
+
+</body>
+</html>
