@@ -1,5 +1,12 @@
 {
   "version": 1,
   "updatedAt": "2026-10-16",
-  "keys": []
+  "keys": [
+    {
+      "key": "MINHDUC-BP36-A4JB",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "ADMIN"
+    }
+  ]
 }
