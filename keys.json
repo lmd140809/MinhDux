@@ -19,6 +19,12 @@
       "deviceID": null,
       "expiresAt": "2026-10-10",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-AENN-SFSW",
+      "deviceID": null,
+      "expiresAt": "2026-11-15",
+      "note": "Không có ghi chú"
     }
   ]
 }
