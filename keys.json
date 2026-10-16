@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-16",
+  "keys": [
+    {
+      "key": "MINHDUC-MASTER",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Key chính của admin — không hết hạn"
+    },
+    {
+      "key": "MINHDUC-VIP-001",
+      "deviceID": null,
+      "expiresAt": "2026-12-31",
+      "note": "Khách VIP 1"
+    },
+    {
+      "key": "MINHDUC-VIP-002",
+      "deviceID": null,
+      "expiresAt": "2026-12-31",
+      "note": "Khách VIP 2"
+    },
+    {
+      "key": "MINHDUC-VIP-003",
+      "deviceID": null,
+      "expiresAt": "2026-06-30",
+      "note": "Khách VIP 3"
+    },
+    {
+      "key": "TRIAL-30D",
+      "deviceID": null,
+      "expiresAt": "2026-03-01",
+      "note": "Dùng thử 30 ngày"
+    },
+    {
+      "key": "CHECKONETRUE",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Key cũ — giữ để tương thích"
+    }
+  ]
+}
