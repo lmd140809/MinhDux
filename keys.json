@@ -73,6 +73,17 @@
       "deviceID": null,
       "expiresAt": "2026-10-18",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-9Y6ETYF9JYZQ",
+      "deviceID": "DEV-407EAEC7-F68F9A2A",
+      "expiresAt": "2026-10-17T18:44",
+      "note": "Không có ghi chú",
+      "tags": [
+        "VIP"
+      ],
+      "createdAt": "2026-10-17T18:43",
+      "checkCount": 0
     }
   ]
 }
