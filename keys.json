@@ -96,6 +96,12 @@
       "deviceID": null,
       "expiresAt": null,
       "note": "Phước Vip"
+    },
+    {
+      "key": "MINHDUC-9954-JVL7",
+      "deviceID": null,
+      "expiresAt": "2026-11-16",
+      "note": "Khách Không Vip:)"
     }
   ]
 }
