@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-16",
+  "updatedAt": "2026-10-17",
   "keys": [
     {
       "key": "MINHDUC-VZ82-UDXY",
@@ -24,12 +24,6 @@
       "key": "MINHDUC-9Q3X-P8ZK",
       "deviceID": null,
       "expiresAt": null,
-      "note": "Không có ghi chú"
-    },
-    {
-      "key": "MINHDUC-SH2V-LSTL",
-      "deviceID": null,
-      "expiresAt": "2026-10-18",
       "note": "Không có ghi chú"
     }
   ]
