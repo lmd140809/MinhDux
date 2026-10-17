@@ -73,6 +73,12 @@
       "deviceID": null,
       "expiresAt": "2026-10-24",
       "note": "TranViet-Dz-Hon-Duc"
+    },
+    {
+      "key": "MINHDUC-JP42-XJVS",
+      "deviceID": null,
+      "expiresAt": "2026-10-18",
+      "note": "Không có ghi chú"
     }
   ]
 }
