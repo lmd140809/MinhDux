@@ -8,5 +8,12 @@
     "isUrgent": true
   },
   "bannedKeys": [],
-  "keys": []
+  "keys": [
+    {
+      "key": "MINHDUC-H7VM-J44Z",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Không có ghi chú"
+    }
+  ]
 }
