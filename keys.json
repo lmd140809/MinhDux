@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-18",
+  "updatedAt": "2026-10-17",
   "announcement": {
     "title": "THÔNG BÁO QUAN TRỌNG",
     "message": "Garena đang quét tự động đợt 2. Anh em hạn chế dùng acc chính, nên bật Anti-Ban  trước khi vào game!",
@@ -8,12 +8,5 @@
     "isUrgent": true
   },
   "bannedKeys": [],
-  "keys": [
-    {
-      "key": "MINHDUC-25HR-MC5A",
-      "deviceID": null,
-      "expiresAt": null,
-      "note": "Key VIP"
-    }
-  ]
+  "keys": []
 }
