@@ -55,6 +55,12 @@
       "deviceID": null,
       "expiresAt": null,
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-BAP5-NBN6",
+      "deviceID": null,
+      "expiresAt": "2026-10-24",
+      "note": "Không có ghi chú"
     }
   ]
 }
