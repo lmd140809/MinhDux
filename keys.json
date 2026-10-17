@@ -1,113 +1,19 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-17",
+  "updatedAt": "2026-10-18",
+  "announcement": {
+    "title": "THÔNG BÁO QUAN TRỌNG",
+    "message": "Garena đang quét tự động đợt 2. Anh em hạn chế dùng acc chính, nên bật Anti-Ban  trước khi vào game!",
+    "date": "18/10/2026",
+    "isUrgent": true
+  },
+  "bannedKeys": [],
   "keys": [
-    {
-      "key": "MINHDUC-AENN-SFSW",
-      "deviceID": null,
-      "expiresAt": "2026-11-15",
-      "note": "Không có ghi chú"
-    },
     {
       "key": "MINHDUC-25HR-MC5A",
       "deviceID": null,
       "expiresAt": null,
-      "note": "Không có ghi chú"
-    },
-    {
-      "key": "MINHDUC-9Q3X-P8ZK",
-      "deviceID": null,
-      "expiresAt": null,
-      "note": "Không có ghi chú"
-    },
-    {
-      "key": "MINHDUC-9SXY-EWCH",
-      "deviceID": null,
-      "expiresAt": "2026-10-24",
-      "note": "Không có ghi chú"
-    },
-    {
-      "key": "MINHDUC-YW2G-3Z43",
-      "deviceID": null,
-      "expiresAt": "2026-11-18",
-      "note": "Không có ghi chú"
-    },
-    {
-      "key": "MINHDUC-XMHW-FS2N",
-      "deviceID": null,
-      "expiresAt": "2026-11-18",
-      "note": "Không có ghi chú"
-    },
-    {
-      "key": "MINHDUC-EENP-PC79",
-      "deviceID": null,
-      "expiresAt": "2026-10-18",
-      "note": "Không có ghi chú"
-    },
-    {
-      "key": "MINHDUC-JXFX-S6WF",
-      "deviceID": null,
-      "expiresAt": null,
-      "note": "Không có ghi chú"
-    },
-    {
-      "key": "MINHDUC-BAP5-NBN6",
-      "deviceID": null,
-      "expiresAt": "2026-10-24",
-      "note": "Không có ghi chú"
-    },
-    {
-      "key": "MINHDUC-9D9A-A77R",
-      "deviceID": null,
-      "expiresAt": "2026-10-24",
-      "note": "Không có ghi chú"
-    },
-    {
-      "key": "MINHDUC-GUC4-BKKT",
-      "deviceID": null,
-      "expiresAt": "2026-10-24",
-      "note": "TranViet-Dz-Hon-Duc"
-    },
-    {
-      "key": "MINHDUC-JP42-XJVS",
-      "deviceID": null,
-      "expiresAt": "2026-10-18",
-      "note": "Không có ghi chú"
-    },
-    {
-      "key": "MINHDUC-9Y6ETYF9JYZQ",
-      "deviceID": "DEV-407EAEC7-F68F9A2A",
-      "expiresAt": "2026-10-17T18:44",
-      "note": "Không có ghi chú",
-      "tags": [
-        "VIP"
-      ],
-      "createdAt": "2026-10-17T18:43",
-      "checkCount": 0
-    },
-    {
-      "key": "MINHDUC-LQV7-D4PG",
-      "deviceID": null,
-      "expiresAt": null,
-      "note": "Không có ghi chú"
-    },
-    {
-      "key": "MINHDUC-2X8W-CKJ6",
-      "deviceID": null,
-      "expiresAt": null,
-      "note": "Phước Vip"
-    },
-    {
-      "key": "MINHDUC-9954-JVL7",
-      "deviceID": null,
-      "expiresAt": "2026-11-16",
-      "note": "Khách Không Vip:)"
+      "note": "Key VIP"
     }
-  ],
-  "announcement": {
-    "title": "đuh",
-    "message": "đuu",
-    "date": "18/10/2026",
-    "isUrgent": false
-  }
+  ]
 }
