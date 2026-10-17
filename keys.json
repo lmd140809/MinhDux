@@ -67,6 +67,12 @@
       "deviceID": null,
       "expiresAt": "2026-10-24",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-GUC4-BKKT",
+      "deviceID": null,
+      "expiresAt": "2026-10-24",
+      "note": "TranViet-Dz-Hon-Duc"
     }
   ]
 }
