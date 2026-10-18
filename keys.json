@@ -1,7 +1,12 @@
 {
   "version": 1,
   "updatedAt": "2026-10-18",
-  "announcement": null,
+  "announcement": {
+    "title": "LÊ MINH ĐỨC",
+    "message": "chúc em huy chơi vui vẻ nhớ bật antiban em nhé",
+    "date": "18/10/2026",
+    "isUrgent": true
+  },
   "bannedKeys": [],
   "keys": [
     {
