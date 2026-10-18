@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-17",
+  "updatedAt": "2026-10-18",
   "announcement": null,
   "bannedKeys": [],
   "keys": [
@@ -26,6 +26,12 @@
       "key": "MINHDUC-TVK3-QJSQ",
       "deviceID": null,
       "expiresAt": "2027-01-15",
+      "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-PLXQ-MKYH",
+      "deviceID": null,
+      "expiresAt": "2026-10-25",
       "note": "Không có ghi chú"
     }
   ]
