@@ -19,12 +19,6 @@
       "note": "Key chính của Admin - Vĩnh viễn"
     },
     {
-      "key": "MINHDUC-VIP-001",
-      "deviceID": null,
-      "expiresAt": "2026-12-31",
-      "note": "Khách VIP 1 (Hết hạn 31/12/2026)"
-    },
-    {
       "key": "MINHDUC-JAK9-62P7",
       "deviceID": null,
       "expiresAt": null,
