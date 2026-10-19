@@ -1,4 +1,3 @@
-
 {
   "version": 1,
   "updatedAt": "2026-10-19",
@@ -10,6 +9,12 @@
       "deviceID": null,
       "expiresAt": null,
       "note": "Key Admin mới"
+    },
+    {
+      "key": "MINHDUC-CMSS-HJE4",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Không có ghi chú"
     }
   ]
 }
