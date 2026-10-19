@@ -92,6 +92,12 @@
       "deviceID": null,
       "expiresAt": "2026-11-18",
       "note": "Khánh"
+    },
+    {
+      "key": "MINHDUC-6XV2-AA5U",
+      "deviceID": null,
+      "expiresAt": "2026-11-18",
+      "note": "TranViet"
     }
   ]
 }
