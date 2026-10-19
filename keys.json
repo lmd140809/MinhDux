@@ -11,12 +11,5 @@
     "MINHDUC-OLD1-1111",
     "MINHDUC-OLD2-2222"
   ],
-  "keys": [
-    {
-      "key": "MINHDUC-RCQH-CCX5",
-      "deviceID": null,
-      "expiresAt": null,
-      "note": "Không có ghi chú"
-    }
-  ]
+  "keys": []
 }
