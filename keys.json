@@ -2,8 +2,8 @@
   "version": 1,
   "updatedAt": "2026-10-19",
   "announcement": {
-    "title": "Lê Minh Đức",
-    "message": "ĐỊT MẸ THK HOÀNG ANH",
+    "title": "HoangAnh",
+    "message": "iu Hoàng Anh",
     "date": "20/10/2026",
     "isUrgent": false
   },
@@ -21,7 +21,7 @@
       "expiresAt": null,
       "note": "Key Admin mới"
     },
-        {
+    {
       "key": "Hoàng Anh Sex",
       "deviceID": null,
       "expiresAt": null,
