@@ -86,6 +86,12 @@
       "deviceID": null,
       "expiresAt": "2026-10-26",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-C5WX-J2XW",
+      "deviceID": null,
+      "expiresAt": "2026-11-18",
+      "note": "Khánh"
     }
   ]
 }
