@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-18",
+  "updatedAt": "2026-10-19",
   "announcement": {
     "title": "THÔNG BÁO QUAN TRỌNG",
     "message": "Garena đang quét tự động đợt 2. Anh em hạn chế dùng acc chính, nên bật Anti-Ban DNS trước khi vào game!",
@@ -23,6 +23,12 @@
       "deviceID": null,
       "expiresAt": "2026-12-31",
       "note": "Khách VIP 1 (Hết hạn 31/12/2026)"
+    },
+    {
+      "key": "MINHDUC-JAK9-62P7",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Không có ghi chú"
     }
   ]
 }
