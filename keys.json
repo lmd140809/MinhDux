@@ -80,6 +80,12 @@
       "deviceID": null,
       "expiresAt": null,
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-RYRG-JTRZ",
+      "deviceID": null,
+      "expiresAt": "2026-10-26",
+      "note": "Không có ghi chú"
     }
   ]
 }
