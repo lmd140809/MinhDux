@@ -17,6 +17,12 @@
       "deviceID": null,
       "expiresAt": null,
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-7Y5H-FPWB",
+      "deviceID": null,
+      "expiresAt": "2026-11-18",
+      "note": "Không có ghi chú"
     }
   ]
 }
