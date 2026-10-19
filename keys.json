@@ -1,1 +1,15 @@
 
+{
+  "version": 1,
+  "updatedAt": "2026-10-19",
+  "announcement": null,
+  "bannedKeys": [],
+  "keys": [
+    {
+      "key": "MINHDUC-MASTER-V2",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Key Admin mới"
+    }
+  ]
+}
