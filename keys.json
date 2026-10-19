@@ -1,7 +1,12 @@
 {
   "version": 1,
   "updatedAt": "2026-10-19",
-  "announcement": null,
+  "announcement": {
+    "title": "bh",
+    "message": "hh",
+    "date": "19/10/2026",
+    "isUrgent": false
+  },
   "bannedKeys": [],
   "keys": [
     {
