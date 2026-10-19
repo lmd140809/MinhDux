@@ -1,1 +1,28 @@
-
+{
+  "version": 1,
+  "updatedAt": "2026-10-18",
+  "announcement": {
+    "title": "THÔNG BÁO QUAN TRỌNG",
+    "message": "Garena đang quét tự động đợt 2. Anh em hạn chế dùng acc chính, nên bật Anti-Ban DNS trước khi vào game!",
+    "date": "18/10/2026",
+    "isUrgent": true
+  },
+  "bannedKeys": [
+    "MINHDUC-OLD1-1111",
+    "MINHDUC-OLD2-2222"
+  ],
+  "keys": [
+    {
+      "key": "MINHDUC-MASTER",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Key chính của Admin - Vĩnh viễn"
+    },
+    {
+      "key": "MINHDUC-VIP-001",
+      "deviceID": null,
+      "expiresAt": "2026-12-31",
+      "note": "Khách VIP 1 (Hết hạn 31/12/2026)"
+    }
+  ]
+}
