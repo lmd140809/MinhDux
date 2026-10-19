@@ -13,12 +13,6 @@
   ],
   "keys": [
     {
-      "key": "MINHDUC-MASTER",
-      "deviceID": null,
-      "expiresAt": null,
-      "note": "Key chính của Admin - Vĩnh viễn"
-    },
-    {
       "key": "MINHDUC-RCQH-CCX5",
       "deviceID": null,
       "expiresAt": null,
