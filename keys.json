@@ -1,11 +1,17 @@
 {
-  "version" : 1,
-  "keys" : [
+  "version": 1,
+  "keys": [
     {
-      "key" : "MINHDUC-S45H-XDBE",
-      "deviceID" : "7D4E363A-A794-44EC-ABBA-2705552FBE26",
-      "note" : "Không có ghi chú"
+      "key": "MINHDUC-S45H-XDBE",
+      "deviceID": "7D4E363A-A794-44EC-ABBA-2705552FBE26",
+      "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-EKL5-KGJH",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-10-20T22:20:11Z"
+  "updatedAt": "2026-10-20"
 }
