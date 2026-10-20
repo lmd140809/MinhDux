@@ -1,43 +1,39 @@
 {
-  "keys" : [
+  "keys": [
     {
-      "key" : "MINHDUC-MASTER-V2",
-      "deviceID" : "7D4E363A-A794-44EC-ABBA-2705552FBE26",
-      "note" : "Key Admin mới"
+      "key": "MINHDUC-MASTER-V2",
+      "deviceID": "7D4E363A-A794-44EC-ABBA-2705552FBE26",
+      "note": "Key Admin mới"
     },
     {
-      "key" : "Mon Dâm Đãng",
-      "note" : "Key Admin mới"
+      "key": "HoangAnh-MinhDuckeyvv",
+      "note": "Key Admin mới"
     },
     {
-      "key" : "HoangAnh-MinhDuckeyvv",
-      "note" : "Key Admin mới"
+      "key": "MINHDUC-CMSS-HJE4",
+      "note": "Không có ghi chú"
     },
     {
-      "key" : "MINHDUC-CMSS-HJE4",
-      "note" : "Không có ghi chú"
+      "key": "MINHDUC-NYP5-P6SF",
+      "expiresAt": "2026-11-18",
+      "note": "hoàng ánhhhs"
     },
     {
-      "key" : "MINHDUC-NYP5-P6SF",
-      "expiresAt" : "2026-11-18",
-      "note" : "hoàng ánhhhs"
+      "note": "Không có ghi chú",
+      "expiresAt": "2026-10-27",
+      "key": "MINHDUC-XGE7-B2NR"
     },
     {
-      "note" : "Không có ghi chú",
-      "expiresAt" : "2026-10-27",
-      "key" : "MINHDUC-XGE7-B2NR"
+      "note": "Không có ghi chú",
+      "expiresAt": "2026-11-19",
+      "key": "MINHDUC-KN2G-7LC8"
     },
     {
-      "note" : "Không có ghi chú",
-      "expiresAt" : "2026-11-19",
-      "key" : "MINHDUC-KN2G-7LC8"
-    },
-    {
-      "note" : "Không có ghi chú",
-      "expiresAt" : "2026-10-27",
-      "key" : "MINHDUC-YPDH-M5VR"
+      "note": "Không có ghi chú",
+      "expiresAt": "2026-10-27",
+      "key": "MINHDUC-YPDH-M5VR"
     }
   ],
-  "updatedAt" : "2026-10-20T22:07:58Z",
-  "version" : 1
+  "updatedAt": "2026-10-20",
+  "version": 1
 }
