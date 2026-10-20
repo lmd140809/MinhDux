@@ -1,5 +1,12 @@
 {
-  "keys": [],
+  "keys": [
+    {
+      "key": "MINHDUC-S45H-XDBE",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Không có ghi chú"
+    }
+  ],
   "updatedAt": "2026-10-20",
   "version": 1
 }
