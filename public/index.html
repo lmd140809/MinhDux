@@ -1,191 +1,170 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FF Tool Demo</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background: #000;
-      font-family: 'Courier New', monospace;
-      color: #0ff;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-    .container { width: 100%; max-width: 500px; }
-
-    /* Khung xanh trên cùng */
-    .top-box {
-      border: 2px solid #0ff;
-      padding: 10px;
-      text-align: center;
-      font-weight: bold;
-      color: #0f0;
-      font-size: 14px;
-      margin-bottom: 10px;
-      background: rgba(0, 255, 255, 0.05);
-    }
-
-    /* Khung vàng Telegram */
-    .tg-box {
-      border: 2px solid #ff0;
-      padding: 10px;
-      text-align: center;
-      color: #ff0;
-      font-size: 13px;
-      margin-bottom: 10px;
-      background: rgba(255, 255, 0, 0.05);
-    }
-
-    /* Chữ xanh lá */
-    .green-text {
-      text-align: center;
-      color: #0f0;
-      font-weight: bold;
-      font-size: 14px;
-      margin: 10px 0;
-      line-height: 1.6;
-    }
-    .pink-text { color: #f0f; font-size: 12px; }
-
-    /* Popup thông báo */
-    .popup {
-      background: rgba(0, 0, 0, 0.95);
-      border: 1px solid #333;
-      padding: 20px;
-      margin-top: 20px;
-      display: none;
-    }
-    .popup.show { display: block; }
-
-    .popup-title {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 15px;
-      padding-bottom: 5px;
-      border-bottom: 3px solid;
-      display: inline-block;
-    }
-    .popup-title.success { color: #0f0; border-color: #0f0; }
-    .popup-title.error { color: #f00; border-color: #f00; }
-    .popup-title.warning { color: #ff0; border-color: #ff0; }
-
-    .popup-message {
-      color: #fff;
-      font-size: 14px;
-      line-height: 1.6;
-      margin-bottom: 20px;
-      white-space: pre-line;
-    }
-
-    .popup-btn {
-      background: #ff0;
-      color: #000;
-      border: none;
-      padding: 10px 30px;
-      font-weight: bold;
-      font-size: 14px;
-      cursor: pointer;
-      float: right;
-    }
-
-    /* Input */
-    .input-area {
-      margin-top: 20px;
-      display: flex;
-      gap: 10px;
-    }
-    .input-area input {
-      flex: 1;
-      padding: 10px;
-      background: #111;
-      border: 1px solid #0ff;
-      color: #0ff;
-      font-family: inherit;
-    }
-    .input-area button {
-      padding: 10px 20px;
-      background: #0ff;
-      color: #000;
-      border: none;
-      font-weight: bold;
-      cursor: pointer;
-      font-family: inherit;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MINH DUC — ADMIN PATCH SERVER</title>
+<style>
+  :root { --bg: #0a0508; --card: rgba(255,255,255,0.05); --gold: #ffc733; --red: #ff4d4d; --green: #4ade80; --text: #fff; --sub: #aaa; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, sans-serif; background: var(--bg); color: var(--text); padding: 20px; min-height: 100vh; }
+  .container { max-width: 800px; margin: 0 auto; }
+  .header { text-align: center; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255,199,51,0.2); }
+  .header h1 { font-size: 22px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; }
+  
+  .card { background: var(--card); border: 1px solid rgba(255,199,51,0.2); border-radius: 16px; padding: 20px; margin-bottom: 20px; }
+  .card h2 { font-size: 14px; color: var(--gold); margin-bottom: 15px; }
+  label { display: block; font-size: 11px; color: var(--sub); margin-bottom: 5px; font-weight: bold; }
+  input[type="text"], input[type="password"], select { width: 100%; padding: 12px; background: rgba(0,0,0,0.5); border: 1px solid #333; border-radius: 8px; color: var(--text); font-size: 14px; margin-bottom: 15px; outline: none; }
+  input:focus { border-color: var(--gold); }
+  
+  .file-upload { border: 2px dashed var(--gold); border-radius: 12px; padding: 20px; text-align: center; cursor: pointer; margin-bottom: 15px; background: rgba(255,199,51,0.05); }
+  .file-upload input { display: none; }
+  .file-upload p { color: var(--gold); font-size: 13px; font-weight: bold; }
+  
+  .btn { width: 100%; padding: 14px; border: none; border-radius: 10px; font-size: 14px; font-weight: bold; cursor: pointer; }
+  .btn-upload { background: linear-gradient(135deg, #ffc733, #ffeb99); color: black; }
+  .btn:hover { opacity: 0.9; }
+  
+  .result { margin-top: 15px; padding: 15px; border-radius: 10px; font-size: 13px; display: none; white-space: pre-wrap; line-height: 1.5; }
+  .result.success { background: rgba(74,222,128,0.15); border: 1px solid var(--green); color: var(--green); display: block; }
+  .result.error { background: rgba(255,77,77,0.15); border: 1px solid var(--red); color: var(--red); display: block; }
+</style>
 </head>
 <body>
-  <div class="container">
+<div class="container">
+  <div class="header"><h1>MINH DUC PATCH SERVER</h1></div>
 
-    <!-- Khung xanh trên cùng -->
-    <div class="top-box">
-      || NOT WORKING JOIN GC NEW FILE NED ||
-    </div>
-
-    <!-- Khung vàng Telegram -->
-    <div class="tg-box">
-      || https://t.me/Premiume_FF_Tcp_bot_Community ||
-    </div>
-
-    <!-- Chữ xanh -->
-    <div class="green-text">
-      FILE REAL ADMIN<br>
-      <span class="pink-text">@AriyanPrime_A9x</span>
-    </div>
-
-    <!-- Input test -->
-    <div class="input-area">
-      <input id="idInput" placeholder="Nhập ID FF..." value="test123">
-      <button onclick="callApi()">GỬI</button>
-    </div>
-
-    <!-- Popup thông báo -->
-    <div id="popup" class="popup">
-      <div id="popupTitle" class="popup-title">LỖI</div>
-      <div id="popupMessage" class="popup-message">Đang tải...</div>
-      <button class="popup-btn" onclick="closePopup()">OK</button>
-      <div style="clear:both"></div>
-    </div>
-
+  <!-- BẢO MẬT TOKEN -->
+  <div class="card" style="border-color: var(--red);">
+    <h2>🔑 Bước 1: Nhập GitHub Token</h2>
+    <label>Yêu cầu Token Classic (Có quyền `repo`)</label>
+    <input type="password" id="token" placeholder="ghp_xxxxxxxxxx">
+    <button class="btn" style="background:#333; color:white;" onclick="saveToken()">LƯU TOKEN</button>
   </div>
 
-  <script>
-    async function callApi() {
-      const id = document.getElementById('idInput').value || 'test123';
-      const url = '/id?unben=' + encodeURIComponent(id);
+  <!-- CẬP NHẬT PATCH -->
+  <div class="card">
+    <h2>📤 Bước 2: Cập nhật File Patch</h2>
+    
+    <label>Version (Phải tăng dần, VD: 1.0.2)</label>
+    <input type="text" id="patchVersion" placeholder="VD: 1.0.2">
 
-      try {
-        const res = await fetch(url);
-        const data = await res.json();
-        showPopup(data);
-      } catch (e) {
-        showPopup({
-          type: 'error',
-          title: 'LỖI',
-          message: 'Lỗi kết nối mạng\nĐăng nhập máy chủ thất bại: 500'
-        });
+    <label>Tên hiển thị mới trên App (VD: Siêu Aim, Aim Head...)</label>
+    <input type="text" id="patchDisplayName" placeholder="Nhập tên bạn muốn hiện trên nút bấm App...">
+    
+    <label>Chọn File (Chức năng) cần thay thế</label>
+    <select id="patchFilename">
+      <option value="OGIOS File (20).3105">File (20) - AimBody</option>
+      <option value="OGIOS File (21).3105">File (21) - AimLock</option>
+      <option value="OGIOS File (22).3105">File (22) - Antiban</option>
+      <option value="OGIOS File (23).3105">File (23) - Nhẹ Tâm</option>
+      <option value="OGIOS File (30).3105">File (30) - Chức năng mới</option>
+    </select>
+
+    <div class="file-upload" onclick="document.getElementById('fileInput').click()">
+      <input type="file" id="fileInput" accept=".3105" onchange="document.getElementById('fileName').textContent = 'Đã chọn: ' + this.files[0].name">
+      <p id="fileName">Bấm để chọn file Patch (.3105) từ máy</p>
+    </div>
+
+    <button class="btn btn-upload" id="btnUpload" onclick="uploadPatch()">TẢI LÊN GITHUB</button>
+    <div class="result" id="resultUpload"></div>
+  </div>
+</div>
+
+<script>
+  const CONFIG = { owner: "lmd140809", repo: "MinhDux" };
+  
+  function saveToken() { 
+    localStorage.setItem('gh_token', document.getElementById('token').value.trim()); 
+    alert('Đã lưu Token!'); 
+  }
+  function getToken() { return localStorage.getItem('gh_token') || ''; }
+  
+  function showResult(msg, type) {
+    const el = document.getElementById('resultUpload');
+    el.textContent = msg; el.className = `result ${type}`;
+  }
+
+  async function uploadPatch() {
+    const token = getToken();
+    const version = document.getElementById('patchVersion').value.trim();
+    const displayName = document.getElementById('patchDisplayName').value.trim();
+    const filename = document.getElementById('patchFilename').value;
+    const file = document.getElementById('fileInput').files[0];
+
+    if (!token) return showResult("❌ Vui lòng lưu Token trước!", "error");
+    if (!version || !file) return showResult("❌ Vui lòng nhập Version và chọn file!", "error");
+
+    document.getElementById('btnUpload').disabled = true;
+    showResult("⏳ Đang xử lý... Vui lòng đợi!", "success");
+
+    try {
+      // 1. Tìm và XOÁ bản Release cũ của file này (nếu có) để tránh lỗi trùng Tag
+      const listRes = await fetch(`https://api.github.com/repos/${CONFIG.owner}/${CONFIG.repo}/releases`, {
+        headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github.v3+json' }
+      });
+      
+      if (!listRes.ok) throw new Error("Token không hợp lệ hoặc lỗi mạng.");
+      const releases = await listRes.json();
+      
+      for (const rel of releases) {
+        const hasFile = rel.assets.some(a => a.name === filename);
+        if (hasFile) {
+          showResult(`⏳ Đang xoá bản cũ (${rel.name}) để thay thế...`, "success");
+          await fetch(`https://api.github.com/repos/${CONFIG.owner}/${CONFIG.repo}/releases/${rel.id}`, {
+            method: 'DELETE',
+            headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github.v3+json' }
+          });
+        }
       }
+
+      // 2. Tạo Release mới
+      const tagName = `patch-${version}-${Date.now()}`; // Dùng timestamp để không bao giờ trùng Tag
+      const releaseRes = await fetch(`https://api.github.com/repos/${CONFIG.owner}/${CONFIG.repo}/releases`, {
+        method: 'POST',
+        headers: { 
+          'Authorization': `token ${token}`,
+          'Accept': 'application/vnd.github.v3+json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ 
+          tag_name: tagName, 
+          name: `Patch Update v${version}`, 
+          body: displayName || "Cập nhật mới", 
+          draft: false, prerelease: false 
+        })
+      });
+
+      if (!releaseRes.ok) throw new Error("Lỗi tạo Release (Token hoặc trùng Tag).");
+      const releaseData = await releaseRes.json();
+      
+      // 3. Upload file (Ép buộc đổi tên file thành đúng tên cũ)
+      showResult("⏳ Đang tải file lên GitHub...", "success");
+      const renamedFile = new File([file], filename, { type: file.type });
+      const uploadUrl = releaseData.upload_url.replace("{?name,label}", `?name=${encodeURIComponent(filename)}`);
+      
+      const fileRes = await fetch(uploadUrl, {
+        method: 'POST',
+        headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/octet-stream' },
+        body: renamedFile
+      });
+
+      if (!fileRes.ok) throw new Error("Lỗi upload file lên Release.");
+
+      showResult(`✅ THÀNH CÔNG!\nĐã thay file ${filename}.\nTên mới trên App: ${displayName}\nMở App lên bấm Cập nhật là xong!`, "success");
+      
+      document.getElementById('patchDisplayName').value = "";
+      document.getElementById('fileInput').value = "";
+      document.getElementById('fileName').textContent = "Bấm để chọn file (.3105)";
+
+    } catch (err) {
+      showResult(`❌ ${err.message}`, "error");
+    } finally {
+      document.getElementById('btnUpload').disabled = false;
     }
-
-    function showPopup(data) {
-      const popup = document.getElementById('popup');
-      const title = document.getElementById('popupTitle');
-      const message = document.getElementById('popupMessage');
-
-      title.textContent = data.title || 'THÔNG BÁO';
-      title.className = 'popup-title ' + (data.type || 'success');
-      message.textContent = data.message || 'Không có nội dung';
-
-      popup.classList.add('show');
-    }
-
-    function closePopup() {
-      document.getElementById('popup').classList.remove('show');
-    }
-  </script>
+  }
+  window.onload = () => document.getElementById('token').value = getToken();
+</script>
 </body>
 </html>
