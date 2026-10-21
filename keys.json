@@ -23,6 +23,12 @@
       "deviceID": null,
       "expiresAt": null,
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-2DPD-XJUS",
+      "deviceID": null,
+      "expiresAt": "2026-10-28",
+      "note": "Không có ghi chú"
     }
   ]
 }
