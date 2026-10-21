@@ -19,15 +19,8 @@
     {
       "key": "MINHDUC-QUM7-Y3HE",
       "note": "Không có ghi chú"
-    },
-    {
-      "deviceID": "7D4E363A-A794-44EC-ABBA-2705552FBE26",
-      "expiresAt": "2026-10-22T07:15",
-      "key": "MINHDUC-8BUU-AV7M",
-      "note": "Không có ghi chú",
-      "vip": true
     }
   ],
-  "updatedAt": "2026-10-21T23:15:57.370Z",
+  "updatedAt": "2026-10-21",
   "version": 1
 }
