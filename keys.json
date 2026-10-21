@@ -1,30 +1,24 @@
 {
-  "keys" : [
+  "keys": [
     {
-      "deviceID" : "7D4E363A-A794-44EC-ABBA-2705552FBE26",
-      "key" : "MINHDUC-S45H-XDBE",
-      "note" : "Không có ghi chú"
+      "deviceID": "7D4E363A-A794-44EC-ABBA-2705552FBE26",
+      "key": "MINHDUC-S45H-XDBE",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "16D70849-6917-4A75-91D2-7DF17040EB55",
-      "key" : "MINHDUC-EKL5-KGJH",
-      "note" : "Không có ghi chú"
+      "deviceID": "16D70849-6917-4A75-91D2-7DF17040EB55",
+      "key": "MINHDUC-EKL5-KGJH",
+      "note": "Không có ghi chú"
     },
     {
-      "key" : "MINHDUC-28WH-8P3V",
-      "note" : "Không có ghi chú"
+      "key": "MINHDUC-28WH-8P3V",
+      "note": "Không có ghi chú"
     },
     {
-      "key" : "MINHDUC-V4FM-8LSR",
-      "note" : "Không có ghi chú"
-    },
-    {
-      "deviceID" : "7D4E363A-A794-44EC-ABBA-2705552FBE26",
-      "expiresAt" : "2026-10-28",
-      "key" : "MINHDUC-2DPD-XJUS",
-      "note" : "Không có ghi chú"
+      "key": "MINHDUC-V4FM-8LSR",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-10-21T21:12:53Z",
-  "version" : 1
+  "updatedAt": "2026-10-21",
+  "version": 1
 }
