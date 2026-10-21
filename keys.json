@@ -13,5 +13,11 @@
     }
   ],
   "updatedAt": "2026-10-21",
-  "version": 1
+  "version": 1,
+  "announcement": {
+    "title": "THÔNG BÁO",
+    "message": "KHÔNG TỰ Ý BẬT CHỨC NĂNG NẾU CHƯA RÕ CÁCH CÀI HÃY LIÊN HỆ ADMIN",
+    "date": "22/10/2026",
+    "isUrgent": true
+  }
 }
