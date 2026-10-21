@@ -1,12 +1,11 @@
 {
-  "keys": [
+  "keys" : [
     {
-      "key": "MINHDUC-J7U5-NHLU",
-      "deviceID": null,
-      "expiresAt": null,
-      "note": "Không có ghi chú"
+      "deviceID" : "7D4E363A-A794-44EC-ABBA-2705552FBE26",
+      "key" : "MINHDUC-J7U5-NHLU",
+      "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-10-21",
-  "version": 1
+  "updatedAt" : "2026-10-21T22:01:35Z",
+  "version" : 1
 }
