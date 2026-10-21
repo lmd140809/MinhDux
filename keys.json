@@ -21,8 +21,16 @@
       "deviceID": null,
       "expiresAt": null,
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-8BUU-AV7M",
+      "deviceID": null,
+      "expiresAt": "2026-10-22T07:15",
+      "note": "Không có ghi chú",
+      "vip": false,
+      "createdAt": "2026-10-21T23:15:04.924Z"
     }
   ],
-  "updatedAt": "2026-10-21",
+  "updatedAt": "2026-10-21T23:15:05.498Z",
   "version": 1
 }
