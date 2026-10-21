@@ -29,6 +29,12 @@
       "deviceID": null,
       "expiresAt": "2026-11-20",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-R2UL-B3MR",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "hoanganh"
     }
   ]
 }
