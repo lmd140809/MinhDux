@@ -1,36 +1,32 @@
 {
-  "announcement": {
-    "date": "22/10/2026",
-    "isUrgent": true,
-    "message": "KHÔNG TỰ Ý BẬT CHỨC NĂNG NẾU CHƯA RÕ CÁCH CÀI HÃY LIÊN HỆ ADMIN",
-    "title": "THÔNG BÁO"
+  "announcement" : {
+    "date" : "22\/10\/2026",
+    "isUrgent" : true,
+    "message" : "KHÔNG TỰ Ý BẬT CHỨC NĂNG NẾU CHƯA RÕ CÁCH CÀI HÃY LIÊN HỆ ADMIN",
+    "title" : "THÔNG BÁO"
   },
-  "keys": [
+  "keys" : [
     {
-      "deviceID": "7D4E363A-A794-44EC-ABBA-2705552FBE26",
-      "key": "MINHDUC-J7U5-NHLU",
-      "note": "Không có ghi chú"
+      "deviceID" : "7D4E363A-A794-44EC-ABBA-2705552FBE26",
+      "key" : "MINHDUC-J7U5-NHLU",
+      "note" : "Không có ghi chú"
     },
     {
-      "deviceID": "1D8F2C63-0B53-4BB0-805C-1128873F2A40",
-      "key": "MINHDUC-93GR-W8U8",
-      "note": "Không có ghi chú"
+      "deviceID" : "1D8F2C63-0B53-4BB0-805C-1128873F2A40",
+      "key" : "MINHDUC-93GR-W8U8",
+      "note" : "Không có ghi chú"
     },
     {
-      "key": "MINHDUC-QUM7-Y3HE",
-      "deviceID": null,
-      "expiresAt": null,
-      "note": "Không có ghi chú"
+      "key" : "MINHDUC-QUM7-Y3HE",
+      "note" : "Không có ghi chú"
     },
     {
-      "key": "MINHDUC-8BUU-AV7M",
-      "deviceID": null,
-      "expiresAt": "2026-10-22T07:15",
-      "note": "Không có ghi chú",
-      "vip": false,
-      "createdAt": "2026-10-21T23:15:04.924Z"
+      "deviceID" : "7D4E363A-A794-44EC-ABBA-2705552FBE26",
+      "expiresAt" : "2026-10-22T07:15",
+      "key" : "MINHDUC-8BUU-AV7M",
+      "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-10-21T23:15:05.498Z",
-  "version": 1
+  "updatedAt" : "2026-10-21T23:15:20Z",
+  "version" : 1
 }
