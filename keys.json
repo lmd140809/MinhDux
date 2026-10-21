@@ -23,6 +23,12 @@
       "deviceID": null,
       "expiresAt": null,
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-UQKN-C2D6",
+      "deviceID": null,
+      "expiresAt": "2026-11-20",
+      "note": "Không có ghi chú"
     }
   ]
 }
