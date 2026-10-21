@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-20",
+  "updatedAt": "2026-10-21",
   "keys": [
     {
       "deviceID": "7D4E363A-A794-44EC-ABBA-2705552FBE26",
@@ -16,6 +16,12 @@
       "key": "MINHDUC-YKDD-532T",
       "deviceID": null,
       "expiresAt": "2026-11-19",
+      "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-4RBA-F7MW",
+      "deviceID": null,
+      "expiresAt": null,
       "note": "Không có ghi chú"
     }
   ]
