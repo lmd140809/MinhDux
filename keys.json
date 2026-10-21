@@ -11,6 +11,12 @@
       "deviceID": "16D70849-6917-4A75-91D2-7DF17040EB55",
       "key": "MINHDUC-EKL5-KGJH",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-FM3Q-NZV6",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Không có ghi chú"
     }
   ]
 }
