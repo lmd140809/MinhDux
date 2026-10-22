@@ -192,6 +192,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "06A386E8-6308-497F-B06C-E103300E53E5",
       "expiresAt" : "2026-10-24",
       "key" : "MINHDUC-ZY8H-65T2",
       "note" : "Không có ghi chú"
@@ -203,6 +204,6 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-10-22T17:11:32Z",
+  "updatedAt" : "2026-10-22T17:12:18Z",
   "version" : 1
 }
