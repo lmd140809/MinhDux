@@ -12,6 +12,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "8D7333D7-8639-4715-8657-E8E33B215DCB",
       "key" : "MINHDUC-QUM7-Y3HE",
       "note" : "Không có ghi chú"
     },
@@ -77,6 +78,6 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-10-22T01:38:55Z",
+  "updatedAt" : "2026-10-22T01:42:28Z",
   "version" : 1
 }
