@@ -119,6 +119,12 @@
       "deviceID": null,
       "expiresAt": "2026-11-21",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-QFHN-EWZF",
+      "deviceID": null,
+      "expiresAt": "2026-11-21",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-10-22",
