@@ -60,6 +60,12 @@
       "deviceID": "E62DD1CA-A5EE-45FC-A0EB-196BDE478ED0",
       "key": "MINHDUC-38L6-Z8GX",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-QMRK-6KWS",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-10-22",
