@@ -43,6 +43,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "A39F43BA-3229-4505-9EDA-4EB159CC99CB",
       "expiresAt" : "2026-10-23",
       "key" : "MINHDUC-JXGQ-9AJ2",
       "note" : "Không có ghi chú"
@@ -64,6 +65,6 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-10-22T00:58:33Z",
+  "updatedAt" : "2026-10-22T01:00:33Z",
   "version" : 1
 }
