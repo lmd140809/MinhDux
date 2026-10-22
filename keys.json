@@ -99,6 +99,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "F026F277-9A4E-40FA-94B8-CEAEA769644C",
       "key" : "MINHDUC-HCC9-RXPU",
       "note" : "Không có ghi chú"
     },
@@ -168,6 +169,6 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-10-22T14:17:12Z",
+  "updatedAt" : "2026-10-22T14:17:31Z",
   "version" : 1
 }
