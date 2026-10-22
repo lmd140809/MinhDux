@@ -113,6 +113,12 @@
       "deviceID": null,
       "expiresAt": "2026-10-29",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-E8WZ-PAGB",
+      "deviceID": null,
+      "expiresAt": "2026-11-21",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-10-22",
