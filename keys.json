@@ -56,6 +56,12 @@
       "deviceID": "EF27AB6D-CF1E-4477-894D-E2C4D2EC6063",
       "key": "MINHDUC-E4SS-ENZG",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-38L6-Z8GX",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-10-22",
