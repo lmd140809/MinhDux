@@ -65,6 +65,12 @@
       "deviceID": "7D4E363A-A794-44EC-ABBA-2705552FBE26",
       "key": "MINHDUC-QMRK-6KWS",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-EABR-RXVW",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-10-22",
