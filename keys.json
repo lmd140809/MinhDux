@@ -208,8 +208,14 @@
       "deviceID": null,
       "expiresAt": null,
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-6W6T-XRRW",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-10-22",
+  "updatedAt": "2026-10-23",
   "version": 1
 }
