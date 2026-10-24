@@ -233,8 +233,14 @@
       "deviceID": "16375FB9-6438-428E-9E76-FAF681C4D05C",
       "key": "MINHDUC-P74E-MHTU",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-E2XG-MV44",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-10-23",
+  "updatedAt": "2026-10-24",
   "version": 1
 }
