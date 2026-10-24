@@ -293,6 +293,12 @@
       "deviceID": null,
       "expiresAt": "2026-11-23",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-KC2S-DB5G",
+      "deviceID": null,
+      "expiresAt": "2026-11-23",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-10-24",
