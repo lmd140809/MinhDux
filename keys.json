@@ -265,6 +265,12 @@
       "deviceID": null,
       "expiresAt": null,
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-7MAN-CAE2",
+      "deviceID": null,
+      "expiresAt": "2026-10-31",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-10-24",
