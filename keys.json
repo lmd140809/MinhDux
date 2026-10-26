@@ -327,8 +327,14 @@
       "deviceID": null,
       "expiresAt": "2027-10-25",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-YGAA-FHPU",
+      "deviceID": null,
+      "expiresAt": "2026-11-27",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-10-25",
+  "updatedAt": "2026-10-26",
   "version": 1
 }
