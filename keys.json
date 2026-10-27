@@ -354,8 +354,14 @@
       "deviceID": null,
       "expiresAt": "2026-11-02",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-N88T-4JRD",
+      "deviceID": null,
+      "expiresAt": "2026-11-26",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-10-26",
+  "updatedAt": "2026-10-27",
   "version": 1
 }
