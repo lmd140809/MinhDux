@@ -379,6 +379,12 @@
       "deviceID": null,
       "expiresAt": null,
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-ESET-E9Q7",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-10-27",
