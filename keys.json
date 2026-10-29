@@ -388,8 +388,14 @@
       "deviceID": null,
       "expiresAt": null,
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-EBR7-2LQU",
+      "deviceID": null,
+      "expiresAt": "2026-11-28",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-10-28",
+  "updatedAt": "2026-10-29",
   "version": 1
 }
