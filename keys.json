@@ -389,11 +389,12 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "16375FB9-6438-428E-9E76-FAF681C4D05C",
       "expiresAt" : "2026-11-28",
       "key" : "MINHDUC-EBR7-2LQU",
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-10-29T12:01:26Z",
+  "updatedAt" : "2026-10-29T12:37:24Z",
   "version" : 1
 }
