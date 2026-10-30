@@ -401,6 +401,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "13B60487-4AE8-4EE3-8B35-FC836F66F0C7",
       "key" : "MINHDUC-HVR2-NN4Z",
       "note" : "Không có ghi chú"
     },
@@ -424,6 +425,6 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-10-30T04:45:04Z",
+  "updatedAt" : "2026-10-30T08:26:14Z",
   "version" : 1
 }
