@@ -459,8 +459,14 @@
       "deviceID": null,
       "expiresAt": "2026-11-29",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-8685-RPED",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-10-30",
+  "updatedAt": "2026-10-31",
   "version": 1
 }
