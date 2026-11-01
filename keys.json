@@ -95,6 +95,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "0ABB7D42-C296-4F59-8185-1AA1BF72C382",
       "key" : "MINHDUC-3KHL-R7FT",
       "note" : "Không có ghi chú"
     },
@@ -489,6 +490,6 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-01T06:29:30Z",
+  "updatedAt" : "2026-11-01T06:33:28Z",
   "version" : 1
 }
