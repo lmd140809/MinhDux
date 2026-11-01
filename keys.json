@@ -456,6 +456,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "FE01C60F-4793-47B2-85C6-D229AF5F87D7",
       "expiresAt" : "2026-11-29",
       "key" : "MINHDUC-8ZF2-9DF5",
       "note" : "Không có ghi chú"
@@ -488,6 +489,6 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-01T06:25:02Z",
+  "updatedAt" : "2026-11-01T06:29:30Z",
   "version" : 1
 }
