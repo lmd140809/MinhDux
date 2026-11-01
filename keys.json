@@ -408,6 +408,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "599ABC10-DB6D-45D1-BD65-FF235EF831B4",
       "key" : "MINHDUC-C443-66U4",
       "note" : "Không có ghi chú"
     },
@@ -490,6 +491,6 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-01T06:33:28Z",
+  "updatedAt" : "2026-11-01T06:34:04Z",
   "version" : 1
 }
