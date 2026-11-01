@@ -375,6 +375,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "FE01C60F-4793-47B2-85C6-D229AF5F87D7",
       "key" : "MINHDUC-QHH9-6D7T",
       "note" : "Không có ghi chú"
     },
@@ -487,6 +488,6 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-01T06:23:47Z",
+  "updatedAt" : "2026-11-01T06:25:02Z",
   "version" : 1
 }
