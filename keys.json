@@ -465,6 +465,12 @@
       "expiresAt": "2026-12-01",
       "key": "MINHDUC-DZWF-79H2",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-7HAY-KTNF",
+      "deviceID": null,
+      "expiresAt": "2026-12-02",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-02",
