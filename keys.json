@@ -293,6 +293,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "81B3281C-CBEF-47CF-B856-B43210AF2578",
       "expiresAt" : "2026-11-23",
       "key" : "MINHDUC-B8PY-FWDQ",
       "note" : "Không có ghi chú"
@@ -499,6 +500,6 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-02T05:24:01Z",
+  "updatedAt" : "2026-11-02T06:39:53Z",
   "version" : 1
 }
