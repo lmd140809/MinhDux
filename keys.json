@@ -116,6 +116,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "0ABB7D42-C296-4F59-8185-1AA1BF72C382",
       "expiresAt" : "2026-11-21",
       "key" : "MINHDUC-E8WZ-PAGB",
       "note" : "Không có ghi chú"
@@ -498,6 +499,6 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-01T13:17:42Z",
+  "updatedAt" : "2026-11-02T05:24:01Z",
   "version" : 1
 }
