@@ -359,6 +359,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "FE01C60F-4793-47B2-85C6-D229AF5F87D7",
       "expiresAt" : "2026-11-26",
       "key" : "MINHDUC-N88T-4JRD",
       "note" : "Không có ghi chú"
@@ -500,6 +501,6 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-02T06:39:53Z",
+  "updatedAt" : "2026-11-02T15:52:42Z",
   "version" : 1
 }
