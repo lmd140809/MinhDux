@@ -333,6 +333,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "79F677D6-E1D9-4C31-B004-D632828B4A23",
       "expiresAt" : "2026-11-27",
       "key" : "MINHDUC-YGAA-FHPU",
       "note" : "Không có ghi chú"
@@ -502,6 +503,6 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-02T16:15:57Z",
+  "updatedAt" : "2026-11-02T16:17:51Z",
   "version" : 1
 }
