@@ -1,12 +1,11 @@
 {
-  "keys": [
+  "keys" : [
     {
-      "key": "MINHDUC-ABCD-1234",
-      "deviceID": null,
-      "expiresAt": "2026-12-31",
-      "note": "Khách VIP - Anh Minh"
+      "deviceID" : "7D4E363A-A794-44EC-ABBA-2705552FBE26",
+      "expiresAt" : "2026-12-31",
+      "key" : "MINHDUC-ABCD-1234",
+      "note" : "Khách VIP - Anh Minh"
     }
   ],
-  "updatedAt": "2026-11-03",
-  "announcement": null
+  "updatedAt" : "2026-11-03T11:23:41Z"
 }
