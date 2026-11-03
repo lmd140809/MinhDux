@@ -19,5 +19,11 @@
       "note": "Khách thường - đã hết hạn"
     }
   ],
-  "updatedAt": "2026-11-03"
+  "updatedAt": "2026-11-03",
+  "announcement": {
+    "title": "zjz",
+    "message": "shsj",
+    "date": "03/11/2026",
+    "isUrgent": false
+  }
 }
