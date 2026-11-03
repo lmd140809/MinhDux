@@ -1,1 +1,23 @@
-
+{
+  "keys": [
+    {
+      "key": "MINHDUC-ABCD-1234",
+      "deviceID": null,
+      "expiresAt": "2026-12-31",
+      "note": "Khách VIP - Anh Minh"
+    },
+    {
+      "key": "MINHDUC-EFGH-5678",
+      "deviceID": "ABC123DEF456",
+      "expiresAt": null,
+      "note": "Key vĩnh viễn - Admin"
+    },
+    {
+      "key": "MINHDUC-IJKL-9012",
+      "deviceID": null,
+      "expiresAt": "2025-01-15",
+      "note": "Khách thường - đã hết hạn"
+    }
+  ],
+  "updatedAt": "2026-11-03"
+}
