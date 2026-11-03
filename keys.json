@@ -341,6 +341,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "A8F0E07C-7F85-4F52-BC6B-8C4166750449",
       "expiresAt" : "2026-11-03",
       "key" : "MINHDUC-X6NS-RPKT",
       "note" : "Không có ghi chú"
@@ -479,6 +480,6 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-02T23:36:09Z",
+  "updatedAt" : "2026-11-03T01:12:02Z",
   "version" : 1
 }
