@@ -11,12 +11,6 @@
       "deviceID": "ABC123DEF456",
       "expiresAt": null,
       "note": "Key vĩnh viễn - Admin"
-    },
-    {
-      "key": "MINHDUC-IJKL-9012",
-      "deviceID": null,
-      "expiresAt": "2025-01-15",
-      "note": "Khách thường - đã hết hạn"
     }
   ],
   "updatedAt": "2026-11-03",
