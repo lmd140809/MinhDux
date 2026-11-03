@@ -33,6 +33,12 @@
     {
       "key": "MINHDUC-827S-D4CX",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-VBT6-HF8A",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-03"
