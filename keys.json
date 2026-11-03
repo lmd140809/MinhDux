@@ -5,12 +5,6 @@
       "deviceID": null,
       "expiresAt": "2026-12-31",
       "note": "Khách VIP - Anh Minh"
-    },
-    {
-      "key": "MINHDUC-EFGH-5678",
-      "deviceID": "ABC123DEF456",
-      "expiresAt": null,
-      "note": "Key vĩnh viễn - Admin"
     }
   ],
   "updatedAt": "2026-11-03",
