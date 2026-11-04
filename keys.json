@@ -58,6 +58,12 @@
       "deviceID": null,
       "expiresAt": null,
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-G53S-JK9X",
+      "deviceID": null,
+      "expiresAt": "2027-02-02",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-04"
