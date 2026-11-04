@@ -110,6 +110,12 @@
       "deviceID": null,
       "expiresAt": "2026-12-04",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-8DKY-NQYN",
+      "deviceID": null,
+      "expiresAt": "2026-12-04",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-04"
