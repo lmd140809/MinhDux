@@ -188,6 +188,12 @@
       "expiresAt": "2026-12-05",
       "key": "MINHDUC-AGJ5-5KRJ",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-2HQU-UUMX",
+      "deviceID": null,
+      "expiresAt": "2026-11-06",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-05"
