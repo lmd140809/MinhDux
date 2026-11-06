@@ -245,6 +245,12 @@
       "expiresAt": "2026-11-07",
       "key": "MINHDUC-4SQ8-GYGG",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-GYLN-QDW8",
+      "deviceID": null,
+      "expiresAt": "2026-11-13",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-06"
