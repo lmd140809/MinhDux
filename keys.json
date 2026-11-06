@@ -288,6 +288,12 @@
       "deviceID": null,
       "expiresAt": "2026-11-07",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-7WRL-MFT4",
+      "deviceID": null,
+      "expiresAt": "2026-11-07",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-06"
