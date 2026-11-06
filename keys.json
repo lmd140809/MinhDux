@@ -251,6 +251,12 @@
       "deviceID": null,
       "expiresAt": "2026-11-13",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-Q5T5-Y5NH",
+      "deviceID": null,
+      "expiresAt": "2026-11-07",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-06"
