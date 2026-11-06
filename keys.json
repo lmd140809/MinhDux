@@ -272,6 +272,12 @@
       "deviceID": null,
       "expiresAt": null,
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-S99H-AF7C",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-06"
