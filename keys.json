@@ -266,6 +266,12 @@
       "deviceID": "FF5B78BC-AF0D-4587-B221-CB2631AC5A1E",
       "key": "MINHDUC-D3LD-3VK2",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-X2EF-BXXT",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-06"
