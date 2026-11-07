@@ -380,6 +380,12 @@
       "deviceID": null,
       "expiresAt": null,
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-3G9J-6A2U",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-07"
