@@ -374,6 +374,12 @@
       "deviceID": null,
       "expiresAt": "2026-11-09",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-MG5V-DB6D",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-07"
