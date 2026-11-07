@@ -343,6 +343,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "2BC864AA-B7A5-4466-9E5A-6D517B084E07",
       "key" : "MINHDUC-3E9P-ZSZN",
       "note" : "Không có ghi chú"
     },
@@ -352,5 +353,5 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-07T10:21:46Z"
+  "updatedAt" : "2026-11-07T10:21:48Z"
 }
