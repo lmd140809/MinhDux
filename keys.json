@@ -1,464 +1,470 @@
 {
-  "keys" : [
+  "keys": [
     {
-      "deviceID" : "7D4E363A-A794-44EC-ABBA-2705552FBE26",
-      "expiresAt" : "2026-12-31",
-      "key" : "MINHDUC-ABCD-1234",
-      "note" : "Khách VIP - Anh Minh"
+      "deviceID": "7D4E363A-A794-44EC-ABBA-2705552FBE26",
+      "expiresAt": "2026-12-31",
+      "key": "MINHDUC-ABCD-1234",
+      "note": "Khách VIP - Anh Minh"
     },
     {
-      "deviceID" : "BAA5B6F1-2EA1-42B8-85D1-E20208D15A4F",
-      "key" : "MINHDUC-8RYJ-6X3J",
-      "note" : "Không có ghi chú"
+      "deviceID": "BAA5B6F1-2EA1-42B8-85D1-E20208D15A4F",
+      "key": "MINHDUC-8RYJ-6X3J",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "D6D38AE5-7BEA-4C0D-B23E-6469C1CB834A",
-      "key" : "MINHDUC-KAXR-D4MT",
-      "note" : "Không có ghi chú"
+      "deviceID": "D6D38AE5-7BEA-4C0D-B23E-6469C1CB834A",
+      "key": "MINHDUC-KAXR-D4MT",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "16AAA20C-9259-4752-8625-5873026129C8",
-      "expiresAt" : "2026-11-11",
-      "key" : "MINHDUC-N3E4-579L",
-      "note" : "Không có ghi chú"
+      "deviceID": "16AAA20C-9259-4752-8625-5873026129C8",
+      "expiresAt": "2026-11-11",
+      "key": "MINHDUC-N3E4-579L",
+      "note": "Không có ghi chú"
     },
     {
-      "key" : "MINHDUC-32H3-VPSX",
-      "note" : "Không có ghi chú"
+      "key": "MINHDUC-32H3-VPSX",
+      "note": "Không có ghi chú"
     },
     {
-      "key" : "MINHDUC-PMR7-S2VS",
-      "note" : "Không có ghi chú"
+      "key": "MINHDUC-PMR7-S2VS",
+      "note": "Không có ghi chú"
     },
     {
-      "key" : "MINHDUC-827S-D4CX",
-      "note" : "Không có ghi chú"
+      "key": "MINHDUC-827S-D4CX",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "AE14FF4B-0159-47DB-AF1A-58E3BBEED73D",
-      "key" : "MINHDUC-VBT6-HF8A",
-      "note" : "Không có ghi chú"
+      "deviceID": "AE14FF4B-0159-47DB-AF1A-58E3BBEED73D",
+      "key": "MINHDUC-VBT6-HF8A",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "7DD19FC5-2E6B-478B-AB99-CA74F5D1888E",
-      "key" : "MINHDUC-K6X9-N5TG",
-      "note" : "Không có ghi chú"
+      "deviceID": "7DD19FC5-2E6B-478B-AB99-CA74F5D1888E",
+      "key": "MINHDUC-K6X9-N5TG",
+      "note": "Không có ghi chú"
     },
     {
-      "key" : "MINHDUC-UY6W-DGP6",
-      "note" : "Không có ghi chú"
+      "key": "MINHDUC-UY6W-DGP6",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "2BD2F1E5-FE97-404E-8FDD-EB06ACC7EE95",
-      "key" : "MINHDUC-FVF4-VY3G",
-      "note" : "Không có ghi chú"
+      "deviceID": "2BD2F1E5-FE97-404E-8FDD-EB06ACC7EE95",
+      "key": "MINHDUC-FVF4-VY3G",
+      "note": "Không có ghi chú"
     },
     {
-      "key" : "MINHDUC-JJKA-GQPL",
-      "note" : "Không có ghi chú"
+      "key": "MINHDUC-JJKA-GQPL",
+      "note": "Không có ghi chú"
     },
     {
-      "expiresAt" : "2027-02-02",
-      "key" : "MINHDUC-G53S-JK9X",
-      "note" : "Không có ghi chú"
+      "expiresAt": "2027-02-02",
+      "key": "MINHDUC-G53S-JK9X",
+      "note": "Không có ghi chú"
     },
     {
-      "key" : "MINHDUC-NTLW-7EZK",
-      "note" : "Không có ghi chú"
+      "key": "MINHDUC-NTLW-7EZK",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "6968D7E2-BDE9-40D9-90DB-78B13E59C034",
-      "key" : "MINHDUC-ZTXZ-TN9Z",
-      "note" : "Không có ghi chú"
+      "deviceID": "6968D7E2-BDE9-40D9-90DB-78B13E59C034",
+      "key": "MINHDUC-ZTXZ-TN9Z",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "5223ECBD-1166-491D-866E-9C0C4FC6D499",
-      "expiresAt" : "2026-11-11",
-      "key" : "MINHDUC-2EZJ-6WRZ",
-      "note" : "Không có ghi chú"
+      "deviceID": "5223ECBD-1166-491D-866E-9C0C4FC6D499",
+      "expiresAt": "2026-11-11",
+      "key": "MINHDUC-2EZJ-6WRZ",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "1D8F2C63-0B53-4BB0-805C-1128873F2A40",
-      "expiresAt" : "2026-11-11",
-      "key" : "MINHDUC-TN22-E5MU",
-      "note" : "Không có ghi chú"
+      "deviceID": "1D8F2C63-0B53-4BB0-805C-1128873F2A40",
+      "expiresAt": "2026-11-11",
+      "key": "MINHDUC-TN22-E5MU",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "16375FB9-6438-428E-9E76-FAF681C4D05C",
-      "expiresAt" : "2026-11-11",
-      "key" : "MINHDUC-3Z3N-R4Q7",
-      "note" : "Không có ghi chú"
+      "deviceID": "16375FB9-6438-428E-9E76-FAF681C4D05C",
+      "expiresAt": "2026-11-11",
+      "key": "MINHDUC-3Z3N-R4Q7",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "F77BA10E-F2E6-47F3-9945-6C9FE281C3B5",
-      "expiresAt" : "2026-12-04",
-      "key" : "MINHDUC-V9BJ-5V7B",
-      "note" : "Không có ghi chú"
+      "deviceID": "F77BA10E-F2E6-47F3-9945-6C9FE281C3B5",
+      "expiresAt": "2026-12-04",
+      "key": "MINHDUC-V9BJ-5V7B",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "F77BA10E-F2E6-47F3-9945-6C9FE281C3B5",
-      "key" : "MINHDUC-VHUP-YQV3",
-      "note" : "Không có ghi chú"
+      "deviceID": "F77BA10E-F2E6-47F3-9945-6C9FE281C3B5",
+      "key": "MINHDUC-VHUP-YQV3",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "F2124B8D-F662-4AC7-BD5A-293BF589A442",
-      "key" : "MINHDUC-HUNS-NWNT",
-      "note" : "Không có ghi chú"
+      "deviceID": "F2124B8D-F662-4AC7-BD5A-293BF589A442",
+      "key": "MINHDUC-HUNS-NWNT",
+      "note": "Không có ghi chú"
     },
     {
-      "expiresAt" : "2026-12-04",
-      "key" : "MINHDUC-T8JC-DZSU",
-      "note" : "Không có ghi chú"
+      "expiresAt": "2026-12-04",
+      "key": "MINHDUC-T8JC-DZSU",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "42172D8F-EE96-42ED-9CDB-5B0715295574",
-      "expiresAt" : "2026-12-04",
-      "key" : "MINHDUC-8DKY-NQYN",
-      "note" : "Không có ghi chú"
+      "deviceID": "42172D8F-EE96-42ED-9CDB-5B0715295574",
+      "expiresAt": "2026-12-04",
+      "key": "MINHDUC-8DKY-NQYN",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "869D5F9E-156F-4BD7-854E-3A3314E4CD10",
-      "key" : "MINHDUC-TW6Y-64XS",
-      "note" : "Không có ghi chú"
+      "deviceID": "869D5F9E-156F-4BD7-854E-3A3314E4CD10",
+      "key": "MINHDUC-TW6Y-64XS",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "81E87BD8-B2D4-4BC3-9363-0259E35D28BA",
-      "expiresAt" : "2026-12-04",
-      "key" : "MINHDUC-YPHV-TRU5",
-      "note" : "Không có ghi chú"
+      "deviceID": "81E87BD8-B2D4-4BC3-9363-0259E35D28BA",
+      "expiresAt": "2026-12-04",
+      "key": "MINHDUC-YPHV-TRU5",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "E13F62CB-65E2-448F-994E-D183000FD420",
-      "expiresAt" : "2026-12-04",
-      "key" : "MINHDUC-BWB8-VMA7",
-      "note" : "Không có ghi chú"
+      "deviceID": "E13F62CB-65E2-448F-994E-D183000FD420",
+      "expiresAt": "2026-12-04",
+      "key": "MINHDUC-BWB8-VMA7",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "E99AD915-090C-4439-8B66-3137E15B71DE",
-      "expiresAt" : "2026-12-04",
-      "key" : "MINHDUC-FETJ-58SH",
-      "note" : "Không có ghi chú"
+      "deviceID": "E99AD915-090C-4439-8B66-3137E15B71DE",
+      "expiresAt": "2026-12-04",
+      "key": "MINHDUC-FETJ-58SH",
+      "note": "Không có ghi chú"
     },
     {
-      "expiresAt" : "2027-11-04",
-      "key" : "MINHDUC-7HEL-2Q28",
-      "note" : "Không có ghi chú"
+      "expiresAt": "2027-11-04",
+      "key": "MINHDUC-7HEL-2Q28",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "6968D7E2-BDE9-40D9-90DB-78B13E59C034",
-      "expiresAt" : "2026-12-04",
-      "key" : "MINHDUC-ZWB9-G764",
-      "note" : "Không có ghi chú"
+      "deviceID": "6968D7E2-BDE9-40D9-90DB-78B13E59C034",
+      "expiresAt": "2026-12-04",
+      "key": "MINHDUC-ZWB9-G764",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "32991A2A-8A5B-46D4-B74F-1040ACD43535",
-      "expiresAt" : "2026-12-04",
-      "key" : "MINHDUC-FUTQ-XRDC",
-      "note" : "Không có ghi chú"
+      "deviceID": "32991A2A-8A5B-46D4-B74F-1040ACD43535",
+      "expiresAt": "2026-12-04",
+      "key": "MINHDUC-FUTQ-XRDC",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "8D7333D7-8639-4715-8657-E8E33B215DCB",
-      "key" : "MINHDUC-H6W3-ZYN2",
-      "note" : "Không có ghi chú"
+      "deviceID": "8D7333D7-8639-4715-8657-E8E33B215DCB",
+      "key": "MINHDUC-H6W3-ZYN2",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "5536F11E-397F-4CFF-81AB-AA075AAAE7D1",
-      "expiresAt" : "2026-12-04",
-      "key" : "MINHDUC-PWP4-N9LF",
-      "note" : "Không có ghi chú"
+      "deviceID": "5536F11E-397F-4CFF-81AB-AA075AAAE7D1",
+      "expiresAt": "2026-12-04",
+      "key": "MINHDUC-PWP4-N9LF",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "0420891F-8A30-4894-98C0-4E108E5EF8C4",
-      "expiresAt" : "2026-12-05",
-      "key" : "MINHDUC-YQJN-DPNU",
-      "note" : "Không có ghi chú"
+      "deviceID": "0420891F-8A30-4894-98C0-4E108E5EF8C4",
+      "expiresAt": "2026-12-05",
+      "key": "MINHDUC-YQJN-DPNU",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "BE4F0CB9-D715-4E8B-ABE2-BCD25E17220D",
-      "expiresAt" : "2026-12-05",
-      "key" : "MINHDUC-MG7L-YDYC",
-      "note" : "Không có ghi chú"
+      "deviceID": "BE4F0CB9-D715-4E8B-ABE2-BCD25E17220D",
+      "expiresAt": "2026-12-05",
+      "key": "MINHDUC-MG7L-YDYC",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "5809D651-58ED-4577-9FDA-1677A45EBE94",
-      "key" : "MINHDUC-HCER-MXTG",
-      "note" : "Không có ghi chú"
+      "deviceID": "5809D651-58ED-4577-9FDA-1677A45EBE94",
+      "key": "MINHDUC-HCER-MXTG",
+      "note": "Không có ghi chú"
     },
     {
-      "expiresAt" : "2026-12-05",
-      "key" : "MINHDUC-AGJ5-5KRJ",
-      "note" : "Không có ghi chú"
+      "expiresAt": "2026-12-05",
+      "key": "MINHDUC-AGJ5-5KRJ",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "32043AE6-C65E-4841-B3FE-9362A3735BD1",
-      "key" : "MINHDUC-JVT3-77CM",
-      "note" : "Không có ghi chú"
+      "deviceID": "32043AE6-C65E-4841-B3FE-9362A3735BD1",
+      "key": "MINHDUC-JVT3-77CM",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "C420FB58-F7ED-43B1-9571-182B32BE8EA7",
-      "expiresAt" : "2026-11-12",
-      "key" : "MINHDUC-VQGB-9WBL",
-      "note" : "Không có ghi chú"
+      "deviceID": "C420FB58-F7ED-43B1-9571-182B32BE8EA7",
+      "expiresAt": "2026-11-12",
+      "key": "MINHDUC-VQGB-9WBL",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "B191ABF4-6039-4E4C-9E89-029D7B3DBE36",
-      "key" : "MINHDUC-WSRD-BNVM",
-      "note" : "Không có ghi chú"
+      "deviceID": "B191ABF4-6039-4E4C-9E89-029D7B3DBE36",
+      "key": "MINHDUC-WSRD-BNVM",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "4B7A4A76-C58C-4CF6-91BC-E7DA28B6A498",
-      "expiresAt" : "2026-12-05",
-      "key" : "MINHDUC-H3M6-AQWL",
-      "note" : "Không có ghi chú"
+      "deviceID": "4B7A4A76-C58C-4CF6-91BC-E7DA28B6A498",
+      "expiresAt": "2026-12-05",
+      "key": "MINHDUC-H3M6-AQWL",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "14135A1D-DC6D-4CDB-9BBC-802EA80E1AB8",
-      "expiresAt" : "2026-11-07",
-      "key" : "MINHDUC-WU4U-3X6P",
-      "note" : "Không có ghi chú"
+      "deviceID": "14135A1D-DC6D-4CDB-9BBC-802EA80E1AB8",
+      "expiresAt": "2026-11-07",
+      "key": "MINHDUC-WU4U-3X6P",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "62A226BB-36AD-4229-8A09-61FC28A51982",
-      "expiresAt" : "2026-12-06",
-      "key" : "MINHDUC-P8SV-RD5W",
-      "note" : "Không có ghi chú"
+      "deviceID": "62A226BB-36AD-4229-8A09-61FC28A51982",
+      "expiresAt": "2026-12-06",
+      "key": "MINHDUC-P8SV-RD5W",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "6466AD3A-801C-482D-98C6-358D58CE7944",
-      "expiresAt" : "2026-11-07",
-      "key" : "MINHDUC-ZEXB-LXSE",
-      "note" : "Không có ghi chú"
+      "deviceID": "6466AD3A-801C-482D-98C6-358D58CE7944",
+      "expiresAt": "2026-11-07",
+      "key": "MINHDUC-ZEXB-LXSE",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "FFC97CFD-0298-4EE0-8DCA-4840C2FB602A",
-      "expiresAt" : "2026-11-07",
-      "key" : "MINHDUC-V88E-T8X3",
-      "note" : "Không có ghi chú"
+      "deviceID": "FFC97CFD-0298-4EE0-8DCA-4840C2FB602A",
+      "expiresAt": "2026-11-07",
+      "key": "MINHDUC-V88E-T8X3",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "C3C9F44C-6444-4A56-B9FB-0F1266E838A5",
-      "expiresAt" : "2026-11-07",
-      "key" : "MINHDUC-4SQ8-GYGG",
-      "note" : "Không có ghi chú"
+      "deviceID": "C3C9F44C-6444-4A56-B9FB-0F1266E838A5",
+      "expiresAt": "2026-11-07",
+      "key": "MINHDUC-4SQ8-GYGG",
+      "note": "Không có ghi chú"
     },
     {
-      "expiresAt" : "2026-11-13",
-      "key" : "MINHDUC-GYLN-QDW8",
-      "note" : "Không có ghi chú"
+      "expiresAt": "2026-11-13",
+      "key": "MINHDUC-GYLN-QDW8",
+      "note": "Không có ghi chú"
     },
     {
-      "expiresAt" : "2026-11-07",
-      "key" : "MINHDUC-Q5T5-Y5NH",
-      "note" : "Không có ghi chú"
+      "expiresAt": "2026-11-07",
+      "key": "MINHDUC-Q5T5-Y5NH",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "EBF4AA87-E104-4CB4-BC40-C0A874B46E84",
-      "expiresAt" : "2026-12-06",
-      "key" : "MINHDUC-57GX-23UK",
-      "note" : "Không có ghi chú"
+      "deviceID": "EBF4AA87-E104-4CB4-BC40-C0A874B46E84",
+      "expiresAt": "2026-12-06",
+      "key": "MINHDUC-57GX-23UK",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "CD393F6D-9957-4778-B004-341D802799BB",
-      "key" : "MINHDUC-KGTC-C37T",
-      "note" : "Không có ghi chú"
+      "deviceID": "CD393F6D-9957-4778-B004-341D802799BB",
+      "key": "MINHDUC-KGTC-C37T",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "FF5B78BC-AF0D-4587-B221-CB2631AC5A1E",
-      "key" : "MINHDUC-D3LD-3VK2",
-      "note" : "Không có ghi chú"
+      "deviceID": "FF5B78BC-AF0D-4587-B221-CB2631AC5A1E",
+      "key": "MINHDUC-D3LD-3VK2",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "F7F1DF06-A2C4-4971-BFB5-92C3C57F6EDF",
-      "key" : "MINHDUC-X2EF-BXXT",
-      "note" : "Không có ghi chú"
+      "deviceID": "F7F1DF06-A2C4-4971-BFB5-92C3C57F6EDF",
+      "key": "MINHDUC-X2EF-BXXT",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "4C32091D-3B94-488E-A4A5-6BBF449BCC56",
-      "key" : "MINHDUC-S99H-AF7C",
-      "note" : "Không có ghi chú"
+      "deviceID": "4C32091D-3B94-488E-A4A5-6BBF449BCC56",
+      "key": "MINHDUC-S99H-AF7C",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "F0AD1D2B-35DC-4221-9172-C2C73283AF40",
-      "expiresAt" : "2026-11-07",
-      "key" : "MINHDUC-PJXP-MV52",
-      "note" : "Không có ghi chú"
+      "deviceID": "F0AD1D2B-35DC-4221-9172-C2C73283AF40",
+      "expiresAt": "2026-11-07",
+      "key": "MINHDUC-PJXP-MV52",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "67A5F4BD-7903-479D-97D9-8BCD8BE6D7F1",
-      "expiresAt" : "2026-11-07",
-      "key" : "MINHDUC-8PD2-WNGN",
-      "note" : "Không có ghi chú"
+      "deviceID": "67A5F4BD-7903-479D-97D9-8BCD8BE6D7F1",
+      "expiresAt": "2026-11-07",
+      "key": "MINHDUC-8PD2-WNGN",
+      "note": "Không có ghi chú"
     },
     {
-      "expiresAt" : "2026-11-07",
-      "key" : "MINHDUC-7WRL-MFT4",
-      "note" : "Không có ghi chú"
+      "expiresAt": "2026-11-07",
+      "key": "MINHDUC-7WRL-MFT4",
+      "note": "Không có ghi chú"
     },
     {
-      "expiresAt" : "2026-12-06",
-      "key" : "MINHDUC-NUW7-B7BE",
-      "note" : "Không có ghi chú"
+      "expiresAt": "2026-12-06",
+      "key": "MINHDUC-NUW7-B7BE",
+      "note": "Không có ghi chú"
     },
     {
-      "expiresAt" : "2026-12-06",
-      "key" : "MINHDUC-EKAP-9SJ9",
-      "note" : "Không có ghi chú"
+      "expiresAt": "2026-12-06",
+      "key": "MINHDUC-EKAP-9SJ9",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "9641E944-7AFB-46AA-934B-620AF528E960",
-      "key" : "MINHDUC-N3TX-MJVE",
-      "note" : "Không có ghi chú"
+      "deviceID": "9641E944-7AFB-46AA-934B-620AF528E960",
+      "key": "MINHDUC-N3TX-MJVE",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "FE00099E-825E-4870-B251-9FE0110CB5F1",
-      "expiresAt" : "2026-11-10",
-      "key" : "MINHDUC-U5M9-DUPY",
-      "note" : "Không có ghi chú"
+      "deviceID": "FE00099E-825E-4870-B251-9FE0110CB5F1",
+      "expiresAt": "2026-11-10",
+      "key": "MINHDUC-U5M9-DUPY",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "33D7AF6D-0F87-4997-8EED-439CA3BC38F4",
-      "key" : "MINHDUC-VZ9X-AVWH",
-      "note" : "Không có ghi chú"
+      "deviceID": "33D7AF6D-0F87-4997-8EED-439CA3BC38F4",
+      "key": "MINHDUC-VZ9X-AVWH",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "7E0381E8-2B60-431B-B713-0035E5C8A549",
-      "expiresAt" : "2026-12-06",
-      "key" : "MINHDUC-M2Y6-U9LY",
-      "note" : "Không có ghi chú"
+      "deviceID": "7E0381E8-2B60-431B-B713-0035E5C8A549",
+      "expiresAt": "2026-12-06",
+      "key": "MINHDUC-M2Y6-U9LY",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "76C7927D-352A-492A-A23F-E36746AE3694",
-      "expiresAt" : "2026-12-06",
-      "key" : "MINHDUC-CWMU-MVU7",
-      "note" : "Không có ghi chú"
+      "deviceID": "76C7927D-352A-492A-A23F-E36746AE3694",
+      "expiresAt": "2026-12-06",
+      "key": "MINHDUC-CWMU-MVU7",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "CC145C53-204E-43A1-A68A-D8E2A227150B",
-      "expiresAt" : "2026-12-06",
-      "key" : "MINHDUC-HZWS-ZQYT",
-      "note" : "Không có ghi chú"
+      "deviceID": "CC145C53-204E-43A1-A68A-D8E2A227150B",
+      "expiresAt": "2026-12-06",
+      "key": "MINHDUC-HZWS-ZQYT",
+      "note": "Không có ghi chú"
     },
     {
-      "key" : "MINHDUC-ZB22-AGXT",
-      "note" : "Không có ghi chú"
+      "key": "MINHDUC-ZB22-AGXT",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "2BC864AA-B7A5-4466-9E5A-6D517B084E07",
-      "key" : "MINHDUC-3E9P-ZSZN",
-      "note" : "Không có ghi chú"
+      "deviceID": "2BC864AA-B7A5-4466-9E5A-6D517B084E07",
+      "key": "MINHDUC-3E9P-ZSZN",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "E904491F-429C-499F-9DEB-F836828C8537",
-      "key" : "MINHDUC-JGWX-KRAM",
-      "note" : "Không có ghi chú"
+      "deviceID": "E904491F-429C-499F-9DEB-F836828C8537",
+      "key": "MINHDUC-JGWX-KRAM",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "AC909D0F-E9FC-4E0E-834D-2FD8E2B01A82",
-      "key" : "MINHDUC-ZS8A-VWDZ",
-      "note" : "Không có ghi chú"
+      "deviceID": "AC909D0F-E9FC-4E0E-834D-2FD8E2B01A82",
+      "key": "MINHDUC-ZS8A-VWDZ",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "4385D1AF-94DD-4897-A8D7-8386EE75972A",
-      "expiresAt" : "2026-11-08",
-      "key" : "MINHDUC-9RRC-4CPY",
-      "note" : "Không có ghi chú"
+      "deviceID": "4385D1AF-94DD-4897-A8D7-8386EE75972A",
+      "expiresAt": "2026-11-08",
+      "key": "MINHDUC-9RRC-4CPY",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "1DFF0EA9-8B12-413C-8918-BA6E0730E47F",
-      "expiresAt" : "2026-11-08",
-      "key" : "MINHDUC-GAFS-5WP3",
-      "note" : "Không có ghi chú"
+      "deviceID": "1DFF0EA9-8B12-413C-8918-BA6E0730E47F",
+      "expiresAt": "2026-11-08",
+      "key": "MINHDUC-GAFS-5WP3",
+      "note": "Không có ghi chú"
     },
     {
-      "expiresAt" : "2026-11-09",
-      "key" : "MINHDUC-83GU-AFJR",
-      "note" : "Không có ghi chú"
+      "expiresAt": "2026-11-09",
+      "key": "MINHDUC-83GU-AFJR",
+      "note": "Không có ghi chú"
     },
     {
-      "key" : "MINHDUC-MG5V-DB6D",
-      "note" : "Không có ghi chú"
+      "key": "MINHDUC-MG5V-DB6D",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "51EDDF27-14BB-4794-AD8D-39EE5971081C",
-      "key" : "MINHDUC-3G9J-6A2U",
-      "note" : "Không có ghi chú"
+      "deviceID": "51EDDF27-14BB-4794-AD8D-39EE5971081C",
+      "key": "MINHDUC-3G9J-6A2U",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "E40413B2-AD8A-4034-B2E5-8B52E92156D5",
-      "key" : "MINHDUC-JWEV-XGMC",
-      "note" : "Không có ghi chú"
+      "deviceID": "E40413B2-AD8A-4034-B2E5-8B52E92156D5",
+      "key": "MINHDUC-JWEV-XGMC",
+      "note": "Không có ghi chú"
     },
     {
-      "key" : "MINHDUC-W8A4-MHH7",
-      "note" : "Không có ghi chú"
+      "key": "MINHDUC-W8A4-MHH7",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "F4893D2D-0FAC-444F-B1B4-1C301C0EF621",
-      "expiresAt" : "2026-11-11",
-      "key" : "MINHDUC-NCLC-H4GZ",
-      "note" : "Không có ghi chú"
+      "deviceID": "F4893D2D-0FAC-444F-B1B4-1C301C0EF621",
+      "expiresAt": "2026-11-11",
+      "key": "MINHDUC-NCLC-H4GZ",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "C1969514-BB87-4DCC-BC8A-705C06933F35",
-      "expiresAt" : "2026-12-08",
-      "key" : "MINHDUC-S56B-NGD3",
-      "note" : "Không có ghi chú"
+      "deviceID": "C1969514-BB87-4DCC-BC8A-705C06933F35",
+      "expiresAt": "2026-12-08",
+      "key": "MINHDUC-S56B-NGD3",
+      "note": "Không có ghi chú"
     },
     {
-      "expiresAt" : "2026-11-09",
-      "key" : "MINHDUC-FWK6-WWVD",
-      "note" : "Không có ghi chú"
+      "expiresAt": "2026-11-09",
+      "key": "MINHDUC-FWK6-WWVD",
+      "note": "Không có ghi chú"
     },
     {
-      "expiresAt" : "2026-11-09",
-      "key" : "MINHDUC-YXNW-FEK9",
-      "note" : "Không có ghi chú"
+      "expiresAt": "2026-11-09",
+      "key": "MINHDUC-YXNW-FEK9",
+      "note": "Không có ghi chú"
     },
     {
-      "expiresAt" : "2026-11-09",
-      "key" : "MINHDUC-62K9-AEEQ",
-      "note" : "Không có ghi chú"
+      "expiresAt": "2026-11-09",
+      "key": "MINHDUC-62K9-AEEQ",
+      "note": "Không có ghi chú"
     },
     {
-      "expiresAt" : "2026-11-09",
-      "key" : "MINHDUC-GWUJ-FTGG",
-      "note" : "Không có ghi chú"
+      "expiresAt": "2026-11-09",
+      "key": "MINHDUC-GWUJ-FTGG",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "14135A1D-DC6D-4CDB-9BBC-802EA80E1AB8",
-      "expiresAt" : "2026-11-09",
-      "key" : "MINHDUC-MMJD-WME8",
-      "note" : "Không có ghi chú"
+      "deviceID": "14135A1D-DC6D-4CDB-9BBC-802EA80E1AB8",
+      "expiresAt": "2026-11-09",
+      "key": "MINHDUC-MMJD-WME8",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "C4712675-8355-40BF-83B4-CEAB695AB2E8",
-      "expiresAt" : "2026-12-09",
-      "key" : "MINHDUC-T4JJ-D798",
-      "note" : "Không có ghi chú"
+      "deviceID": "C4712675-8355-40BF-83B4-CEAB695AB2E8",
+      "expiresAt": "2026-12-09",
+      "key": "MINHDUC-T4JJ-D798",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "7D4E363A-A794-44EC-ABBA-2705552FBE26",
-      "expiresAt" : "2026-12-08",
-      "key" : "MINHDUC-NP4L-JLH4",
-      "note" : "Không có ghi chú"
+      "deviceID": "7D4E363A-A794-44EC-ABBA-2705552FBE26",
+      "expiresAt": "2026-12-08",
+      "key": "MINHDUC-NP4L-JLH4",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "CD0E17D6-6FEA-4665-917C-71DB40564060",
-      "expiresAt" : "2026-12-08",
-      "key" : "MINHDUC-XR38-PRRV",
-      "note" : "Không có ghi chú"
+      "deviceID": "CD0E17D6-6FEA-4665-917C-71DB40564060",
+      "expiresAt": "2026-12-08",
+      "key": "MINHDUC-XR38-PRRV",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "10852489-03EE-4993-9FFB-79B51B1211F1",
-      "expiresAt" : "2026-12-08",
-      "key" : "MINHDUC-76D2-BCD7",
-      "note" : "Không có ghi chú"
+      "deviceID": "10852489-03EE-4993-9FFB-79B51B1211F1",
+      "expiresAt": "2026-12-08",
+      "key": "MINHDUC-76D2-BCD7",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "11840EED-F16B-4B60-8FF9-CB6C3D138017",
-      "key" : "MINHDUC-3EZY-ESHB",
-      "note" : "Không có ghi chú"
+      "deviceID": "11840EED-F16B-4B60-8FF9-CB6C3D138017",
+      "key": "MINHDUC-3EZY-ESHB",
+      "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-YLKE-ZHKW",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-08T12:17:24Z"
+  "updatedAt": "2026-11-09"
 }
