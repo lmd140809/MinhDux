@@ -431,6 +431,12 @@
       "deviceID": null,
       "expiresAt": null,
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-U66T-MS7H",
+      "deviceID": null,
+      "expiresAt": "2026-12-09",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-09"
