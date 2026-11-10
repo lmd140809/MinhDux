@@ -427,6 +427,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "E904491F-429C-499F-9DEB-F836828C8537",
       "key" : "MINHDUC-FLQC-DH7K",
       "note" : "Không có ghi chú"
     },
@@ -442,5 +443,5 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-10T00:28:24Z"
+  "updatedAt" : "2026-11-10T01:21:19Z"
 }
