@@ -523,6 +523,12 @@
       "deviceID": null,
       "expiresAt": "2026-11-17",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-FRNE-FPST",
+      "deviceID": null,
+      "expiresAt": "2026-12-10",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-10"
