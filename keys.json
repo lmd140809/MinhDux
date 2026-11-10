@@ -563,6 +563,12 @@
       "deviceID": null,
       "expiresAt": "2026-11-13",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-UV54-JKMX",
+      "deviceID": null,
+      "expiresAt": "2026-12-10",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-10"
