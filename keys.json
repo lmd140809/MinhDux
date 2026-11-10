@@ -529,6 +529,12 @@
       "deviceID": null,
       "expiresAt": "2026-12-10",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-EN2A-Y26G",
+      "deviceID": null,
+      "expiresAt": "2026-11-17",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-10"
