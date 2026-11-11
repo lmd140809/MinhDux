@@ -1,0 +1,15 @@
+{
+  "keys": [
+    {
+      "key": "SRV-NSUK-9BXT",
+      "deviceID": null,
+      "expiresAt": "2027-02-09",
+      "note": "HOANGANH",
+      "fileUrl": null,
+      "fileName": null,
+      "releaseTag": null,
+      "type": "server"
+    }
+  ],
+  "updatedAt": "2026-11-11"
+}
