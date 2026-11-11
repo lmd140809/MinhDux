@@ -616,6 +616,12 @@
       "deviceID": null,
       "expiresAt": "2026-12-11",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-CRKB-MCGZ",
+      "deviceID": null,
+      "expiresAt": "2026-11-18",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-11"
