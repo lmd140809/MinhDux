@@ -599,6 +599,12 @@
       "expiresAt": "2026-11-18",
       "key": "MINHDUC-6HGE-H6JZ",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-FQYR-MYVJ",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-11"
