@@ -1,4 +1,15 @@
 {
-  "keys": [],
+  "keys": [
+    {
+      "key": "HOANGANHDEPZAI",
+      "deviceID": null,
+      "expiresAt": "2027-02-09",
+      "note": "Server key",
+      "fileUrl": null,
+      "fileName": null,
+      "releaseTag": null,
+      "type": "server"
+    }
+  ],
   "updatedAt": "2026-11-11"
 }
