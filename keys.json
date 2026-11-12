@@ -726,6 +726,12 @@
       "deviceID": null,
       "expiresAt": "2026-12-12",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-8CX2-54FR",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-12"
