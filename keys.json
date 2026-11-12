@@ -12,6 +12,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "CFD1FA97-6267-48E5-A913-4C8C1081E15E",
       "key" : "MINHDUC-PMR7-S2VS",
       "note" : "Không có ghi chú"
     },
@@ -682,5 +683,5 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-12T05:05:35Z"
+  "updatedAt" : "2026-11-12T06:05:40Z"
 }
