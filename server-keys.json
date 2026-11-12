@@ -9,7 +9,17 @@
       "fileName": null,
       "releaseTag": null,
       "type": "server"
+    },
+    {
+      "key": "HOANGANHYEUEM",
+      "deviceID": null,
+      "expiresAt": "2027-02-10",
+      "note": "Server key",
+      "fileUrl": null,
+      "fileName": null,
+      "releaseTag": null,
+      "type": "server"
     }
   ],
-  "updatedAt": "2026-11-11"
+  "updatedAt": "2026-11-12"
 }
