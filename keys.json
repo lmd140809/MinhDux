@@ -786,6 +786,12 @@
       "deviceID": null,
       "expiresAt": null,
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-ZTRJ-933B",
+      "deviceID": null,
+      "expiresAt": "2026-12-12",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-12"
