@@ -448,6 +448,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "14135A1D-DC6D-4CDB-9BBC-802EA80E1AB8",
       "expiresAt" : "2026-12-10",
       "key" : "MINHDUC-FZPD-7GV5",
       "note" : "Không có ghi chú"
@@ -670,5 +671,5 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-11T16:41:27Z"
+  "updatedAt" : "2026-11-12T04:17:36Z"
 }
