@@ -795,6 +795,12 @@
       "deviceID": null,
       "expiresAt": null,
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-YJCC-FQVS",
+      "deviceID": null,
+      "expiresAt": "2026-11-19",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-12"
