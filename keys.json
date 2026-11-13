@@ -814,6 +814,12 @@
       "deviceID": null,
       "expiresAt": "2026-11-20",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-XF7G-RG59",
+      "deviceID": null,
+      "expiresAt": "2026-11-20",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-13"
