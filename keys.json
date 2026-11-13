@@ -879,6 +879,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "B9260F8E-1D77-4870-9C9F-0BFCEE4F19AE",
       "key" : "MINHDUC-QLSB-UMHP",
       "note" : "Không có ghi chú"
     },
@@ -899,5 +900,5 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-13T13:48:28Z"
+  "updatedAt" : "2026-11-13T13:49:11Z"
 }
