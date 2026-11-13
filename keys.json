@@ -690,6 +690,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "FE00099E-825E-4870-B251-9FE0110CB5F1",
       "expiresAt" : "2026-11-14",
       "key" : "MINHDUC-CXV4-JJFW",
       "note" : "Không có ghi chú"
@@ -729,5 +730,5 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-13T02:09:47Z"
+  "updatedAt" : "2026-11-13T04:25:25Z"
 }
