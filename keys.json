@@ -895,6 +895,12 @@
       "deviceID": null,
       "expiresAt": "2026-11-20",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-X6CF-Y6DP",
+      "deviceID": null,
+      "expiresAt": "2026-12-13",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-13"
