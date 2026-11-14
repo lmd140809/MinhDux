@@ -958,6 +958,12 @@
       "deviceID": null,
       "expiresAt": "2026-11-21",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-REGJ-FKDQ",
+      "deviceID": null,
+      "expiresAt": "2026-11-21",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-14"
