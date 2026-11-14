@@ -1059,6 +1059,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "1BC5A209-61D6-4E7E-AD56-072DCC008620",
       "key" : "HOANGANH-SREL-BQTV",
       "note" : "Không có ghi chú"
     },
@@ -1069,5 +1070,5 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-14T13:35:47Z"
+  "updatedAt" : "2026-11-14T13:49:12Z"
 }
