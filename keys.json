@@ -719,6 +719,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "0D857E47-D447-479F-A358-79FACB1B0B6D",
       "expiresAt" : "2026-12-12",
       "key" : "MINHDUC-YY2K-3GK7",
       "note" : "Không có ghi chú"
@@ -947,5 +948,5 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-14T04:16:58Z"
+  "updatedAt" : "2026-11-14T06:11:49Z"
 }
