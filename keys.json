@@ -952,6 +952,12 @@
       "deviceID": null,
       "expiresAt": "2026-12-14",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-7NGS-YK34",
+      "deviceID": null,
+      "expiresAt": "2026-11-21",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-14"
