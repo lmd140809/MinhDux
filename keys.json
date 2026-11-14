@@ -1132,6 +1132,12 @@
       "deviceID": null,
       "expiresAt": "2026-12-14",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-AFJC-XKWE",
+      "deviceID": null,
+      "expiresAt": "2026-12-14",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-14"
