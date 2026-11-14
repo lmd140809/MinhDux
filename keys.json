@@ -964,6 +964,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "F58E73BB-716B-4567-B30C-F02A05EB8860",
       "expiresAt" : "2026-11-21",
       "key" : "MINHDUC-6T5P-AKQX",
       "note" : "Không có ghi chú"
@@ -975,5 +976,5 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-14T08:04:20Z"
+  "updatedAt" : "2026-11-14T08:04:31Z"
 }
