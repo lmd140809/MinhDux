@@ -1088,6 +1088,12 @@
       "deviceID": null,
       "expiresAt": null,
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "HOANGANH-VHBE-8A2D",
+      "deviceID": null,
+      "expiresAt": "2026-12-15",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-15"
