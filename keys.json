@@ -1,28 +1,34 @@
 {
-  "announcement" : {
-    "date" : "14\/11\/2026",
-    "isUrgent" : false,
-    "message" : "❤️",
-    "title" : "LE MINH DUC"
+  "announcement": {
+    "date": "14/11/2026",
+    "isUrgent": false,
+    "message": "❤️",
+    "title": "LE MINH DUC"
   },
-  "keys" : [
+  "keys": [
     {
-      "expiresAt" : "2026-10-29T14:30",
-      "key" : "MINHDUC-ABCD-1234",
-      "note" : "Khách VIP"
+      "expiresAt": "2026-10-29T14:30",
+      "key": "MINHDUC-ABCD-1234",
+      "note": "Khách VIP"
     },
     {
-      "deviceID" : "F77BA10E-F2E6-47F3-9945-6C9FE281C3B5",
-      "expiresAt" : "2026-12-15",
-      "key" : "MINHDUC-8S94-7MBP",
-      "note" : "Không có ghi chú"
+      "deviceID": "F77BA10E-F2E6-47F3-9945-6C9FE281C3B5",
+      "expiresAt": "2026-12-15",
+      "key": "MINHDUC-8S94-7MBP",
+      "note": "Không có ghi chú"
     },
     {
-      "deviceID" : "E904491F-429C-499F-9DEB-F836828C8537",
-      "expiresAt" : "2026-11-22",
-      "key" : "MINHDUC-UQVU-W5NY",
-      "note" : "Không có ghi chú"
+      "deviceID": "E904491F-429C-499F-9DEB-F836828C8537",
+      "expiresAt": "2026-11-22",
+      "key": "MINHDUC-UQVU-W5NY",
+      "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-FMYA-7ZSK",
+      "deviceID": null,
+      "expiresAt": "2026-11-22",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-15T15:20:28Z"
+  "updatedAt": "2026-11-15"
 }
