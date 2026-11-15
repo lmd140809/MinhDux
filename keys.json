@@ -1,24 +1,22 @@
 {
-  "announcement": {
-    "date": "14/11/2026",
-    "isUrgent": false,
-    "message": "❤️",
-    "title": "LE MINH DUC"
+  "announcement" : {
+    "date" : "14\/11\/2026",
+    "isUrgent" : false,
+    "message" : "❤️",
+    "title" : "LE MINH DUC"
   },
-  "keys": [
+  "keys" : [
     {
-      "key": "MINHDUC-ABCD-1234",
-      "expiresAt": "2026-10-29T14:30",
-      "note": "Khách VIP",
-      "vip": true,
-      "createdAt": "2026-10-22T14:30:00.000Z"
+      "expiresAt" : "2026-10-29T14:30",
+      "key" : "MINHDUC-ABCD-1234",
+      "note" : "Khách VIP"
     },
     {
-      "key": "MINHDUC-8S94-7MBP",
-      "deviceID": null,
-      "expiresAt": "2026-12-15",
-      "note": "Không có ghi chú"
+      "deviceID" : "F77BA10E-F2E6-47F3-9945-6C9FE281C3B5",
+      "expiresAt" : "2026-12-15",
+      "key" : "MINHDUC-8S94-7MBP",
+      "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-15"
+  "updatedAt" : "2026-11-15T14:59:34Z"
 }
