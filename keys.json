@@ -1,7 +1,9 @@
+
 {
-  "announcement" : {
-    "date" : "14\/11\/2026",
-    "isUrgent" : false,
-    "message" : "❤️",
-    "title" : "LE MINH DUC"
+  "announcement": {
+    "date": "14/11/2026",
+    "isUrgent": false,
+    "message": "❤️",
+    "title": "LE MINH DUC"
   }
+}
