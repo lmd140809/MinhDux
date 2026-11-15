@@ -1057,7 +1057,13 @@
       "expiresAt": "2027-02-12",
       "key": "HOANGANH-TKJF-XPSG",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "HOANGANH-TH2A-22EW",
+      "deviceID": null,
+      "expiresAt": "2026-12-15",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-14"
+  "updatedAt": "2026-11-15"
 }
