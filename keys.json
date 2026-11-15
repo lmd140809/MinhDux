@@ -5,5 +5,14 @@
     "isUrgent": false,
     "message": "❤️",
     "title": "LE MINH DUC"
-  }
+  },
+  "keys": [
+    {
+      "key": "MINHDUC-ABCD-1234",
+      "expiresAt": "2026-10-29T14:30",
+      "note": "Khách VIP",
+      "vip": true,
+      "createdAt": "2026-10-22T14:30:00.000Z"
+    }
+  ]
 }
