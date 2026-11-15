@@ -4,11 +4,4 @@
     "isUrgent" : false,
     "message" : "❤️",
     "title" : "LE MINH DUC"
-  },
-  "keys" : [
-    {
-      "deviceID" : "7D4E363A-A794-44EC-ABBA-2705552FBE26",
-      "expiresAt" : "2026-12-31",
-      "key" : "MINHDUC-ABCD-1234",
-      "note" : "Khách VIP - Anh Minh"
-    }
+  }
