@@ -1,69 +1,66 @@
 {
-  "announcement": {
-    "date": "14/11/2026",
-    "isUrgent": false,
-    "message": "❤️",
-    "title": "LE MINH DUC"
+  "announcement" : {
+    "date" : "14\/11\/2026",
+    "isUrgent" : false,
+    "message" : "❤️",
+    "title" : "LE MINH DUC"
   },
-  "keys": [
+  "keys" : [
     {
-      "expiresAt": "2026-10-29T14:30",
-      "key": "MINHDUC-ABCD-1234",
-      "note": "Khách VIP"
+      "expiresAt" : "2026-10-29T14:30",
+      "key" : "MINHDUC-ABCD-1234",
+      "note" : "Khách VIP"
     },
     {
-      "deviceID": "F77BA10E-F2E6-47F3-9945-6C9FE281C3B5",
-      "expiresAt": "2026-12-15",
-      "key": "MINHDUC-8S94-7MBP",
-      "note": "Không có ghi chú"
+      "deviceID" : "F77BA10E-F2E6-47F3-9945-6C9FE281C3B5",
+      "expiresAt" : "2026-12-15",
+      "key" : "MINHDUC-8S94-7MBP",
+      "note" : "Không có ghi chú"
     },
     {
-      "deviceID": "E904491F-429C-499F-9DEB-F836828C8537",
-      "expiresAt": "2026-11-22",
-      "key": "MINHDUC-UQVU-W5NY",
-      "note": "Không có ghi chú"
+      "deviceID" : "E904491F-429C-499F-9DEB-F836828C8537",
+      "expiresAt" : "2026-11-22",
+      "key" : "MINHDUC-UQVU-W5NY",
+      "note" : "Không có ghi chú"
     },
     {
-      "deviceID": "BA639008-D49F-48DC-8038-90B0982778C4",
-      "expiresAt": "2026-11-22",
-      "key": "MINHDUC-FMYA-7ZSK",
-      "note": "Không có ghi chú"
+      "deviceID" : "BA639008-D49F-48DC-8038-90B0982778C4",
+      "expiresAt" : "2026-11-22",
+      "key" : "MINHDUC-FMYA-7ZSK",
+      "note" : "Không có ghi chú"
     },
     {
-      "deviceID": "7D4E363A-A794-44EC-ABBA-2705552FBE26",
-      "expiresAt": "2026-12-15",
-      "key": "MINHDUC-DM2J-X85A",
-      "note": "Không có ghi chú"
+      "deviceID" : "7D4E363A-A794-44EC-ABBA-2705552FBE26",
+      "expiresAt" : "2026-12-15",
+      "key" : "MINHDUC-DM2J-X85A",
+      "note" : "Không có ghi chú"
     },
     {
-      "deviceID": "C1969514-BB87-4DCC-BC8A-705C06933F35",
-      "expiresAt": "2026-12-15",
-      "key": "MINHDUC-HJLJ-DRSP",
-      "note": "Không có ghi chú"
+      "deviceID" : "C1969514-BB87-4DCC-BC8A-705C06933F35",
+      "expiresAt" : "2026-12-15",
+      "key" : "MINHDUC-HJLJ-DRSP",
+      "note" : "Không có ghi chú"
     },
     {
-      "deviceID": "1D8F2C63-0B53-4BB0-805C-1128873F2A40",
-      "key": "HOANGANH-ULAP-SLQM",
-      "note": "Không có ghi chú"
+      "deviceID" : "1D8F2C63-0B53-4BB0-805C-1128873F2A40",
+      "key" : "HOANGANH-ULAP-SLQM",
+      "note" : "Không có ghi chú"
     },
     {
-      "deviceID": "B191ABF4-6039-4E4C-9E89-029D7B3DBE36",
-      "expiresAt": "2026-12-16",
-      "key": "MINHDUC-BXGT-QD6G",
-      "note": "Không có ghi chú"
+      "deviceID" : "B191ABF4-6039-4E4C-9E89-029D7B3DBE36",
+      "expiresAt" : "2026-12-16",
+      "key" : "MINHDUC-BXGT-QD6G",
+      "note" : "Không có ghi chú"
     },
     {
-      "key": "HOANGANH-VGYF-WTGN",
-      "deviceID": null,
-      "expiresAt": null,
-      "note": "Không có ghi chú"
+      "deviceID" : "8D7333D7-8639-4715-8657-E8E33B215DCB",
+      "key" : "HOANGANH-VGYF-WTGN",
+      "note" : "Không có ghi chú"
     },
     {
-      "key": "HOANGANH-ZGAQ-EDNL",
-      "deviceID": null,
-      "expiresAt": null,
-      "note": "Không có ghi chú"
+      "key" : "HOANGANH-ZGAQ-EDNL",
+      "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-16"
+  "updatedAt" : "2026-11-16T04:19:11Z"
 }
