@@ -345,6 +345,12 @@
       "deviceID": null,
       "expiresAt": "2026-12-16",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-SH5G-VDNQ",
+      "deviceID": null,
+      "expiresAt": "2026-12-16",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-16"
