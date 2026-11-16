@@ -90,6 +90,12 @@
       "deviceID": null,
       "expiresAt": null,
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-MESS-6UYU",
+      "deviceID": null,
+      "expiresAt": "2026-12-16",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-16"
