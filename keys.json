@@ -132,6 +132,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "5223ECBD-1166-491D-866E-9C0C4FC6D499",
       "expiresAt" : "2026-12-16",
       "key" : "MINHDUC-KR8M-BV25",
       "note" : "Không có ghi chú"
@@ -154,5 +155,5 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-16T05:56:48Z"
+  "updatedAt" : "2026-11-16T05:57:21Z"
 }
