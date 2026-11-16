@@ -63,6 +63,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "69B2BA16-7B9C-4F43-99EF-17C7329AECE3",
       "expiresAt" : "2026-12-16",
       "key" : "MINHDUC-SP6V-4F9D",
       "note" : "Không có ghi chú"
@@ -73,5 +74,5 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-16T04:21:51Z"
+  "updatedAt" : "2026-11-16T04:22:11Z"
 }
