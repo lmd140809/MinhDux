@@ -234,6 +234,12 @@
       "deviceID": null,
       "expiresAt": "2026-11-22",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "HOANGANH-KESX-U5RJ",
+      "deviceID": null,
+      "expiresAt": "2027-02-14",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-16"
