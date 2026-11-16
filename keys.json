@@ -72,6 +72,12 @@
       "deviceID": "B9260F8E-1D77-4870-9C9F-0BFCEE4F19AE",
       "key": "HOANGANH-64V8-BSWS",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "HOANGANH-2Z2R-2BZK",
+      "deviceID": null,
+      "expiresAt": "2026-12-16",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-16"
