@@ -143,10 +143,11 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "D6D38AE5-7BEA-4C0D-B23E-6469C1CB834A",
       "expiresAt" : "2026-12-16",
       "key" : "MINHDUC-6BNC-EHUP",
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-16T05:56:13Z"
+  "updatedAt" : "2026-11-16T05:56:35Z"
 }
