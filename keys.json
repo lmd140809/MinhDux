@@ -497,6 +497,12 @@
       "deviceID": null,
       "expiresAt": "2027-11-17",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-T9NH-CL5H",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-17"
