@@ -502,6 +502,12 @@
       "deviceID": "869D5F9E-156F-4BD7-854E-3A3314E4CD10",
       "key": "MINHDUC-T9NH-CL5H",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-A6FN-CQNC",
+      "deviceID": null,
+      "expiresAt": "2026-11-24",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-17"
