@@ -531,6 +531,12 @@
       "deviceID": null,
       "expiresAt": "2026-12-18",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-2L5K-32ZJ",
+      "deviceID": null,
+      "expiresAt": "2026-11-19",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-18"
