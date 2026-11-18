@@ -22,22 +22,17 @@
     --line-strong: rgba(15, 17, 21, 0.12);
     --accent: #eab308;
     --green: #10b981;
-    
-    /* Brand Colors */
     --zalo: #0068FF;
     --facebook: #1877F2;
     --tiktok: #000000;
-    
     --radius-sm: 12px;
     --radius-md: 18px;
     --radius-lg: 24px;
     --radius-xl: 32px;
-    
     --shadow-sm: 0 2px 4px rgba(15,17,21,0.02), 0 4px 12px rgba(15,17,21,0.03);
     --shadow-md: 0 4px 12px rgba(15,17,21,0.04), 0 12px 32px rgba(15,17,21,0.06);
     --shadow-lg: 0 8px 24px rgba(15,17,21,0.06), 0 24px 64px rgba(15,17,21,0.08);
     --shadow-xl: 0 16px 40px rgba(15,17,21,0.08), 0 32px 80px rgba(15,17,21,0.12);
-    
     --ease: cubic-bezier(0.4, 0, 0.2, 1);
     --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
@@ -54,14 +49,14 @@ body {
     position: relative;
 }
 
-/* ================= NỀN ĐỘNG ================= */
+/* Nền động */
 .ambient-bg { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
 .blob { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.6; animation: float 20s infinite ease-in-out alternate; }
 .blob-1 { width: 400px; height: 400px; background: radial-gradient(circle, rgba(234, 179, 8, 0.15) 0%, transparent 70%); top: -100px; left: -100px; }
 .blob-2 { width: 500px; height: 500px; background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%); bottom: 20%; right: -200px; animation-delay: -5s; }
 @keyframes float { 0% { transform: translate(0, 0) scale(1); } 50% { transform: translate(30px, -50px) scale(1.1); } 100% { transform: translate(-20px, 40px) scale(0.9); } }
 
-/* ================= HEADING ================= */
+/* Heading */
 .page-heading { padding: 32px 20px 16px; display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; max-width: 1180px; margin: 0 auto; }
 .page-heading h1 {
     font-size: 32px; font-weight: 800; letter-spacing: -1.5px; line-height: 1.1;
@@ -79,7 +74,7 @@ body {
 .status-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2); animation: pulse 2s infinite; }
 @keyframes pulse { 0%, 100% { box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2); } 50% { box-shadow: 0 0 0 6px rgba(16, 185, 129, 0.05); } }
 
-/* ================= STICKY TOP ================= */
+/* Sticky top */
 .sticky-top {
     position: sticky; top: 0; z-index: 90; padding: 10px 16px;
     background: rgba(248, 249, 252, 0.7); backdrop-filter: blur(24px) saturate(180%);
@@ -114,7 +109,7 @@ body {
 .icon-btn:hover { background: var(--ink); color: #fff; border-color: var(--ink); transform: translateY(-1px); box-shadow: var(--shadow-md); }
 .icon-btn:active { transform: scale(0.94); }
 
-/* ================= SEARCH & FILTER ================= */
+/* Search & filter */
 .search-container {
     background: var(--surface); border-radius: var(--radius-md);
     margin-top: 10px; border: 1px solid var(--line); box-shadow: var(--shadow-sm);
@@ -146,7 +141,7 @@ body {
 .filter-chip:hover { color: var(--ink); background: var(--line); }
 .filter-chip.active { color: var(--ink); background: #fff; border-color: var(--line-strong); box-shadow: var(--shadow-sm); }
 
-/* ================= CATEGORY ================= */
+/* Category */
 .category-list { display: flex; gap: 8px; overflow-x: auto; padding: 10px 2px 4px; scrollbar-width: none; }
 .category-list::-webkit-scrollbar { display: none; }
 .category {
@@ -161,13 +156,13 @@ body {
 .category .cat-count { font-size: 10px; font-weight: 800; padding: 2px 6px; border-radius: 99px; background: var(--bg); color: var(--muted); }
 .category.active .cat-count { background: rgba(255,255,255,0.15); color: #fff; }
 
-/* ================= PRODUCTS ================= */
+/* Products */
 .product-section { padding: 16px 16px 60px; max-width: 1180px; margin: 0 auto; }
 .section-title { font-size: 13px; color: var(--muted); margin: 0 6px 16px; font-weight: 600; display: flex; align-items: center; gap: 8px; }
 .section-title strong { color: var(--ink); font-weight: 800; }
 .product-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 
-/* ================= PRODUCT CARD ================= */
+/* Product card */
 .product-card {
     background: var(--surface); border-radius: var(--radius-lg); padding: 8px;
     border: 1px solid var(--line); box-shadow: var(--shadow-sm);
@@ -215,7 +210,7 @@ body {
 .btn-view span.arrow { font-size: 16px; transition: transform 0.3s var(--ease-spring); }
 .btn-view:hover span.arrow { transform: translateX(4px); }
 
-/* ================= SKELETON & EMPTY ================= */
+/* Skeleton & empty */
 .skeleton-card { background: var(--surface); border-radius: var(--radius-lg); padding: 8px; border: 1px solid var(--line); }
 .sk-thumb { width: 100%; aspect-ratio: 16/11; border-radius: var(--radius-md); margin-bottom: 12px; }
 .sk-line { height: 10px; border-radius: 5px; margin-bottom: 8px; }
@@ -231,7 +226,7 @@ body {
 .empty-state button { margin-top: 20px; padding: 10px 24px; background: var(--ink); color: #fff; border: none; border-radius: var(--radius-sm); font-family: inherit; font-weight: 700; font-size: 13px; cursor: pointer; transition: all 0.3s var(--ease); }
 .empty-state button:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
 
-/* ================= BOTTOM NAV (NHỎ GỌN) ================= */
+/* Bottom nav */
 .bottom-nav-wrap { position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); width: calc(100% - 32px); max-width: 360px; z-index: 100; }
 .bottom-nav {
     background: rgba(255, 255, 255, 0.88);
@@ -253,7 +248,7 @@ body {
 .nav-item.active { background: var(--ink); color: #fff; box-shadow: 0 6px 16px rgba(15, 17, 21, 0.25), inset 0 1px 1px rgba(255,255,255,0.15); transform: translateY(-1px); }
 .nav-item.active .nav-icon svg { stroke-width: 2.4; }
 
-/* ================= SCROLL TOP ================= */
+/* Scroll top */
 .scroll-top {
     position: fixed; bottom: 90px; right: 20px; width: 40px; height: 40px;
     border-radius: var(--radius-sm); background: var(--ink); color: #fff;
@@ -265,7 +260,7 @@ body {
 .scroll-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
 .scroll-top:hover { transform: translateY(-3px); }
 
-/* ================= CONTACT MODAL (PREMIUM) ================= */
+/* Modal */
 .modal-overlay {
     position: fixed; inset: 0; background: rgba(15, 17, 21, 0.5);
     backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
@@ -294,7 +289,6 @@ body {
 .modal-header h2 { font-size: 20px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 6px; }
 .modal-header p { font-size: 13px; color: var(--muted); }
 
-/* CẬP NHẬT: Lưới 3 cột cho 3 mạng xã hội */
 .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 24px; }
 .contact-btn {
     display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
@@ -303,16 +297,10 @@ body {
 }
 .contact-btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
 .contact-btn:active { transform: scale(0.97); }
-
-/* Nút Zalo */
 .btn-zalo { background: linear-gradient(135deg, rgba(0,104,255,0.1) 0%, rgba(0,104,255,0.05) 100%); color: var(--zalo); border: 1px solid rgba(0,104,255,0.2); }
 .btn-zalo:hover { background: var(--zalo); color: #fff; border-color: var(--zalo); }
-
-/* Nút Facebook */
 .btn-facebook { background: linear-gradient(135deg, rgba(24,119,242,0.1) 0%, rgba(24,119,242,0.05) 100%); color: var(--facebook); border: 1px solid rgba(24,119,242,0.2); }
 .btn-facebook:hover { background: var(--facebook); color: #fff; border-color: var(--facebook); }
-
-/* Nút TikTok */
 .btn-tiktok { background: linear-gradient(135deg, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.03) 100%); color: var(--tiktok); border: 1px solid rgba(0,0,0,0.1); }
 .btn-tiktok:hover { background: var(--tiktok); color: #fff; border-color: var(--tiktok); }
 
@@ -346,7 +334,7 @@ body {
 .play-icon svg { width: 22px; height: 22px; fill: #fff; margin-left: 3px; }
 .video-demo-wrap p { font-size: 13px; font-weight: 600; opacity: 0.9; }
 
-/* ================= DESKTOP ================= */
+/* Desktop */
 @media (min-width: 768px) {
     body { padding-bottom: 60px; }
     .page-heading h1 { font-size: 44px; letter-spacing: -2px; }
@@ -387,6 +375,42 @@ const PRODUCTS = [
         category: 'regedit',
         fileUrl: 'https://www.mediafire.com/file/37tta4gpokwq7l3/REGEDIT+ANDROI.crt/file'
     },
+    {
+        id: '3',
+        name: 'REGEDIT IPHONE SUPER',
+        desc: 'TỐI ƯU TRẢI NGHIỆM VÀ ĐỘ NHẠY IPHONE',
+        image: 'https://cdn.upanhlaylink.com/i/Rlih7hNH.png',
+        downloads: 850,
+        category: 'regedit',
+        fileUrl: 'https://www.mediafire.com/file/knolrkq8x2bsial/REGEDIT_IPHONE_SUPER.voicecontrolcommands/file'
+    },
+    {
+        id: '4',
+        name: 'REGEDIT ANDROI SUPER',
+        desc: 'TỐI ƯU TRẢI NGHIỆM VÀ ĐỘ NHẠY ANDROID',
+        image: 'https://cdn.upanhlaylink.com/i/lqJyzvTF.png',
+        downloads: 750,
+        category: 'regedit',
+        fileUrl: 'https://www.mediafire.com/file/5p2qo49pa3hvuc1/REGEDIT+ANDROI+SUPER.crt/file'
+    },
+{
+    id: '5',
+    name: 'NHẸ TÂM IPHONE',
+    desc: 'TÙY CHỈNH CẢM GIÁC VUỐT VÀ ĐỘ MƯỢT KHI THAO TÁC TRÊN IPHONE',
+    image: 'https://cdn.upanhlaylink.com/i/VvrZGLLs.png',
+    downloads: 650,
+    category: 'nhetam',
+    fileUrl: 'https://www.mediafire.com/file/tnwqxwuy8t5ty9e/NHE_TAM_IPHONE.mobileconfig/file'
+},
+{
+    id: '6',
+    name: 'NHẸ TÂM ANDROID',
+    desc: 'TỐI ƯU THAO TÁC CẢM ỨNG VÀ TRẢI NGHIỆM ĐIỀU KHIỂN TRÊN ANDROID',
+    image: 'https://cdn.upanhlaylink.com/i/ivFPwtMx.png',
+    downloads: 620,
+    category: 'nhetam',
+    fileUrl: 'https://www.mediafire.com/file/6qgslh5dwdbc3ie/NHE_TAM_ANDROID.xml/file'
+}
 ];
 
 localStorage.setItem('PRODUCTS_DATA', JSON.stringify(PRODUCTS));
@@ -448,6 +472,7 @@ const API_SERVER = {
         </div>
     </div>
 
+    <!-- ================= CATEGORY (ĐÃ SỬA TÊN RÕ RÀNG) ================= -->
     <div class="category-list" id="categoryList">
         <button class="category active" data-category="all">
             Tất cả <span class="cat-count" data-count="all">0</span>
@@ -455,8 +480,11 @@ const API_SERVER = {
         <button class="category" data-category="regedit">
             REGEDIT <span class="cat-count" data-count="regedit">0</span>
         </button>
+        <button class="category" data-category="nhetam">
+            NHẸ TÂM <span class="cat-count" data-count="nhetam">0</span>
+        </button>
         <button class="category" data-category="other">
-            Khác <span class="cat-count" data-count="other">0</span>
+            KHÁC <span class="cat-count" data-count="other">0</span>
         </button>
     </div>
 </div>
@@ -499,25 +527,21 @@ const API_SERVER = {
 <div class="modal-overlay" id="contactModal">
     <div class="modal-content">
         <div class="modal-drag" id="modalDrag"></div>
-        
+
         <div class="modal-header">
             <h2>Liên Hệ & Hỗ Trợ</h2>
             <p>Kết nối với chúng tôi để được hỗ trợ nhanh nhất</p>
         </div>
 
-        <!-- CẬP NHẬT: THÊM FACEBOOK VÀO GRID 3 CỘT -->
         <div class="contact-grid">
             <a href="https://zalo.me/0358648824" target="_blank" rel="noopener" class="contact-btn btn-zalo">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.92 2 10.75c0 2.75 1.44 5.19 3.7 6.8-.15 1.36-.62 2.66-1.38 3.84-.22.34.15.78.52.59 1.5-.77 2.75-1.85 3.63-2.87 1.1.28 2.27.43 3.53.43 5.52 0 10-3.92 10-8.75S17.52 2 12 2z"/></svg>
                 Zalo
             </a>
-            
-            <!-- Link Facebook: Hãy thay "your_profile" bằng username Facebook của bạn -->
             <a href="https://www.facebook.com/share/18vA3fdnTn/?mibextid=wwXIfr" target="_blank" rel="noopener" class="contact-btn btn-facebook">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/></svg>
                 Facebook
             </a>
-
             <a href="https://www.tiktok.com/@khoc1minh_r?_r=1&_t=ZS-9BNTCFFkkY0" target="_blank" rel="noopener" class="contact-btn btn-tiktok">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
                 TikTok
@@ -586,23 +610,27 @@ function skeletonHTML(count = 6) {
     `).join('');
 }
 
-// Hàm render chính xử lý cả Category và Search
+// Render chính (đã sửa logic category 'nhetam' và 'other')
 function renderProducts() {
     const grid = document.getElementById('productGrid');
     const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
     let filtered = allProducts;
 
-    // 1. Lọc theo Category đang chọn
+    // 1. Lọc theo danh mục
     if (currentCategory !== 'all') {
         filtered = filtered.filter(p => {
             const cat = String(p.category || '').toLowerCase();
             if (currentCategory === 'regedit') return cat === 'regedit';
-            if (currentCategory === 'other') return cat !== 'regedit';
+            if (currentCategory === 'nhetam') return cat === 'nhetam';
+            if (currentCategory === 'other') {
+                // "Khác" = tất cả những gì không phải regedit và nhetam
+                return cat !== 'regedit' && cat !== 'nhetam';
+            }
             return true;
         });
     }
 
-    // 2. Lọc theo Từ khóa Tìm kiếm
+    // 2. Lọc theo từ khóa
     if (searchTerm) {
         filtered = filtered.filter(p => {
             const name = String(p.name || '').toLowerCase();
@@ -612,12 +640,11 @@ function renderProducts() {
             if (currentSearchFilter === 'name') return name.includes(searchTerm);
             if (currentSearchFilter === 'desc') return desc.includes(searchTerm);
             if (currentSearchFilter === 'category') return cat.includes(searchTerm);
-            
             return name.includes(searchTerm) || desc.includes(searchTerm) || cat.includes(searchTerm);
         });
     }
 
-    // Cập nhật text hiển thị số lượng
+    // Cập nhật số lượng
     const countEl = document.getElementById('productCount');
     if (searchTerm) {
         countEl.innerHTML = `Tìm thấy <strong>${filtered.length}</strong> sản phẩm khớp với "${escapeHtml(searchTerm)}"`;
@@ -638,13 +665,16 @@ function renderProducts() {
         return;
     }
 
-    // Render danh sách
+    // Render danh sách (đã sửa nhãn category cho đúng)
     grid.innerHTML = filtered.map((p, i) => {
         const id = encodeURIComponent(p.id ?? '');
         const name = escapeHtml(p.name || 'Sản phẩm');
         const desc = escapeHtml(p.desc || 'File chia sẻ miễn phí.');
         const img = escapeHtml(p.image || '');
-        const catLabel = String(p.category || '').toLowerCase() === 'regedit' ? 'REGEDIT' : 'Khác';
+        const catRaw = String(p.category || '').toLowerCase();
+        let catLabel = 'KHÁC';
+        if (catRaw === 'regedit') catLabel = 'REGEDIT';
+        else if (catRaw === 'nhetam') catLabel = 'NHẸ TÂM';
 
         return `
             <article class="product-card" style="animation-delay:${Math.min(i * 50, 400)}ms"
@@ -673,12 +703,16 @@ function renderProducts() {
     }).join('');
 }
 
-// Cập nhật số lượng hiển thị trên các nút Danh mục
+// Đếm số lượng theo danh mục (đã thêm nhetam)
 function updateCategoryCounts() {
     const counts = {
         all: allProducts.length,
         regedit: allProducts.filter(p => String(p.category || '').toLowerCase() === 'regedit').length,
-        other: allProducts.filter(p => String(p.category || '').toLowerCase() !== 'regedit').length,
+        nhetam: allProducts.filter(p => String(p.category || '').toLowerCase() === 'nhetam').length,
+        other: allProducts.filter(p => {
+            const cat = String(p.category || '').toLowerCase();
+            return cat !== 'regedit' && cat !== 'nhetam';
+        }).length,
     };
     document.querySelectorAll('.cat-count').forEach(el => {
         const key = el.dataset.count;
@@ -691,20 +725,19 @@ function resetFilters() {
     currentSearchFilter = 'all';
     document.getElementById('searchInput').value = '';
     document.getElementById('clearBtn').classList.remove('visible');
-    
+
     document.querySelectorAll('.category').forEach(b => b.classList.toggle('active', b.dataset.category === 'all'));
     document.querySelectorAll('.filter-chip').forEach(b => b.classList.toggle('active', b.dataset.filter === 'all'));
-    
+
     renderProducts();
 }
 
-// Sự kiện gõ tìm kiếm
+// Sự kiện tìm kiếm
 document.getElementById('searchInput').addEventListener('input', function () {
     document.getElementById('clearBtn').classList.toggle('visible', this.value.length > 0);
     renderProducts();
 });
 
-// Sự kiện xóa từ khóa
 document.getElementById('clearBtn').addEventListener('click', function () {
     const input = document.getElementById('searchInput');
     input.value = '';
@@ -713,7 +746,7 @@ document.getElementById('clearBtn').addEventListener('click', function () {
     renderProducts();
 });
 
-// Sự kiện chọn bộ lọc Tìm kiếm
+// Bộ lọc tìm kiếm
 document.querySelectorAll('.filter-chip').forEach(chip => {
     chip.addEventListener('click', function() {
         document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
@@ -723,7 +756,7 @@ document.querySelectorAll('.filter-chip').forEach(chip => {
     });
 });
 
-// Sự kiện chọn Danh mục
+// Danh mục
 document.querySelectorAll('.category').forEach(button => {
     button.addEventListener('click', function () {
         document.querySelectorAll('.category').forEach(i => i.classList.remove('active'));
@@ -753,7 +786,7 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-// ================= MODAL LOGIC =================
+// Modal
 const modal = document.getElementById('contactModal');
 const contactNav = document.getElementById('contactNav');
 const modalDrag = document.getElementById('modalDrag');
@@ -771,7 +804,6 @@ function toggleModal(show) {
 contactNav.addEventListener('click', () => toggleModal(true));
 modal.addEventListener('click', (e) => { if (e.target === modal) toggleModal(false); });
 
-// Kéo xuống đóng Modal
 let startY = 0, currentY = 0, isDragging = false;
 modalDrag.addEventListener('touchstart', (e) => {
     startY = e.touches[0].clientY; isDragging = true;
@@ -793,7 +825,7 @@ modalDrag.addEventListener('touchend', () => {
     startY = 0; currentY = 0;
 });
 
-// ================= LOAD DATA =================
+// Load dữ liệu
 function loadProducts(silent = false) {
     const grid = document.getElementById('productGrid');
     if (!silent) grid.innerHTML = skeletonHTML(6);
