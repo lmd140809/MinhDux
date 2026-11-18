@@ -515,6 +515,12 @@
       "deviceID": null,
       "expiresAt": "2026-12-18",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-5EEQ-LM7Q",
+      "deviceID": null,
+      "expiresAt": "2026-11-25",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-18"
