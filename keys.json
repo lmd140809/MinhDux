@@ -587,7 +587,13 @@
       "deviceID": "a73d0e32dcbcdb79",
       "expiresAt": "2026-12-19",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-5J7W-A3T9",
+      "deviceID": null,
+      "expiresAt": "2026-12-19",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-19T09:20:36Z"
+  "updatedAt": "2026-11-19"
 }
