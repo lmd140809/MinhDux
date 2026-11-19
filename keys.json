@@ -659,7 +659,13 @@
       "deviceID": "0e90a43a03b6354c",
       "expiresAt": "2026-11-26",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-VU8V-8SUV",
+      "deviceID": null,
+      "expiresAt": "2026-12-19",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-19T18:20:02Z"
+  "updatedAt": "2026-11-19"
 }
