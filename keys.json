@@ -650,7 +650,7 @@
     },
     {
       "key": "MINHDUC-X7WF-969L",
-      "deviceID": "",
+      "deviceID": "dddc2a0fbdfc8a51",
       "expiresAt": "2026-12-19",
       "note": "Không có ghi chú"
     },
@@ -661,5 +661,5 @@
       "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-19"
+  "updatedAt": "2026-11-19T18:19:49Z"
 }
