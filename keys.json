@@ -629,7 +629,13 @@
       "expiresAt": "2026-12-19",
       "key": "MINHDUC-T9N8-AR94",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "HOANGANH-K2PM-AXQF",
+      "deviceID": null,
+      "expiresAt": "2026-12-19",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-19T15:27:03Z"
+  "updatedAt": "2026-11-19"
 }
