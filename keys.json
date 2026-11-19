@@ -581,7 +581,13 @@
       "deviceID": "b134a812df92d797",
       "expiresAt": "2026-11-26",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-E6W5-DC6V",
+      "deviceID": null,
+      "expiresAt": "2026-12-19",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-19T09:08:39Z"
+  "updatedAt": "2026-11-19"
 }
