@@ -641,7 +641,13 @@
       "deviceID": "fb7340b9b94f7c9c",
       "expiresAt": "2026-12-19",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-SC4W-MLDD",
+      "deviceID": null,
+      "expiresAt": "2026-12-19",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-19T15:42:30Z"
+  "updatedAt": "2026-11-19"
 }
