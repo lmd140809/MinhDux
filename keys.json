@@ -617,6 +617,12 @@
       "expiresAt": "2026-12-19",
       "key": "HOANGANH-BEQA-3ZUA",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-LP6U-9WRU",
+      "deviceID": null,
+      "expiresAt": "2026-12-19",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-19"
