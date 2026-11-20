@@ -818,7 +818,13 @@
       "deviceID": "befede01c935ac5d",
       "expiresAt": "2026-12-20",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-G6U3-6NMP",
+      "deviceID": null,
+      "expiresAt": "2026-12-20",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-20T19:07:48Z"
+  "updatedAt": "2026-11-20"
 }
