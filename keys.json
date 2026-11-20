@@ -812,7 +812,13 @@
       "deviceID": "83749eccf3c1ba26",
       "expiresAt": "2026-12-20",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-RZY7-WLBK",
+      "deviceID": null,
+      "expiresAt": "2026-12-20",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-20T18:51:47Z"
+  "updatedAt": "2026-11-20"
 }
