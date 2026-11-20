@@ -827,10 +827,10 @@
     },
     {
       "key": "MINHDUC-3NMW-23FM",
-      "deviceID": null,
+      "deviceID": "fd27017b8556a251",
       "expiresAt": "2026-12-20",
       "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-20"
+  "updatedAt": "2026-11-20T20:25:56Z"
 }
