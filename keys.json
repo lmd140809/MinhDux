@@ -704,7 +704,13 @@
       "deviceID": "131f4d0300952df9",
       "expiresAt": null,
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-4EPX-2J46",
+      "deviceID": null,
+      "expiresAt": "2026-12-19",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-20T05:35:21Z"
+  "updatedAt": "2026-11-20"
 }
