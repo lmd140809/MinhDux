@@ -667,6 +667,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "D6E48D3F-CF08-40CC-9ACE-41DA95576D39",
       "expiresAt" : "2026-12-19",
       "key" : "MINHDUC-HTJ3-2AYR",
       "note" : "Không có ghi chú"
@@ -698,5 +699,5 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-20T04:54:28Z"
+  "updatedAt" : "2026-11-20T05:05:54Z"
 }
