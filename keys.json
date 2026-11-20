@@ -745,7 +745,13 @@
       "deviceID": "59652771eaf879f7",
       "expiresAt": null,
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-JWHQ-V5U3",
+      "deviceID": null,
+      "expiresAt": "2026-12-20",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-20T07:10:48Z"
+  "updatedAt": "2026-11-20"
 }
