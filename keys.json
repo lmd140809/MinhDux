@@ -806,7 +806,13 @@
       "deviceID": "5cda8c798c1bd274",
       "expiresAt": "2026-12-20",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-PSFM-YDVS",
+      "deviceID": null,
+      "expiresAt": "2026-12-20",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-20T17:54:48Z"
+  "updatedAt": "2026-11-20"
 }
