@@ -695,6 +695,12 @@
       "deviceID": null,
       "expiresAt": "2026-12-19",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-2RTQ-NY7R",
+      "deviceID": null,
+      "expiresAt": "2026-12-19",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-20"
