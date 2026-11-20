@@ -721,7 +721,13 @@
       "deviceID": "5658df2f98a52e0a",
       "expiresAt": "2026-12-20",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-H8SE-F52Z",
+      "deviceID": null,
+      "expiresAt": "2026-11-21",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-20T06:25:45Z"
+  "updatedAt": "2026-11-20"
 }
