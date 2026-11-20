@@ -766,7 +766,13 @@
       "deviceID": "a75a4f9aec5691c6",
       "expiresAt": "2026-12-20",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-BJXM-6MJL",
+      "deviceID": null,
+      "expiresAt": "2026-12-20",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-20T10:27:54Z"
+  "updatedAt": "2026-11-20"
 }
