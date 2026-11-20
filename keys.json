@@ -794,6 +794,12 @@
       "deviceID": null,
       "expiresAt": "2026-12-20",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-7QCX-L24E",
+      "deviceID": null,
+      "expiresAt": "2026-12-20",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-20"
