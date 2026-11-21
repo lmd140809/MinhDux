@@ -864,6 +864,12 @@
       "expiresAt": "2026-12-21",
       "key": "MINHDUC-UGEX-WUXE",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-D4UQ-3WVT",
+      "deviceID": null,
+      "expiresAt": "2026-11-28",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-21"
