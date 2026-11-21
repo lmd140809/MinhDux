@@ -953,7 +953,13 @@
       "deviceID": "39e133652fadd704",
       "expiresAt": "2026-11-22",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-HVDU-AZXZ",
+      "deviceID": null,
+      "expiresAt": "2026-11-22",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21T08:06:41Z"
+  "updatedAt": "2026-11-21"
 }
