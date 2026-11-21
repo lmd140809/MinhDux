@@ -1066,7 +1066,13 @@
       "deviceID": "aa393219ee8c9b68",
       "expiresAt": "2026-12-21",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-MZ3U-DEZ6",
+      "deviceID": null,
+      "expiresAt": "2026-12-21",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21T11:25:07Z"
+  "updatedAt": "2026-11-21"
 }
