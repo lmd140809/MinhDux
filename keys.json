@@ -989,7 +989,13 @@
       "deviceID": "22fc8cecd13c93cc",
       "expiresAt": "2026-11-22",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-FZEC-NE4K",
+      "deviceID": null,
+      "expiresAt": "2026-11-22",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21T08:11:12Z"
+  "updatedAt": "2026-11-21"
 }
