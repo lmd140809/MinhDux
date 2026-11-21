@@ -983,7 +983,13 @@
       "deviceID": "23a98eaa4fab9f9f",
       "expiresAt": "2026-11-22",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-TDK3-N2GQ",
+      "deviceID": null,
+      "expiresAt": "2026-11-22",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21T08:10:27Z"
+  "updatedAt": "2026-11-21"
 }
