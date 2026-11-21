@@ -959,7 +959,13 @@
       "deviceID": "438668b9362d0658",
       "expiresAt": "2026-11-22",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-NJVU-34PV",
+      "deviceID": null,
+      "expiresAt": "2026-11-22",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21T08:07:42Z"
+  "updatedAt": "2026-11-21"
 }
