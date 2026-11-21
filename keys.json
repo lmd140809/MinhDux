@@ -1054,7 +1054,13 @@
       "key": "MINHDUC-KNCX-YQLB",
       "note": "Không có ghi chú",
       "deviceID": "f8d9112b066de386"
+    },
+    {
+      "key": "MINHDUC-HKET-KYCL",
+      "deviceID": null,
+      "expiresAt": "2026-12-21",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21T10:52:08Z"
+  "updatedAt": "2026-11-21"
 }
