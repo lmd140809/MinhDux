@@ -914,10 +914,10 @@
     },
     {
       "key": "MINHDUC-PMD8-WATH",
-      "deviceID": null,
+      "deviceID": "c7152eedcc4eb871",
       "expiresAt": "2026-12-21",
       "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21"
+  "updatedAt": "2026-11-21T07:50:59Z"
 }
