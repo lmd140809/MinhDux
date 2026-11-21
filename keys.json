@@ -867,7 +867,7 @@
     },
     {
       "key": "MINHDUC-D4UQ-3WVT",
-      "deviceID": null,
+      "deviceID": "735216f2e0fbd73b",
       "expiresAt": "2026-11-28",
       "note": "Không có ghi chú"
     },
@@ -878,5 +878,5 @@
       "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21"
+  "updatedAt": "2026-11-21T06:50:54Z"
 }
