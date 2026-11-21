@@ -887,7 +887,13 @@
       "deviceID": "4aa4f411f076a76b",
       "expiresAt": "2026-11-22",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-ZAH9-R7GK",
+      "deviceID": null,
+      "expiresAt": "2026-11-22",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21T07:35:52Z"
+  "updatedAt": "2026-11-21"
 }
