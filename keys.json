@@ -1034,7 +1034,7 @@
     },
     {
       "key": "MINHDUC-GG8K-Z82C",
-      "deviceID": null,
+      "deviceID": "ad97c267ffbb61d1",
       "expiresAt": "2026-12-21",
       "note": "Không có ghi chú"
     },
@@ -1045,5 +1045,5 @@
       "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21T08:31:56Z"
+  "updatedAt": "2026-11-21T08:37:16Z"
 }
