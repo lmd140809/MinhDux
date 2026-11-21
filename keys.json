@@ -968,7 +968,7 @@
     },
     {
       "key": "MINHDUC-CUYS-STHH",
-      "deviceID": null,
+      "deviceID": "527ea7a65f9b40c0",
       "expiresAt": "2026-11-22",
       "note": "Không có ghi chú"
     },
@@ -979,5 +979,5 @@
       "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21"
+  "updatedAt": "2026-11-21T08:09:29Z"
 }
