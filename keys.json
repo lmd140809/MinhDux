@@ -1010,7 +1010,7 @@
     },
     {
       "key": "MINHDUC-VTXC-G9EJ",
-      "deviceID": null,
+      "deviceID": "3c1bc1e19c126c07",
       "expiresAt": "2026-11-22",
       "note": "Không có ghi chú"
     },
@@ -1021,5 +1021,5 @@
       "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21"
+  "updatedAt": "2026-11-21T08:14:24Z"
 }
