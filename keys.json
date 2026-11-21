@@ -965,7 +965,13 @@
       "deviceID": "df72076f6196ed52",
       "expiresAt": "2026-11-22",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-CUYS-STHH",
+      "deviceID": null,
+      "expiresAt": "2026-11-22",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21T08:08:41Z"
+  "updatedAt": "2026-11-21"
 }
