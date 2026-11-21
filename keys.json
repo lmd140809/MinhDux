@@ -1060,7 +1060,13 @@
       "deviceID": "ce3ba9dc247c5a2e",
       "expiresAt": "2026-12-21",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-L9CG-5982",
+      "deviceID": null,
+      "expiresAt": "2026-12-21",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21T11:09:17Z"
+  "updatedAt": "2026-11-21"
 }
