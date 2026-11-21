@@ -893,7 +893,13 @@
       "deviceID": "735216f2e0fbd73b",
       "expiresAt": "2026-11-22",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-9QNC-ZJ3V",
+      "deviceID": null,
+      "expiresAt": "2026-11-22",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21T07:42:05Z"
+  "updatedAt": "2026-11-21"
 }
