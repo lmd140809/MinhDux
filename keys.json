@@ -1102,7 +1102,15 @@
       "expiresAt": "2026-11-21T18:19:48.013Z",
       "key": "MINHDUC-BLUR-HWZR",
       "note": "minhduc"
+    },
+    {
+      "key": "MINHDUC-AETQ-QGRZ",
+      "deviceID": null,
+      "expiresAt": "2026-12-21T17:20:55.924Z",
+      "note": "Không có ghi chú",
+      "type": "client",
+      "createdAt": "2026-11-21T17:20:55.924Z"
     }
   ],
-  "updatedAt": "2026-11-21T17:20:24.911Z"
+  "updatedAt": "2026-11-21T17:20:55.924Z"
 }
