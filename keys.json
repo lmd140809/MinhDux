@@ -1028,7 +1028,7 @@
     },
     {
       "key": "MINHDUC-PMWN-8QL2",
-      "deviceID": null,
+      "deviceID": "ac12ff7cb5e1df4a",
       "expiresAt": "2026-11-22",
       "note": "Không có ghi chú"
     },
@@ -1039,5 +1039,5 @@
       "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21"
+  "updatedAt": "2026-11-21T08:31:01Z"
 }
