@@ -884,10 +884,10 @@
     },
     {
       "key": "MINHDUC-VECC-5JEE",
-      "deviceID": null,
+      "deviceID": "4aa4f411f076a76b",
       "expiresAt": "2026-11-22",
       "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21"
+  "updatedAt": "2026-11-21T07:35:52Z"
 }
