@@ -1019,7 +1019,13 @@
       "deviceID": "6cc031e65bf15914",
       "expiresAt": "2026-12-21",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-TBV4-36Z2",
+      "deviceID": null,
+      "expiresAt": "2026-12-21",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21T08:14:35Z"
+  "updatedAt": "2026-11-21"
 }
