@@ -1120,6 +1120,12 @@
       "deviceID": null,
       "expiresAt": "2026-12-21",
       "note": "HOANGANH"
+    },
+    {
+      "key": "MINHDUC-P444-KG6H",
+      "deviceID": null,
+      "expiresAt": "2026-12-21",
+      "note": "HOANGANH-VIP"
     }
   ],
   "updatedAt": "2026-11-21"
