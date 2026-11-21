@@ -911,7 +911,13 @@
       "deviceID": "735216f2e0fbd73b",
       "expiresAt": "2026-11-28",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-PMD8-WATH",
+      "deviceID": null,
+      "expiresAt": "2026-12-21",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21T07:50:20Z"
+  "updatedAt": "2026-11-21"
 }
