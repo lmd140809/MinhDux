@@ -1097,7 +1097,15 @@
       "deviceID": "87b897b73f7c7875",
       "expiresAt": "2027-11-21",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-BLUR-HWZR",
+      "deviceID": null,
+      "expiresAt": "2026-11-21T18:19:48.013Z",
+      "note": "minhduc",
+      "type": "client",
+      "createdAt": "2026-11-21T17:19:48.013Z"
     }
   ],
-  "updatedAt": "2026-11-21T17:18:02Z"
+  "updatedAt": "2026-11-21T17:19:48.013Z"
 }
