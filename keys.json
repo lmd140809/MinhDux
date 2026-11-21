@@ -1,11 +1,6 @@
 {
   "keys": [
     {
-      "expiresAt": "2026-10-29T14:30",
-      "key": "MINHDUC-ABCD-1234",
-      "note": "Khách VIP"
-    },
-    {
       "deviceID": "F77BA10E-F2E6-47F3-9945-6C9FE281C3B5",
       "expiresAt": "2026-12-15",
       "key": "MINHDUC-8S94-7MBP",
@@ -1098,5 +1093,5 @@
       "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21"
+  "updatedAt": "2026-11-21T16:06:54.781Z"
 }
