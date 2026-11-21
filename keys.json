@@ -873,10 +873,10 @@
     },
     {
       "key": "MINHDUC-G768-VHYN",
-      "deviceID": null,
+      "deviceID": "befede01c935ac5d",
       "expiresAt": "2026-11-28",
       "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21"
+  "updatedAt": "2026-11-21T06:46:56Z"
 }
