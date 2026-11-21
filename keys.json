@@ -1001,7 +1001,13 @@
       "deviceID": "5ddc38739ee32f31",
       "expiresAt": "2026-11-22",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-TK2Q-HHFC",
+      "deviceID": null,
+      "expiresAt": "2026-11-22",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21T08:13:05Z"
+  "updatedAt": "2026-11-21"
 }
