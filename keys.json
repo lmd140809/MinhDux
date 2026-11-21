@@ -977,7 +977,13 @@
       "deviceID": "6102d73a8cd9dbf5",
       "expiresAt": "2026-11-22",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-K3CS-Y6JU",
+      "deviceID": null,
+      "expiresAt": "2026-11-22",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21T08:09:49Z"
+  "updatedAt": "2026-11-21"
 }
