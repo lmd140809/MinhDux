@@ -947,7 +947,13 @@
       "deviceID": "29af703e4f300f1c",
       "expiresAt": "2026-11-22",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-3DQG-TUJT",
+      "deviceID": null,
+      "expiresAt": "2026-11-22",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21T08:04:46Z"
+  "updatedAt": "2026-11-21"
 }
