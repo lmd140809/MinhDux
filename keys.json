@@ -1072,7 +1072,13 @@
       "deviceID": "f8a36e141867c8f1",
       "expiresAt": "2026-12-21",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-MK32-TEMM",
+      "deviceID": null,
+      "expiresAt": "2026-12-21",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-21T13:22:01Z"
+  "updatedAt": "2026-11-21"
 }
