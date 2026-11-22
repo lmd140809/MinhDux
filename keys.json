@@ -1131,7 +1131,13 @@
       "expiresAt": "2026-11-22T09:0:51.345Z",
       "key": "MINHDUC-6YEM-CSAV",
       "note": "MinhDuc"
+    },
+    {
+      "key": "MINHDUC-BL5H-UUWX",
+      "deviceID": null,
+      "expiresAt": null,
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-22T09:00:49.459Z"
+  "updatedAt": "2026-11-22"
 }
