@@ -1125,7 +1125,15 @@
       "deviceID": "9CAF1809-6F78-4BAD-9AAC-7A663B9FCD32",
       "key": "HOANGANH-HCDD-83PW",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-6YEM-CSAV",
+      "deviceID": null,
+      "expiresAt": "2026-11-22T09:57:51.345Z",
+      "note": "MinhDuc",
+      "type": "client",
+      "createdAt": "2026-11-22T08:57:51.345Z"
     }
   ],
-  "updatedAt": "2026-11-22"
+  "updatedAt": "2026-11-22T08:57:51.345Z"
 }
