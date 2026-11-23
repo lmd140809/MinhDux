@@ -735,6 +735,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "E904491F-429C-499F-9DEB-F836828C8537",
       "expiresAt" : "2026-12-20",
       "key" : "MINHDUC-LTVX-VACM",
       "note" : "Không có ghi chú"
@@ -1144,5 +1145,5 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-22T17:54:47Z"
+  "updatedAt" : "2026-11-23T01:41:01Z"
 }
