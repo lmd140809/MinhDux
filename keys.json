@@ -1130,7 +1130,13 @@
       "deviceID": null,
       "expiresAt": null,
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "HOANGANHDEPZAI-REGA-V3VX",
+      "deviceID": null,
+      "expiresAt": "2026-12-23",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-23T08:44:54Z"
+  "updatedAt": "2026-11-23"
 }
