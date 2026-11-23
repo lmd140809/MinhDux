@@ -1111,7 +1111,8 @@
     {
       "expiresAt": "2026-12-21",
       "key": "MINHDUC-B2A9-Y9Q6",
-      "note": "Không có ghi chú"
+      "note": "Không có ghi chú",
+      "deviceID": "120aec4e697fec67"
     },
     {
       "deviceID": "4cbda3afce35338f",
@@ -1131,5 +1132,5 @@
       "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-23"
+  "updatedAt": "2026-11-23T08:44:54Z"
 }
