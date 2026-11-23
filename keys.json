@@ -1,16 +1,11 @@
 {
-  "keys" : [
+  "keys": [
     {
-      "deviceID" : "F77BA10E-F2E6-47F3-9945-6C9FE281C3B5",
-      "expiresAt" : "2026-12-15",
-      "key" : "MINHDUC-8S94-7MBP",
-      "note" : "Không có ghi chú"
-    },
-    {
-      "deviceID" : "D5CC473E-0DA0-4F18-A023-8A2AA6A46651",
-      "key" : "HOANGANHDEPZAI-MUBW-3NKW",
-      "note" : "Không có ghi chú"
+      "deviceID": "F77BA10E-F2E6-47F3-9945-6C9FE281C3B5",
+      "expiresAt": "2026-12-15",
+      "key": "MINHDUC-8S94-7MBP",
+      "note": "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-23T11:27:40Z"
+  "updatedAt": "2026-11-23T13:47:54.670Z"
 }
