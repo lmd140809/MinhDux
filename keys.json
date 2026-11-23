@@ -1,23 +1,22 @@
 {
-  "keys": [
+  "keys" : [
     {
-      "deviceID": "7D4E363A-A794-44EC-ABBA-2705552FBE26",
-      "expiresAt": "2026-12-23",
-      "key": "MINHDUC-EMYP-HH87",
-      "note": "Không có ghi chú"
+      "deviceID" : "7D4E363A-A794-44EC-ABBA-2705552FBE26",
+      "expiresAt" : "2026-12-23",
+      "key" : "MINHDUC-EMYP-HH87",
+      "note" : "Không có ghi chú"
     },
     {
-      "key": "MINHDUC-C7TD-LXC5",
-      "deviceID": null,
-      "expiresAt": "2026-12-23",
-      "note": "Không có ghi chú"
+      "expiresAt" : "2026-12-23",
+      "key" : "MINHDUC-C7TD-LXC5",
+      "note" : "Không có ghi chú"
     },
     {
-      "key": "MINHDUC-LUJ2-AMW6",
-      "deviceID": null,
-      "expiresAt": "2026-12-23",
-      "note": "Không có ghi chú"
+      "deviceID" : "8B5D25CB-F359-44D3-8896-BD4B6EC81272",
+      "expiresAt" : "2026-12-23",
+      "key" : "MINHDUC-LUJ2-AMW6",
+      "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-23"
+  "updatedAt" : "2026-11-23T19:41:12Z"
 }
