@@ -1,4 +1,11 @@
 {
-  "keys": [],
-  "updatedAt": "2026-11-23T13:48:00.117Z"
+  "keys": [
+    {
+      "key": "MINHDUC-EMYP-HH87",
+      "deviceID": null,
+      "expiresAt": "2026-12-23",
+      "note": "Không có ghi chú"
+    }
+  ],
+  "updatedAt": "2026-11-23"
 }
