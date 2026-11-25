@@ -1,34 +1,33 @@
 {
-  "keys": [
+  "keys" : [
     {
-      "deviceID": "DC3260F3-D15E-4A54-8C49-CA8162F823A8",
-      "expiresAt": "2026-12-02",
-      "key": "MINHDUC-B6QY-LWKB",
-      "note": "Không có ghi chú"
+      "deviceID" : "DC3260F3-D15E-4A54-8C49-CA8162F823A8",
+      "expiresAt" : "2026-12-02",
+      "key" : "MINHDUC-B6QY-LWKB",
+      "note" : "Không có ghi chú"
     },
     {
-      "expiresAt": "2026-12-25",
-      "key": "MINHDUC-XBWY-TN9T",
-      "note": "Không có ghi chú"
+      "expiresAt" : "2026-12-25",
+      "key" : "MINHDUC-XBWY-TN9T",
+      "note" : "Không có ghi chú"
     },
     {
-      "deviceID": "7D4E363A-A794-44EC-ABBA-2705552FBE26",
-      "expiresAt": "2026-12-25",
-      "key": "MINHDUC-ZDBT-EPLK",
-      "note": "Không có ghi chú"
+      "deviceID" : "7D4E363A-A794-44EC-ABBA-2705552FBE26",
+      "expiresAt" : "2026-12-25",
+      "key" : "MINHDUC-ZDBT-EPLK",
+      "note" : "Không có ghi chú"
     },
     {
-      "deviceID": "7D4E363A-A794-44EC-ABBA-2705552FBE26",
-      "expiresAt": "2026-12-25",
-      "key": "MINHDUC-ZBEY-8DRB",
-      "note": "Không có ghi chú"
+      "deviceID" : "7D4E363A-A794-44EC-ABBA-2705552FBE26",
+      "expiresAt" : "2026-12-25",
+      "key" : "MINHDUC-ZBEY-8DRB",
+      "note" : "Không có ghi chú"
     },
     {
-      "key": "HOANGANH-LWHD-R8TR",
-      "deviceID": null,
-      "expiresAt": null,
-      "note": "Không có ghi chú"
+      "deviceID" : "1D8F2C63-0B53-4BB0-805C-1128873F2A40",
+      "key" : "HOANGANH-LWHD-R8TR",
+      "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-25"
+  "updatedAt" : "2026-11-25T22:32:00Z"
 }
