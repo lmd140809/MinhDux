@@ -87,6 +87,12 @@
       "deviceID": null,
       "expiresAt": "2026-11-27",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-PCLS-QXVW",
+      "deviceID": null,
+      "expiresAt": "2026-12-26",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-26"
