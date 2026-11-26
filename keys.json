@@ -51,6 +51,12 @@
       "expiresAt": "2026-12-04",
       "key": "MINHDUC-RSDN-TTQ4",
       "note": "Không có ghi chú"
+    },
+    {
+      "key": "MINHDUC-45FD-XU36",
+      "deviceID": null,
+      "expiresAt": "2026-12-26",
+      "note": "Không có ghi chú"
     }
   ],
   "updatedAt": "2026-11-26"
