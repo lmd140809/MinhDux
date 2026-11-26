@@ -30,7 +30,7 @@
     },
     {
       "key": "MINHDUC-6452-3D5L",
-      "deviceID": null,
+      "deviceID": "83fe7f7fa31a1441",
       "expiresAt": "2026-12-04",
       "note": "Không có ghi chú"
     },
@@ -41,5 +41,5 @@
       "note": "Không có ghi chú"
     }
   ],
-  "updatedAt": "2026-11-26"
+  "updatedAt": "2026-11-26T00:30:24Z"
 }
