@@ -65,6 +65,7 @@
       "note" : "Không có ghi chú"
     },
     {
+      "deviceID" : "5C87BFAE-B33F-4F70-AEA0-9A91D18A5CE2",
       "expiresAt" : "2026-12-26",
       "key" : "MINHDUC-CCZN-RUKY",
       "note" : "Không có ghi chú"
@@ -76,5 +77,5 @@
       "note" : "Không có ghi chú"
     }
   ],
-  "updatedAt" : "2026-11-26T07:20:12Z"
+  "updatedAt" : "2026-11-26T07:22:35Z"
 }
