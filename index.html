@@ -13,7 +13,6 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 :root{
-  /* ===== DARK ROBOT PALETTE ===== */
   --bg:#07080c;
   --bg-2:#0b0d13;
   --bg-3:#0f1219;
@@ -28,7 +27,6 @@
   --line-strong:rgba(255,255,255,.12);
   --line-glow:rgba(255,255,255,.18);
 
-  /* ===== ACCENTS ===== */
   --accent:#eab308;
   --accent-2:#f59e0b;
   --accent-glow:rgba(234,179,8,.35);
@@ -37,10 +35,8 @@
   --cyan:#22d3ee;
   --zalo:#0068FF;--facebook:#1877F2;--tiktok:#fff;
 
-  /* ===== RADIUS ===== */
   --radius-sm:14px;--radius-md:20px;--radius-lg:26px;--radius-xl:34px;
 
-  /* ===== SHADOWS (dark tuned) ===== */
   --shadow-sm:0 1px 0 rgba(255,255,255,.04) inset,0 4px 14px rgba(0,0,0,.4);
   --shadow-md:0 1px 0 rgba(255,255,255,.05) inset,0 14px 40px rgba(0,0,0,.5);
   --shadow-lg:0 1px 0 rgba(255,255,255,.06) inset,0 28px 70px rgba(0,0,0,.6);
@@ -68,7 +64,6 @@ body{
     radial-gradient(800px 600px at 50% 50%,rgba(255,255,255,.02),transparent 60%),
     linear-gradient(180deg,#07080c 0%,#0b0d13 100%);
 }
-/* Grid overlay kiểu robot / tech */
 .ambient-bg::before{
   content:'';position:absolute;inset:0;
   background-image:
@@ -530,7 +525,6 @@ body{
 <script>
 /* ============================================================
    DATA — SẢN PHẨM GỐC (bao gồm cả APP)
-   APP chỉ hiển thị ở app.html — không hiện ở cửa hàng này
    ============================================================ */
 const PRODUCTS = [
     {
@@ -587,7 +581,7 @@ const PRODUCTS = [
         category: 'nhetam',
         fileUrl: 'https://www.mediafire.com/file/6qgslh5dwdbc3ie/NHE_TAM_ANDROID.xml/file'
     },
-    /* ====== SẢN PHẨM APP — KHÔNG hiển thị ở trang này ====== */
+    /* ====== APP ANDROID ====== */
     {
         id: '7',
         name: 'APP HỖ TRỢ ANDROID',
@@ -595,16 +589,22 @@ const PRODUCTS = [
         image: 'https://cdn.upanhlaylink.com/i/oQRvLnmn.png',
         downloads: 420,
         category: 'app',
-        fileUrl: 'https://www.mediafire.com/file/tvd6yyhhjyzu7vk/MINHDUC-ANDROID-ELITE-DEBUG.apk/file'
+        fileUrl: 'https://www.mediafire.com/file/676c6lenyvhmf4r/MINHDUC-ANDROID-ELITE-DEBUG.apk/file'
+    },
+    /* ====== APP IPHONE (MỚI THÊM) ====== */
+    {
+        id: '8',
+        name: 'APP HỖ TRỢ IPHONE',
+        desc: 'ỨNG DỤNG HỖ TRỢ TỐI ƯU VÀ TRẢI NGHIỆM TRÊN IPHONE',
+        image: 'https://cdn.upanhlaylink.com/i/QLI3W9kV.png', // dùng tạm ảnh android, bạn có thể thay link mới
+        downloads: 350,
+        category: 'app',
+        fileUrl: 'https://www.mediafire.com/file/rw4fkd9pgyc12hf/ADMIN+MINHDUC_1.0.0_1795756819.ipa/file'
     }
 ];
 
-/* Luôn lưu toàn bộ PRODUCTS (kể cả app) để app.html đọc */
-if (!localStorage.getItem('PRODUCTS_DATA')) {
-    localStorage.setItem('PRODUCTS_DATA', JSON.stringify(PRODUCTS));
-} else {
-    localStorage.setItem('PRODUCTS_DATA', JSON.stringify(PRODUCTS));
-}
+/* Lưu toàn bộ PRODUCTS (kể cả app) để app.html đọc */
+localStorage.setItem('PRODUCTS_DATA', JSON.stringify(PRODUCTS));
 
 const API_SERVER = {
     getAll: () => JSON.parse(localStorage.getItem('PRODUCTS_DATA') || '[]'),
@@ -671,6 +671,9 @@ const API_SERVER = {
         </button>
         <button class="category" data-category="regedit">
             REGEDIT <span class="cat-count" data-count="regedit">0</span>
+        </button>
+        <button class="category" data-category="app-iphone">
+            APP IPHONE <span class="cat-count" data-count="app-iphone">0</span>
         </button>
         <button class="category" data-category="other">
             Khác <span class="cat-count" data-count="other">0</span>
@@ -790,6 +793,10 @@ function renderProducts(){
         filtered = filtered.filter(p => {
             const cat = String(p.category || '').toLowerCase();
             if (currentCategory === 'regedit') return cat === 'regedit';
+            if (currentCategory === 'app-iphone') {
+                // Lọc APP IPHONE dựa trên tên hoặc mô tả chứa "IPHONE" và category là app
+                return cat === 'app' && (String(p.name||'').toLowerCase().includes('iphone') || String(p.desc||'').toLowerCase().includes('iphone'));
+            }
             if (currentCategory === 'other') return cat !== 'regedit' && cat !== 'app';
             return true;
         });
@@ -834,6 +841,7 @@ function renderProducts(){
         let catLabel = 'Khác';
         if (catRaw === 'regedit') catLabel = 'REGEDIT';
         if (catRaw === 'nhetam') catLabel = 'NHẸ TÂM';
+        if (catRaw === 'app') catLabel = 'APP';
 
         return `
             <article class="product-card" style="animation-delay:${Math.min(i*50,400)}ms"
@@ -860,10 +868,12 @@ function renderProducts(){
 }
 
 function updateCategoryCounts(){
+    const all = allProducts;
     const counts = {
-        all: allProducts.length,
-        regedit: allProducts.filter(p => String(p.category||'').toLowerCase()==='regedit').length,
-        other: allProducts.filter(p => {
+        all: all.length,
+        regedit: all.filter(p => String(p.category||'').toLowerCase()==='regedit').length,
+        'app-iphone': all.filter(p => String(p.category||'').toLowerCase()==='app' && (String(p.name||'').toLowerCase().includes('iphone') || String(p.desc||'').toLowerCase().includes('iphone'))).length,
+        other: all.filter(p => {
             const c = String(p.category||'').toLowerCase();
             return c !== 'regedit' && c !== 'app';
         }).length,
